@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\District;
 use App\Models\Town;
 use App\Models\University;
 use Illuminate\Database\Migrations\Migration;
@@ -18,7 +19,7 @@ return new class extends Migration
             $table->id();
             $table->foreignIdFor(User::class)->constrained();
             $table->string("carnet")->nullable();
-            $table->foreignIdFor(Town::class)->constrained();
+            $table->foreignIdFor(District::class)->constrained();
             $table->string("adress");
             $table->foreignIdFor(University::class)->constrained();
             $table->timestamps();

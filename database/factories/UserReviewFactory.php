@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,8 +17,12 @@ class UserReviewFactory extends Factory
      */
     public function definition(): array
     {
+        $users = User::all()->pluck('id');
+
         return [
-            //
+            'stars' => fake()->numberBetween(1, 5),
+            'comment'=> fake()->text(rand(25, 255)),
+            'user_id' => $users->random(),
         ];
     }
 }

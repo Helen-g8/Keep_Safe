@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Role;
+use App\Models\Sex;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -17,12 +19,21 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
+        $sexes = Sex::all()->pluck('id');
+        $role = Role::all()->pluck('id');
+
         return [
             'name' => fake()->name(),
+            'sex_id' => $sexes->random(),
+            'age' => fake()->numberBetween(18, 60),
+            'dui' => fake()->randomNumber(9, true),
+            'phone' => fake()->randomNumber(8, true),
             'email' => fake()->unique()->safeEmail(),
+            'role_id' => $role->random(),
             'email_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
             'remember_token' => Str::random(10),
+
         ];
     }
 
