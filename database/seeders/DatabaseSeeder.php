@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             UserReviewSeeder::class,
             StudentSeeder::class,
+            RentalLocationSeeder::class,
         ]);
     }
 }
