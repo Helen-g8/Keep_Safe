@@ -2,6 +2,9 @@
 
 namespace Database\Factories;
 
+use App\Models\District;
+use App\Models\Town;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,8 +19,15 @@ class RentalLocationFactory extends Factory
      */
     public function definition(): array
     {
+        $user = User::all()->pluck("id");
+        $districts = District::all()->pluck("id");
         return [
-            //
+            "user_id"=>$user->random(),
+            "rooms"=>fake()->numberBetween(0, 9),
+            'coordinates' => fake()->latitude() . fake()->longitude(),
+            "district_id" => $districts->random(),
+            "address" => fake()->streetAddress(),
+            "price" =>fake()->numberBetween(75,500),
         ];
     }
 }

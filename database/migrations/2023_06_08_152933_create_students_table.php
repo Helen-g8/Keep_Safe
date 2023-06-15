@@ -20,7 +20,7 @@ return new class extends Migration
             $table->foreignIdFor(User::class)->constrained();
             $table->string("carnet")->nullable();
             $table->foreignIdFor(District::class)->constrained();
-            $table->string("adress");
+            $table->string("address");
             $table->foreignIdFor(University::class)->constrained();
             $table->timestamps();
         });

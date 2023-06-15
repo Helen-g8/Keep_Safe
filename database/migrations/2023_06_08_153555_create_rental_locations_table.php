@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\District;
 use App\Models\Town;
 use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
@@ -19,7 +20,7 @@ return new class extends Migration
             $table->foreignIdFor(User::class)->constrained();
             $table->integer("rooms");
             $table->string("coordinates");
-            $table->foreignIdFor(Town::class)->constrained();
+            $table->foreignIdFor(District::class)->constrained();
             $table->string("address");
             $table->integer("price");
 

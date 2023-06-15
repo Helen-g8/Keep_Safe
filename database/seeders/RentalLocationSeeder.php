@@ -12,6 +12,6 @@ class RentalLocationSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+    
     }
 }
