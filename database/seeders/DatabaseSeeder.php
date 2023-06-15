@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             StudentSeeder::class,
             RentalLocationSeeder::class,
             RentalReviewSeeder::class,
+            RuleSeeder::class,
         ]);
     }
 }

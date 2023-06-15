@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\RentalLocation;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,8 +17,10 @@ class RuleFactory extends Factory
      */
     public function definition(): array
     {
+        $rentals=RentalLocation::all()->pluck("id");
         return [
-            //
+            "rule"=>fake()->text(rand(50,255)),
+            "rental_location_id"=>$rentals->random(),
         ];
     }
 }
