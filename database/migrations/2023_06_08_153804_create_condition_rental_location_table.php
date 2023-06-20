@@ -14,11 +14,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('condition_rental_location', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
             $table->foreignIdFor(RentalLocation::class)->constrained();
             $table->foreignIdFor(Condition::class)->constrained();
-            $table->boolean("asnwer");
+            $table->primary(['rental_location_id', 'condition_id']);
+            $table->boolean("answer");
         });
     }
 

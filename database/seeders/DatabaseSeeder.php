@@ -17,13 +17,14 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
             SexSeeder::class,
             UniversitySeeder::class,
-            ConditionSeeder::class,
             UserSeeder::class,
             UserReviewSeeder::class,
             StudentSeeder::class,
             RentalLocationSeeder::class,
+            ConditionSeeder::class,
             RentalReviewSeeder::class,
             RuleSeeder::class,
+            PaymentSeeder::class,
         ]);
     }
 }
