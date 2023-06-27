@@ -52,4 +52,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(UserReview::class);
     }
+
+    public function sex()
+    {
+        return $this->belongsTo(Sex::class);
+    }
 }
