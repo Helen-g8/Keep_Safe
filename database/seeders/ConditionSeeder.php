@@ -16,7 +16,11 @@ class ConditionSeeder extends Seeder
     {
         $conditions = [
             'Mascotas permitidas',
+            'Traer muebles propios',
+            '',
         ];
+
+
 
         $condiciones = Condition::factory(count($conditions))->sequence(fn ($sqn) => [
             'name' => $conditions[$sqn->index]
