@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Rule extends Model
 {
     use HasFactory;
+
+    public function rentallocation(){
+        return $this->belongsTo(RentalLocation::class);
+    }
 }

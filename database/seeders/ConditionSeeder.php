@@ -19,6 +19,7 @@ class ConditionSeeder extends Seeder
             'Traer muebles propios',
             '',
         ];
+        //anwers es si la persona acepto la condiciones de arriba 
 
 
 
