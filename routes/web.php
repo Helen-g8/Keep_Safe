@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Role;
+use App\Models\Sex;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +20,17 @@ Route::get('/', function () {
 });
 
 Route::get('/signUp', function () {
-    return view('signUp');
+    return view('signUp', [
+        'sexos' => Sex::all(),
+        'roles' => Role::all(),
+    ]);
+});
+
+Route::post('/signUp', function (){
+    $attributes= request()->validate([
+        'first_name' => 'required|string|max:100',
+        'last_name'=> 'required|string|max:100',
+        'age'=> 'required|integer|'
+    ]);
 });
 
