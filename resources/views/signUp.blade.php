@@ -1,6 +1,5 @@
 <x-layout>
-    <form>
-        <div class="grid gap-6 md:grid-cols-2 mb-6">
+    <form class="grid gap-6 md:grid-cols-2 mb-6 mt-6 mx-6">
             <div>
                 <label for="first_name" class="block mb-2 text-sm font-medium text-black-900">Nombres</label>
                 <input type="text" id="first_name"
