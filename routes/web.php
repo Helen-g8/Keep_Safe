@@ -22,7 +22,7 @@ Route::get('/', function () {
 Route::get('/signUp', function () {
     return view('signUp', [
         'sexos' => Sex::all(),
-        'roles' => Role::all(),
+        'rol' => request('rol'),
     ]);
 });
 
@@ -30,7 +30,16 @@ Route::post('/signUp', function (){
     $attributes= request()->validate([
         'first_name' => 'required|string|max:100',
         'last_name'=> 'required|string|max:100',
-        'age'=> 'required|integer|'
-    ]);
+        'age'=> 'required|integer|max_digits:2|min:15',
+        'DUI' => 'required|integer|max_digits:9|min_digits:9',
+        'phone' => 'required|interger|max-digits:8|min_digits:8'
+        ]);
 });
 
+Route::get('/login', function(){
+    return view('login');
+});
+
+Route::get('/selectRole',function(){
+    return view('selectRole');
+});
