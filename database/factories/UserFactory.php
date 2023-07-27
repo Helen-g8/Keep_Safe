@@ -23,7 +23,8 @@ class UserFactory extends Factory
         $role = Role::all()->pluck('id');
 
         return [
-            'name' => fake()->name(),
+            'first_name' => fake()->firstName(),
+            'last_name' => fake()->lastName(),
             'sex_id' => $sexes->random(),
             'age' => fake()->numberBetween(18, 60),
             'dui' => fake()->randomNumber(9, true),
