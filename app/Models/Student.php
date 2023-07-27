@@ -10,7 +10,7 @@ class Student extends Model
     use HasFactory;
 
     public function payment(){
-        return $this->hasMany(payment::class);
+        return $this->hasMany(Payment::class);
     }
 
     public function user(){
