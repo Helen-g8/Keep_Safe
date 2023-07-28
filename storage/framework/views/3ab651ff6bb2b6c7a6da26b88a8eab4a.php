@@ -1,9 +1,9 @@
 <?php $attributes ??= new \Illuminate\View\ComponentAttributeBag; ?>
-<?php foreach($attributes->onlyProps(['label', 'name', 'type' => 'text', 'placeholder' => ' ', 'required' => false, 'class' => '']) as $__key => $__value) {
+<?php foreach($attributes->onlyProps(['label', 'name', 'type' => 'text', 'placeholder' => ' ', 'required' => false, 'class' => ' ']) as $__key => $__value) {
     $$__key = $$__key ?? $__value;
 } ?>
-<?php $attributes = $attributes->exceptProps(['label', 'name', 'type' => 'text', 'placeholder' => ' ', 'required' => false, 'class' => '']); ?>
-<?php foreach (array_filter((['label', 'name', 'type' => 'text', 'placeholder' => ' ', 'required' => false, 'class' => '']), 'is_string', ARRAY_FILTER_USE_KEY) as $__key => $__value) {
+<?php $attributes = $attributes->exceptProps(['label', 'name', 'type' => 'text', 'placeholder' => ' ', 'required' => false, 'class' => ' ']); ?>
+<?php foreach (array_filter((['label', 'name', 'type' => 'text', 'placeholder' => ' ', 'required' => false, 'class' => ' ']), 'is_string', ARRAY_FILTER_USE_KEY) as $__key => $__value) {
     $$__key = $$__key ?? $__value;
 } ?>
 <?php $__defined_vars = get_defined_vars(); ?>
