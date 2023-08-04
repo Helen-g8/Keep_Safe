@@ -9,5 +9,8 @@
 </head>
 <body>
     {{ $slot }}
+
+    <x-nav.nav/>
+    {{ $slot }}
 </body>
 </html>

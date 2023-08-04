@@ -1,5 +1,5 @@
 <x-layout>
-    <form class="bg-red-400 to-r from-slate-500 to-purple-500">
+    <form class="h-screen bg-red-400 to-r from-slate-500">
         <input type="number" value="{{ $rol }}" class="hidden" name="role_id">
 
     <div class="mx-6 text-white grid gap-6 md:grid-cols-2">
@@ -10,14 +10,13 @@
 
             <div>
                 <label for="sex" class="block mb-2 text-sm font-medium text-white-900">Sexo</label>
-                <select id="sexSign"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    required>
+                <select id="sexSign" class="bg-white-50 border border-gray-300 text-white-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                    <option value="" selected disabled>Selecciona tu sexo</option>
                     @foreach ($sexos as $sexo)
                         <option value="{{ $sexo->id }}">{{ $sexo->name }}</option>
-                        <option selected>Selecciona tu sexo</option>
                     @endforeach
                 </select>
+
             </div>
 
             <x-input label="DUI" placeholder="Digita el numero de DUI" name="dui" required />

@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcomeL');
 });
 
 
@@ -27,6 +27,10 @@ Route::get('/signUp', function () {
         'sexos' => Sex::all(),
         'rol' => request('rol'),
     ]);
+});
+
+Route::get('welcome', function () {
+    return view('welcome');
 });
 
 Route::post('/signUp', function () {

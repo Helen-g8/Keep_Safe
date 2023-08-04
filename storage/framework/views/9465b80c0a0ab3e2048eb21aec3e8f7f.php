@@ -7,7 +7,7 @@
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
-    <form class="bg-red-400 to-r from-slate-500 to-purple-500">
+    <form class="h-screen bg-red-400 to-r from-slate-500">
         <input type="number" value="<?php echo e($rol); ?>" class="hidden" name="role_id">
 
     <div class="mx-6 text-white grid gap-6 md:grid-cols-2">
@@ -60,14 +60,13 @@
 
             <div>
                 <label for="sex" class="block mb-2 text-sm font-medium text-white-900">Sexo</label>
-                <select id="sexSign"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    required>
+                <select id="sexSign" class="bg-white-50 border border-gray-300 text-white-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                    <option value="" selected disabled>Selecciona tu sexo</option>
                     <?php $__currentLoopData = $sexos; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sexo): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <option value="<?php echo e($sexo->id); ?>"><?php echo e($sexo->name); ?></option>
-                        <option selected>Selecciona tu sexo</option>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </select>
+
             </div>
 
             <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
