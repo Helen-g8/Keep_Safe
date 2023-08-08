@@ -1,4 +1,5 @@
 <?php
+use App\Models\RentalLocation;
 use App\Models\User;
 
 Route::post('/login', function () {
@@ -38,3 +39,36 @@ Route::post('/signUp', function () {
 
     return redirect('/home');
 });
+
+Route::post('/rental/create', function(){
+    $attributes = validateRentalAttributes();
+
+    $RentalLocation = RentalLocation::create($attributes);
+
+    return redirect('rental/' + $RentalLocation->id);
+});
+
+
+//{rental}
+Route::patch('/rental/{rental}', function (RentalLocation $rental) {
+    if ($rental->user_id != Auth::user()->id) {
+        return '/';
+    }
+
+    $attributes = validateRentalAttributes();
+
+    $rental->update($attributes);
+
+    return redirect('rental/' + $rental->id);
+});
+
+function validateRentalAttributes() {
+    return request()->validate([
+        'user_id' => 'required|numeric|exists:users,id',
+        'rooms' => 'required|integer|min:1|max:25',
+        'coordinates' => 'required|string|max:255',
+        'district_id'=>'required|numeric|exists:districts,id',
+        'address' => 'required|string|max:255',
+        'price' => 'required|integer|min:50|max:500',
+    ]);
+}
