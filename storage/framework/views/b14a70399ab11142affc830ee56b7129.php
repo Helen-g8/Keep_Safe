@@ -8,9 +8,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <?php echo e($slot); ?>
-
-
     <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.nav.nav','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('nav.nav'); ?>
@@ -26,8 +23,11 @@
 <?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
 <?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
 <?php endif; ?>
-    <?php echo e($slot); ?>
 
+    <div class="mt-[68px]">
+        <?php echo e($slot); ?>
+
+    </div>
 </body>
 </html>
 <?php /**PATH /home/alexticas2006/GitHub/Keep_Safe/resources/views/components/layout.blade.php ENDPATH**/ ?>

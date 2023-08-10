@@ -7,6 +7,7 @@
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
+    <?php echo csrf_field(); ?>
     <form class="h-screen bg-red-400 to-r from-slate-500">
         <input type="number" value="<?php echo e($rol); ?>" class="hidden" name="role_id">
 

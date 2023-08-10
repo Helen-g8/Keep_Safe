@@ -4,13 +4,22 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Znck\Eloquent\Traits\BelongsToThrough;
 
 class RentalLocation extends Model
 {
-    use HasFactory;
+    use HasFactory, BelongsToThrough;
 
-    public function towns(){
-        return $this->belongsTo(Town::class);
+    public function district(){
+        return $this->belongsTo(District::class);
+    }
+
+    public function town() {
+        return $this->belongsToThrough(Town::class, District::class);
+    }
+
+    public function state() {
+        return $this->belongsToThrough(State::class, [Town::class, District::class]);
     }
 
     public function Payment(){

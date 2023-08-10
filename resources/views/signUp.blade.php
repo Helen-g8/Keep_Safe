@@ -1,4 +1,5 @@
 <x-layout>
+    @csrf
     <form class="h-screen bg-red-400 to-r from-slate-500">
         <input type="number" value="{{ $rol }}" class="hidden" name="role_id">
 

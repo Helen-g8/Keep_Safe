@@ -8,7 +8,7 @@
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
 
-    <div class="bg-gradient-to-r from-blue-500 to-purple-500 min-h-screen flex flex-col place-content-center">
+    <div class="bg-gradient-to-r from-purple-400 to-cyan-500 min-h-screen flex flex-col place-content-center">
         <label class="text-center block mb-2 text-xl font-bold">Selecciona tu rol</label>
         <div class="grid gap-6 md:grid-cols-2 mb-4 mt-5 px-20 mx-4">
             <a href="/signUp?rol=1" type="button"
