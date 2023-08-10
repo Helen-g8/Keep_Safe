@@ -14,10 +14,15 @@
         <option value="anual">Anual</option>
         <option value="personalizado">Personalizado</option>
 </select>
-        <x-input label="text" placeholder="Restrinciones personalizadas" name="text" required />
-        <select id>
+        <x-input label="text" placeholder="Restrinciones personalizadas" name="text" required />  
     <x-input label="ubication" placeholder="Ubicacion" name="ubication" required />
-</form>
+    <option value="{{ $states-> id }}">{{ $states->name }}</option>
+    <option value="{{ $towns-> id }}">{{ $towns->name }}</option>
+    <option value="{{ $districts-> id }}">{{ $districts->name }}</option>
+    <x-input label="Servicios predeterminado " placeholder="FALTA EL SELECT DE ESTO :) XD" name="ubication" required />
+
+</form> 
+</x-layout>
     
 
 
