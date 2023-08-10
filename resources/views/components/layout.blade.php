@@ -8,9 +8,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    {{ $slot }}
-
     <x-nav.nav/>
-    {{ $slot }}
+
+    <div class="mt-[68px]">
+        {{ $slot }}
+    </div>
 </body>
 </html>
