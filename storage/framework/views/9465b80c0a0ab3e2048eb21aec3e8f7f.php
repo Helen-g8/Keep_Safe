@@ -8,7 +8,7 @@
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
     <?php echo csrf_field(); ?>
-    <form class="h-screen bg-red-400 to-r from-slate-500">
+    <form class="min-h-screen flex flex-col place-content-center bg-red-400 to-r from-slate-500">
         <input type="number" value="<?php echo e($rol); ?>" class="hidden" name="role_id">
 
     <div class="mx-6 text-white grid gap-6 md:grid-cols-2">
