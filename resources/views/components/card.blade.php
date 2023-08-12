@@ -13,5 +13,7 @@
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg>
         </a>
+
+        <label class="bg-blue-500 ml-[120px] px-2 py-2 rounded ">Activo</label>
     </div>
 </div>
