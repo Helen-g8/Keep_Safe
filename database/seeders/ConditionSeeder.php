@@ -17,9 +17,16 @@ class ConditionSeeder extends Seeder
         $conditions = [
             'Mascotas permitidas',
             'Traer muebles propios',
-            '',
+            'Conpartir baño sanitario',
+            'Compartir la cocina',
+            'Compartir ducha',
+            'Compartir sala de estar',
+            'tendra servicio de wifi',
+            ''
+
+
         ];
-        //anwers es si la persona acepto la condiciones de arriba 
+        //anwers es si la persona acepto la condiciones de arriba
 
 
 
