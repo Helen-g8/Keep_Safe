@@ -67,7 +67,6 @@
                         <option value="<?php echo e($sexo->id); ?>"><?php echo e($sexo->name); ?></option>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </select>
-
             </div>
 
             <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
