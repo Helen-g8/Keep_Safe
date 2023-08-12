@@ -40,6 +40,16 @@ class UniversitySeeder extends Seeder
 'Universidad de El Salvador (UES) - Campus Sonsonate',
 'Universidad Tecnológica de El Salvador (UTEC) - Campus Sonsonate',
 'Universidad de El Salvador (UES) - Campus Usulután',
+'Universidad Nueva San Salvador',
+'Universidad Politécnica de el Salvador',
+'Universidad Cristiana de las Asambleas de Dios',
+'Universidad de Oriente',
+'Universidad Autónoma de Santa Ana',
+'Escuela Superior de Economia y Negocios (ESEN)',
+'Universidad Arbert Einstein',
+'Escuela de comunicación Mónica Herrera',
+'Universidad Andrés Bello',
+'INCAE Business School'
         ];
 
         University::factory(count($universities))->sequence(fn ($sqn) => [
