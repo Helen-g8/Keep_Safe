@@ -72,3 +72,5 @@ function validateRentalAttributes() {
         'price' => 'required|integer|min:50|max:500',
     ]);
 }
+
+
