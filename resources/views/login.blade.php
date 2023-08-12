@@ -17,7 +17,6 @@
                         <option value="{{ $sexo->id }}">{{ $sexo->name }}</option>
                     @endforeach
                 </select>
-
             </div>
 
             <x-input label="DUI" placeholder="Digita el numero de DUI" name="dui" required />
