@@ -17,3 +17,6 @@
         <label class="bg-blue-500 ml-[120px] px-2 py-2 rounded ">Activo</label>
     </div>
 </div>
+<div>
+    {{ $slot }}
+</div>
