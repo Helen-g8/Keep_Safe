@@ -49,7 +49,9 @@ class UniversitySeeder extends Seeder
 'Universidad Arbert Einstein',
 'Escuela de comunicación Mónica Herrera',
 'Universidad Andrés Bello',
-'INCAE Business School'
+'INCAE Business School',
+'Escuela de Aviación Aerotraining (San Salvador)',
+
         ];
 
         University::factory(count($universities))->sequence(fn ($sqn) => [
