@@ -73,4 +73,6 @@ function validateRentalAttributes() {
     ]);
 }
 
+Route::view('profile','profile');
+
 

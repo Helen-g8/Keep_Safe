@@ -39,7 +39,7 @@
                 <select id="sexSign" x-model="district"
                     class="bg-white-50 border border-gray-300 text-white-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     required>
-                    <option value="" selected disabled>Selecciona tu sexo</option>
+                    <option value="" selected disabled>Selecciona tu distrito</option>
                     @foreach ($districts as $district)
                         <option value="{{ $district->id }}" :class="{{ $district->town_id }} == town ? '' : 'hidden'">
                             {{ $district->name }}</option>
