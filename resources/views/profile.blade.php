@@ -98,7 +98,5 @@
     }
   }
 </script>
-
-
                 
 </x-layout>
