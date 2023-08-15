@@ -1,4 +1,4 @@
-<nav class="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200">
+<nav class="bg-[#F2BA52] fixed w-full z-20 top-0 left-0 border-b border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center">
             <img src="<?php echo e(asset('NearU.jpg')); ?>" class="h-8 mr-3" alt="Flowbite Logo">
@@ -6,11 +6,11 @@
             <div class="flex md:order-2">
                 <a href="/selectRole">
                     <button type="button"
-                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-2 text-center mr-3 md:mr-6">Registrarse</button>
+                        class="text-white bg-[#BF7534] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-2 text-center mr-3 md:mr-6">Registrarse</button>
                 </a>
                 <a href="/signUp">
                     <button type="button"
-                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-2 text-center mr-3 md:mr-0 ">Iniciar
+                        class="text-white bg-[#BF7534] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-2 text-center mr-3 md:mr-0 ">Iniciar
                         sesion</button>
                 </a>
                 <button data-collapse-toggle="navbar-sticky" type="button"
@@ -26,10 +26,10 @@
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                 <ul
-                    class="flex flex-col md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                    class="flex flex-col md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-[#F2BA52] md:flex-row md:space-x-8 md:mt-0 md:border-0">
                     <li>
                         <a href="welcome"
-                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:">Inicio</a>
+                            class="block py-2  pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:">Inicio</a>
                     </li>
                     <li>
                         <a href="#"
