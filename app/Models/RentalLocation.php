@@ -13,7 +13,10 @@ class RentalLocation extends Model
     public function district(){
         return $this->belongsTo(District::class);
     }
-
+    /**
+     * Summary of town
+     * @return mixed
+     */
     public function town() {
         return $this->belongsToThrough(Town::class, District::class);
     }
