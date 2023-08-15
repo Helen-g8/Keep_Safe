@@ -47,20 +47,58 @@
                 class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
                 name</label>
         </div>
-        <form>
-  <p class="clasificacion">
-    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-    --><label for="radio1">★</label><!--
-    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-    --><label for="radio2">★</label><!--
-    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-    --><label for="radio3">★</label><!--
-    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-    --><label for="radio4">★</label><!--
-    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-    --><label for="radio5">★</label>
-  </p>
-</form>
+       
+<style>
+  .stars {
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .star {
+    color: gray;
+  }
+  
+  .filled-star {
+    color: gold;
+  }
+</style>
+</head>
+<body>
+
+<p>Califica este producto:</p>
+
+<div class="stars">
+  <span class="star" onclick="rate(1)">&#9733;</span>
+  <span class="star" onclick="rate(2)">&#9733;</span>
+  <span class="star" onclick="rate(3)">&#9733;</span>
+  <span class="star" onclick="rate(4)">&#9733;</span>
+  <span class="star" onclick="rate(5)">&#9733;</span>
+</div>
+
+<p id="selectedRating">Votación: </p>
+
+<script>
+  let selectedRating = 0;
+
+  function rate(rating) {
+    selectedRating = rating;
+    updateStars();
+    document.getElementById('selectedRating').textContent = `Votación: ${rating} estrellas`;
+  }
+
+  function updateStars() {
+    const stars = document.getElementsByClassName('star');
+    for (let i = 0; i < 5; i++) {
+      if (i < selectedRating) {
+        stars[i].classList.add('filled-star');
+      } else {
+        stars[i].classList.remove('filled-star');
+      }
+    }
+  }
+</script>
+
 
                 
 </x-layout>
