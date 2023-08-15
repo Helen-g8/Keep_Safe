@@ -1,4 +1,5 @@
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<x-layout>
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
     <a href="#">
         <img class="rounded-t-lg" src="/images/Casa.jpg"/>
     </a>
@@ -17,6 +18,4 @@
         <label class="bg-blue-500 ml-[120px] px-2 py-2 rounded ">Activo</label>
     </div>
 </div>
-<div>
-    {{ $slot }}
-</div>
+</x-layout>

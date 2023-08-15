@@ -6,6 +6,8 @@ Route::view('welcome', 'welcome');
 
 Route::view('signUp', 'signUp');
 
+Route::view('card', 'card');
+
 Route::view('selectRole', 'selectRole');
 
 Route::get('/login', function () {

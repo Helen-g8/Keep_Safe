@@ -1,4 +1,4 @@
-<nav class="bg-gray fixed w-full z-20 top-0 left-0 border-b border-gray-200">
+<nav class="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center">
             <img src="<?php echo e(asset('NearU.jpg')); ?>" class="h-8 mr-3" alt="Flowbite Logo">
