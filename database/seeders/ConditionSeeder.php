@@ -21,9 +21,7 @@ class ConditionSeeder extends Seeder
             'Compartir la cocina',
             'Compartir ducha',
             'Compartir sala de estar',
-            'tendra servicio de wifi',
-            ''
-
+            'Tendra servicio de wifi',
 
         ];
         //anwers es si la persona acepto la condiciones de arriba
