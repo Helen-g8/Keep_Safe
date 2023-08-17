@@ -29,7 +29,7 @@ class ConditionSeeder extends Seeder
 
 
         $condiciones = Condition::factory(count($conditions))->sequence(fn ($sqn) => [
-            'name' => $conditions[$sqn->index]
+            'name' => $condition[$sqn->index]
         ])->create();
 
         $rentals = RentalLocation::all()->pluck('id');
