@@ -1,6 +1,10 @@
 <?php
+use App\Models\District;
 use App\Models\RentalLocation;
 use App\Models\Sex;
+use App\Models\State;
+use App\Models\Town;
+use App\Models\University;
 
 Route::view('welcome', 'welcome');
 
@@ -14,6 +18,10 @@ Route::get('signUp', function () {
     return view('signup', [
         'sexos' => Sex::all(),
         'rol' => request('rol'),
+        'universities' => University::all(),
+        'districts' => District::all(),
+        'states' => State::all(),
+        'towns' => Town::all(),
     ]);
 });
 

@@ -1,6 +1,6 @@
 <x-layout>
     @csrf
-    <form class="min-h-screen flex flex-col place-content-center bg-orange-300">
+    <form class="min-h-screen flex flex-col place-content-center bg-orange-300" x-data="{ state: '', town: '', district: '' }">
         <input type="number" value="{{ $rol }}" class="hidden" name="role_id">
 
     <div class="mx-6 text-white grid gap-6 md:grid-cols-2">
@@ -25,13 +25,10 @@
 
             <x-input label="Email" placeholder="Escribe tu email" name="email" required />
 
-            <x-input label="Contrasena" placeholder="Crea una contrasena segura" name="password" required />
+            <x-input label="Contraseña" placeholder="Crea una contraseña segura" name="password" type='password' required />
 
-            <x-input label="Confirmacion de contrasena" placeholder="Confirma tu contrasena"
+            <x-input label="Confirmacion de contrañena" placeholder="Confirma tu contraseña"
                 name="password_confirmation" required />
-
-            <x-input label="Colonia/Canton/Pueblo donde resides actualmente" placeholder="Ej: Colonia las granadillas"
-                name="address" required />
 
 
             @if ($rol == 1)
@@ -46,10 +43,54 @@
             @endif
 
             @if ($rol == 2)
-                <x-input label="Carne Universitario" placeholder="Colonia las granadillas" name="address" required />
-                    <x-input label="Distrito" placeholder="Selecciona tu distrito" name="district_id" required />
-                <x-input label="Universidad" placeholder="Selecciona tu universidad" name="university_id" required />
+                <x-input label="Carne Universitario" type='file' name="address" required />
 
+                <div>
+                    <label for="states" class="mb-2 text-sm font-medium text-black-900">Departamentos</label>
+                    <select id="sexSign" x-model="state"
+                        class="bg-white-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        required>
+                        <option value="" selected disabled>Selecciona tu departamento</option>
+                        @foreach ($states as $state)
+                            <option value="{{ $state->id }}">{{ $state->name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+
+                <div x-show="state != ''">
+                    <label for="sex" class="mb-2 text-sm font-medium text-white-900">Municipios</label>
+                    <select id="sexSign" x-model="town"
+                        class="bg-white-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        required>
+                        <option value="" selected disabled>Selecciona tu municipio</option>
+                        @foreach ($towns as $town)
+                            <option value="{{ $town->id }}" :class="{{ $town->state_id }} == state ? '' : 'hidden'">
+                                {{ $town->name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+
+                <div x-show="town != ''">
+                    <label for="sex" class="block mb-2 text-sm font-medium text-white-900">Distritos</label>
+                    <select id="sexSign" x-model="district"
+                        class="bg-white-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        required>
+                        <option value="" selected disabled>Selecciona tu distrito</option>
+                        @foreach ($districts as $district)
+                            <option value="{{ $district->id }}" :class="{{ $district->town_id }} == town ? '' : 'hidden'">
+                                {{ $district->name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+                    <div>
+                        <label for="university" class="block mb-2 text-sm font-medium text-white-900">Universidad</label>
+                        <select id="universitySign" class="bg-white-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                            <option value="" selected disabled>Selecciona tu universidad</option>
+                            @foreach ($universities as $university)
+                                <option class="text-black" value="{{ $university->id }}">{{ $university->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
             @endif
 
             <button type="submit"
