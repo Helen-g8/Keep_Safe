@@ -17,14 +17,20 @@ class UniversitySeeder extends Seeder
         $universities = [
             [
                 'name' => 'Universidad de El Salvador (UES) - Campus Ahuachapán',
-                'distrito' => ''
+                'state' => 'Ahuachapán'
             ],
             [
                 'name' => 'Universidad Francisco Gavidia (UFG) - Campus Sensuntepeque',
-                'distrito' => ''
-            ]
-            'Universidad Nacional de El Salvador (UNSA) - Campus Chalatenango',
-            'Universidad Don Bosco (UDB) - Campus Cuscatlán',
+                'state' => 'Cabañas'
+            ],
+            [
+                'name' => 'Universidad Nacional de El Salvador (UNSA) - Campus Chalatenango',
+                'state' => 'Chalatenango'
+            ],
+            [
+                'Universidad Don Bosco (UDB) - Campus Cuscatlán',
+                'state' =
+            ],
             'Universidad de El Salvador (UES) - Campus Santa Tecla',
             'Universidad Dr. José Matías Delgado (UMG) - Campus Santa Tecla',
             'Universidad Francisco Gavidia (UFG) - Campus Santa Tecla',
