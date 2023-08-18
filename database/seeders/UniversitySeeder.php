@@ -23,28 +23,28 @@ class UniversitySeeder extends Seeder
             ],
 
             [
-                'state' => 'Cabañas',
+                'district' => 'Cabañas',
                 'name' => [
                     'Universidad Francisco Gavidia (UFG) - Campus Sensuntepeque',
                 ]
             ],
 
             [
-                'state' => 'Chalatenango',
+                'district' => 'Chalatenango',
                 'name' => [
                     'Universidad Nacional de El Salvador (UNSA) - Campus Chalatenango'
                 ]
             ],
 
             [
-                'state' => 'Cuscatlán',
+                'district' => 'Cuscatlán',
                 'name' => [
                     'Universidad Don Bosco (UDB) - Campus Cuscatlán'
                 ]
             ],
 
             [
-                'state' => 'La Libertad',
+                'district' => 'La Libertad',
                 'name' => [
                     'Universidad de El Salvador (UES) - Campus Santa Tecla',
                     'Universidad Dr. José Matías Delgado (UMG) - Campus Santa Tecla',
@@ -143,7 +143,7 @@ class UniversitySeeder extends Seeder
 
         foreach ($universities as $universitiesarray) {
             $district = District::where('name', $universitiesarray['district'])->first()->id;
-            
+
             $universitiesnames = $universitiesarray['name'];
             University::factory(count($universitiesnames))->sequence(fn($sqn) => [
                 'name' => $universitiesnames[$sqn->index],
