@@ -23,7 +23,7 @@ class UniversitySeeder extends Seeder
             ],
 
             [
-                'district' => 'Cabañas',
+                'district' => 'Sensuntepeque',
                 'name' => [
                     'Universidad Francisco Gavidia (UFG) - Campus Sensuntepeque',
                 ]
