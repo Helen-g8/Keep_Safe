@@ -1,23 +1,28 @@
 <?php
 use App\Models\RentalLocation;
+use App\Models\Student;
 use App\Models\User;
 
 Route::post('/login', function () {
     $attributes = request()->validate([
-        'email' => 'required|email|max200',
+        'email' => 'required|email|max:200',
         'password' => 'required|string|max:200',
     ]);
 
     if (Auth::attempt($attributes)) {
         request()->session()->regenerate();
 
-        return redirect('/home');
+        if (Auth::user()->role->name == 'Arrendador') {
+            return redirect('/arrendadorHome');
+        } else {
+            return redirect('/mostrarArrendamientos');
+        }
     }
 
     return back()->WithErrors([
         'email' => 'Cuenta no encontrada'
     ]);
-});
+})->name('login');
 
 Route::post('/signUp', function () {
     $attributes = request()->validate([
@@ -75,4 +80,9 @@ function validateRentalAttributes() {
 
 Route::view('profile','profile');
 
+Route::get('/profile', function () {
+    return view('profile', [
+        'user' => Auth::user(),
+    ]);
+})->middleware('auth');
 
