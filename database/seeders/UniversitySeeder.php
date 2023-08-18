@@ -41,7 +41,6 @@ class UniversitySeeder extends Seeder
             'Universidad de El Salvador (UES) - Campus San Miguel',
             'Universidad Gerardo Barrios (UGB) - Campus San Miguel',
             'Universidad de El Salvador (UES) - Campus San Salvador',
-            'Universidad Centroamericana "José Simeón Cañas" (UCA)',
             'Universidad Tecnológica de El Salvador (UTEC)',
             'Universidad Dr. José Matías Delgado (UMG) - Campus San Salvador',
             'Universidad Francisco Gavidia (UFG) - Campus San Salvador',
