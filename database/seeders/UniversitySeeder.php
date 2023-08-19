@@ -23,7 +23,7 @@ class UniversitySeeder extends Seeder
             ],
 
             [
-                'district' => 'Cabañas',
+                'district' => 'Sensuntepeque',
                 'name' => [
                     'Universidad Francisco Gavidia (UFG) - Campus Sensuntepeque',
                 ]
@@ -44,19 +44,27 @@ class UniversitySeeder extends Seeder
             ],
 
             [
-                'district' => 'La Libertad',
+                'district' => 'Antiguo Cuscatlán',
                 'name' => [
-                    'Universidad de El Salvador (UES) - Campus Santa Tecla',
                     'Universidad Dr. José Matías Delgado (UMG) - Campus Santa Tecla',
-                    'Universidad Francisco Gavidia (UFG) - Campus Santa Tecla',
-                    'Escuela Superior de Economia y Negocios (ESEN)',
                     'Universidad Albert Einstein',
-                    'Escuela de comunicación Mónica Herrera',
                 ]
             ],
 
             [
-                'state' => 'La Paz',
+                'district' =>  'Santa Tecla',
+                'name' => [
+                    'Universidad de El Salvador (UES) - Campus Santa Tecla',
+                    'Universidad Dr. José Matías Delgado (UMG) - Campus Santa Tecla',
+                    'Universidad Francisco Gavidia (UFG) - Campus Santa Tecla',
+                    'Escuela Superior de Economia y Negocios (ESEN) - campus Santa Tecla',
+                    'Escuela de comunicación Mónica Herrera',
+                ]
+            ],
+
+            
+            [
+                'district' => 'San Luis Talpa',
                 'name' => [
                     'Universidad de El Salvador (UES) - Campus San Luis Talpa',
                     'Universidad Nacional de El Salvador (UNSA) - Campus Zacatecoluca',
@@ -64,28 +72,41 @@ class UniversitySeeder extends Seeder
             ],
 
             [
-                'state' => 'La Unión',
+                'district' => 'Zacatecoluca',
+                'name' => [
+                    'Universidad Nacional de El Salvador (UNSA) - Campus Zacatecoluca',
+                ],
+            ],
+
+            [
+                'district' => 'La Unión',
                 'name' => [
                     'Universidad de El Salvador (UES) - Campus La Unión',
                 ]
             ],
 
             [
-                'state' => 'Morazán',
+                'district' => 'San Francisco Gotera',
                 'name' => [
                     'Universidad de El Salvador (UES) - Campus San Francisco Gotera',
                 ]
             ],
 
             [
-                'state' => 'San Salvador',
+                'district' => 'San Salvador',
                 'name' => [
                     'Universidad de El Salvador (UES) - Campus San Salvador',
-                    'Universidad Centroamericana "José Simeón Cañas" (UCA)',
-                    'Universidad Tecnológica de El Salvador (UTEC)',
                     'Universidad Dr. José Matías Delgado (UMG) - Campus San Salvador',
                     'Universidad Francisco Gavidia (UFG) - Campus San Salvador',
                     'Universidad Tecnológica (UTEC) - Campus San Salvador', 
+
+                ]
+            ],
+
+            [
+                'district' => 'San Salvador',
+                'name' => [
+                    'Universidad Centroamericana "José Simeón Cañas" (UCA)',
                     'Escuela de Aviación Aerotraining', 
                     'Universidad Nueva San Salvador',   
                     'Universidad Cristiana de las Asambleas de Dios',
@@ -95,6 +116,15 @@ class UniversitySeeder extends Seeder
                     'INCAE Business School',
                 ]
             ],
+
+
+            [
+                'district' => 'San Salvador',
+                'name' => [
+                    'Universidad de El Salvador (UES) - Campus San Salvador',lo<
+                ]
+            ],
+
 
             [
                 'state' => 'San Miguel',
