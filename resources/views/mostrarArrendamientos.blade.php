@@ -9,7 +9,7 @@
                         Pupilaje en {{ $arrendamiento->district->name }},
                         {{ $arrendamiento->district->town->name }}
                     </span>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <p class="mb-3 font-normal text-gray-700 ">
                         Precio: ${{ $arrendamiento->price }}
                     </p>
                     <div class="flex justify-between">

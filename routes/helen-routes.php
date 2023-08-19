@@ -29,7 +29,7 @@ Route::post('/signUp', function () {
         'first_name' => 'required|string|max:100',
         'last_name' => 'required|string|max:100',
         'age' => 'required|integer|max_digits:5|min_digits:1',
-        'dui' => 'required|integer|max_digits:9|min_digits:9',
+        'dui' => 'required|integer|max:9|min:9',
         'phone' => 'required|integer|max-digits:8|min_digits:8',
         'email' => 'required|email|max:255',
         'password' => 'required|string|confirmed|max:255',

@@ -7,7 +7,7 @@
 
             <x-input label="Nombres" placeholder="Ej: Kevin Antonio" name="first_name" required />
             <x-input label="Apellidos" placeholder="Ej: Hernandez Molina" name="last_name" required />
-            <x-input label="Edad" placeholder="Escribe tu edad" name="age" required />
+            <x-input label="Edad" placeholder="Escribe tu edad" name="age" type="number" required />
 
             <div>
                 <label for="sex" class="block mb-2 text-sm font-medium text-white-900">Sexo</label>
@@ -19,16 +19,16 @@
                 </select>
             </div>
 
-            <x-input label="DUI" placeholder="Digita el numero de DUI" name="dui" required />
+            <x-input label="DUI" placeholder="Digita el numero de DUI" name="dui" type="number" required />
 
-            <x-input label="Numero telefonico" placeholder="Escribe tu numero telefonico" name="phone" required />
+            <x-input label="Numero telefonico" placeholder="Escribe tu numero telefonico" name="phone" type='number' required />
 
             <x-input label="Email" placeholder="Escribe tu email" name="email" required />
 
             <x-input label="Contraseña" placeholder="Crea una contraseña segura" name="password" type='password' required />
 
             <x-input label="Confirmacion de contrañena" placeholder="Confirma tu contraseña"
-                name="password_confirmation" required />
+                name="password_confirmation" type='password' required />
 
 
             @if ($rol == 1)
