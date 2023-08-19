@@ -7,16 +7,11 @@
         <label>{{ $user->age }}</label>
         <br>
         <label>{{ $user->role->name }}</label>
-        <br>
-        <label>{{ $user->phone }}</label>
-        <br>
-        <label>{{ $user->dui }}</label>
-        <br>
     </div>
 
-    <img src="{{ asset('profile.jpg') }}" alt="arrendatario" width="300" height="400" class="h-auto max-w-lg mx-auto ">
-
-
+<div class="class="bg-orange-300 min-h-screen flex flex-col place-content-center""></div>
+        <img src="{{ asset('profile.jpg') }}" alt="arrendatario" width="300" height="400"
+            class="h-auto max-w-lg mx-auto ">
 
     <div class="flex justify-center items-center">
 
@@ -43,11 +38,11 @@
 
 
             <div class="stars ">
-                <span class="star" onclick="rate(1)">&#9733;</span>
-                <span class="star" onclick="rate(2)">&#9733;</span>
-                <span class="star" onclick="rate(3)">&#9733;</span>
-                <span class="star" onclick="rate(4)">&#9733;</span>
-                <span class="star" onclick="rate(5)">&#9733;</span>
+                <span class="star" onclick="rate(1)"> &#9733;</span>
+                <span class="star" onclick="rate(2)"> &#9733;</span>
+                <span class="star" onclick="rate(3)"> &#9733;</span>
+                <span class="star" onclick="rate(4)"> &#9733;</span>
+                <span class="star" onclick="rate(5)"> &#9733;</span>
             </div>
 
             <script>
