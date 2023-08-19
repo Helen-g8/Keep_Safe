@@ -24,7 +24,7 @@ Route::post('/login', function () {
     ]);
 })->name('login');
 
-Route::post('/signUp', function () {
+Route::post('/signup', function () {
     $attributes = request()->validate([
         'first_name' => 'required|string|max:100',
         'last_name' => 'required|string|max:100',
@@ -42,7 +42,7 @@ Route::post('/signUp', function () {
     Auth::login($user);
     request()->session()->regenerate();
 
-    return redirect('/home');
+    return redirect('/profile');
 });
 
 Route::post('/rental/create', function(){
