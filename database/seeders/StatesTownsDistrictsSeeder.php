@@ -128,7 +128,7 @@ class StatesTownsDistrictsSeeder extends Seeder
             ]
         ],
         [
-            'name' => 'Cuscatlan',
+            'name' => 'Cuscatlán',
             'towns' => [
                 [
                     'name' => 'Cuscatlán Norte',

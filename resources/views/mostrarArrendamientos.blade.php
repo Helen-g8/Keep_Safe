@@ -1,6 +1,6 @@
 <x-layout>
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-4 max-w-screen bg-white border border-gray-200 rounded-lg shadow">
-        @foreach ($arrendamientos as $arrendamiento)
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-4 max-w-screen bg-white border border-gray-200 rounded-lg shadow">    
+    @foreach ($arrendamientos as $arrendamiento)
             <div class="p-5 border rounded bg-white shadow">
                 <div class="flex flex-col justify-between h-full">
                     <img src="{{ asset('images/Casa.jpg') }}" alt="Casa Logo" width="100%" height="200">
@@ -28,4 +28,4 @@
             </div>
         @endforeach
     </div>
-</x-layout>
+</x-layout> 
