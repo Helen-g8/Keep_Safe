@@ -115,7 +115,7 @@ class UniversitySeeder extends Seeder
 
 
             [
-                'state' => 'San Miguel',
+                'district' => 'San Miguel',
                 'name' => [
                     'Universidad de El Salvador (UES) - Campus San Miguel',
                     'Universidad Gerardo Barrios (UGB) - Campus San Miguel',
@@ -124,14 +124,14 @@ class UniversitySeeder extends Seeder
                 ],
 
             [
-                'state' => 'San Vicente',
+                'district' => 'San Vicente',
                 'name' => [
                     'Universidad de El Salvador (UES) - Campus San Vicente',
                 ]
             ],
 
             [
-                'state' => 'Santa Ana',
+                'district' => 'Santa Ana',
                 'name' => [
                     'Universidad de El Salvador (UES) - Campus Santa Ana',
                     'Universidad Católica de El Salvador (UNICAES) - Campus Santa Ana',
@@ -141,7 +141,7 @@ class UniversitySeeder extends Seeder
             ],
 
             [
-                'state' => 'Sonsonate',
+                'district' => 'Sonsonate',
                 'name' => [
                     'Universidad de El Salvador (UES) - Campus Sonsonate',
                     'Universidad Tecnológica de El Salvador (UTEC) - Campus Sonsonate',
@@ -149,7 +149,7 @@ class UniversitySeeder extends Seeder
             ],
 
             [
-                'state' => 'Usulután',
+                'district' => 'Usulután',
                 'name' => [
                     'Universidad de El Salvador (UES) - Campus Usulután',
                 ]
