@@ -107,7 +107,6 @@ class UniversitySeeder extends Seeder
                 'district' => 'San Salvador',
                 'name' => [
                     'Universidad Centroamericana "José Simeón Cañas" (UCA)',
-                    'Universidad Tecnológica de El Salvador (UTEC)',
                     'Escuela de Aviación Aerotraining', 
                     'Universidad Nueva San Salvador',   
                     'Universidad Cristiana de las Asambleas de Dios',
