@@ -37,18 +37,12 @@ class UniversitySeeder extends Seeder
             ],
 
             [
-                'district' => 'Cuscatlán',
-                'name' => [
-                    'Universidad Don Bosco (UDB) - Campus Cuscatlán'
-                ]
-            ],
-
-            [
                 'district' => 'Antiguo Cuscatlán',
                 'name' => [
                     'Universidad Dr. José Matías Delgado (UMG) - Campus Santa Tecla',
                     'Universidad Albert Einstein',
-                    'Escuela de Aviación Aerotraining', 
+                    'Escuela de Aviación Aerotraining',
+                    'Universidad Don Bosco (UDB) - Campus Cuscatlán'
                 ]
             ],
 
@@ -154,21 +148,18 @@ class UniversitySeeder extends Seeder
                     'Universidad de El Salvador (UES) - Campus Usulután',
                 ]
             ],
-
-
         ];
 
-
         foreach ($universities as $universitiesarray) {
-            $district = District::where('name', $universitiesarray['district'])->first()->id;
-
+            $district = District::where('name', $universitiesarray['district'])->first();
+            if ($district == null) {
+                dd($universitiesarray['district']);
+            }
             $universitiesnames = $universitiesarray['name'];
             University::factory(count($universitiesnames))->sequence(fn($sqn) => [
                 'name' => $universitiesnames[$sqn->index],
-                'district_id' => $district
+                'district_id' => $district->id
             ])->create();
         }
-
-
     }
 }
