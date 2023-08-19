@@ -57,7 +57,7 @@ class UniversitySeeder extends Seeder
                 ]
             ],
 
-            
+
             [
                 'district' => 'San Luis Talpa',
                 'name' => [
@@ -93,9 +93,9 @@ class UniversitySeeder extends Seeder
                     'Universidad de El Salvador (UES) - Campus San Salvador',
                     'Universidad Dr. José Matías Delgado (UMG) - Campus San Salvador',
                     'Universidad Francisco Gavidia (UFG) - Campus San Salvador',
-                    'Universidad Tecnológica (UTEC) - Campus San Salvador', 
+                    'Universidad Tecnológica (UTEC) - Campus San Salvador',
                     'Universidad Politécnica de El Salvador',
-                    'Universidad Nueva San Salvador',   
+                    'Universidad Nueva San Salvador',
                 ]
             ],
 
@@ -104,7 +104,7 @@ class UniversitySeeder extends Seeder
                 'name' => [
                     'Universidad de El Salvador (UES) - Campus San Salvador',
                 ],
-            ],   
+            ],
 
 
 
@@ -129,8 +129,8 @@ class UniversitySeeder extends Seeder
                 'name' => [
                     'Universidad de El Salvador (UES) - Campus Santa Ana',
                     'Universidad Católica de El Salvador (UNICAES) - Campus Santa Ana',
-                    'Universidad Tecnológica de El Salvador (UTEC) - Campus Santa Ana', 
-                    'Universidad Autónoma de Santa Ana',       
+                    'Universidad Tecnológica de El Salvador (UTEC) - Campus Santa Ana',
+                    'Universidad Autónoma de Santa Ana',
                 ]
             ],
 
