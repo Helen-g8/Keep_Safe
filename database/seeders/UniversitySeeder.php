@@ -109,7 +109,9 @@ class UniversitySeeder extends Seeder
                 'district' => 'San Salvador',
                 'name' => [
                     'Universidad de El Salvador (UES) - Campus San Salvador',
-            ],
+                ],
+            ],   
+
 
 
             [
