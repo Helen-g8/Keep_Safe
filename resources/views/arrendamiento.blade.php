@@ -17,7 +17,7 @@
 
         <br>
         @if ($arrendamiento->rooms > 0)
-            <button class="rounded bg-blue-400 px-4 py-2">ALQUILAR</button>
+            <button class="rounded bg-blue-400 px-4 py-2">Estoy Interesado</button>
         @else
             No Disponible
         @endif

@@ -19,7 +19,7 @@
                 </select>
             </div>
 
-            <x-input label="DUI" placeholder="Digita el numero de DUI" name="dui" type="number" required />
+            <x-input label="DUI" type="number" placeholder="Digita el numero de DUI" name="dui" required />
 
             <x-input label="Numero telefonico" placeholder="Escribe tu numero telefonico" name="phone" type='number' required />
 
