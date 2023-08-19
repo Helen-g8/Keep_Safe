@@ -40,6 +40,8 @@
         <body>
 
 
+
+
             <div class="stars ">
                 <span class="star" onclick="rate(1)">&#9733;</span>
                 <span class="star" onclick="rate(2)">&#9733;</span>
@@ -48,11 +50,9 @@
                 <span class="star" onclick="rate(5)">&#9733;</span>
             </div>
 
-            <p id="selectedRating " class="mr-2">Votación: </p>
-
             <script>
                 let selectedRating = 0;
-  
+
                 function rate(rating) {
                     selectedRating = rating;
                     updateStars();
