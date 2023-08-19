@@ -22,8 +22,6 @@
                                     stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                             </svg>
                         </a>
-                        <label class="inline-block bg-blue-500 px-1 py-1 rounded text-center text-sm text-white">Estoy interesado</label>
-
                         <label class="inline-block bg-blue-500 px-1 py-1 rounded text-center text-sm text-white">Disponible</label>
                     </div>
                 </div>
