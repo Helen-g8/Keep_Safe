@@ -48,6 +48,7 @@ class UniversitySeeder extends Seeder
                 'name' => [
                     'Universidad Dr. José Matías Delgado (UMG) - Campus Santa Tecla',
                     'Universidad Albert Einstein',
+                    'Escuela de Aviación Aerotraining', 
                 ]
             ],
 
@@ -99,30 +100,15 @@ class UniversitySeeder extends Seeder
                     'Universidad Dr. José Matías Delgado (UMG) - Campus San Salvador',
                     'Universidad Francisco Gavidia (UFG) - Campus San Salvador',
                     'Universidad Tecnológica (UTEC) - Campus San Salvador', 
-
-                ]
-            ],
-
-            [
-                'district' => 'San Salvador',
-                'name' => [
-                    'Universidad Centroamericana "José Simeón Cañas" (UCA)',
-                    'Escuela de Aviación Aerotraining', 
-                    'Universidad Nueva San Salvador',   
-                    'Universidad Cristiana de las Asambleas de Dios',
                     'Universidad Politécnica de El Salvador',
-                    'Universidad Andrés Bello',
-                    'Universidad Andrés Bello - Campus 2',
-                    'INCAE Business School',
+                    'Universidad Nueva San Salvador',   
                 ]
             ],
-
 
             [
                 'district' => 'San Salvador',
                 'name' => [
-                    'Universidad de El Salvador (UES) - Campus San Salvador',lo<
-                ]
+                    'Universidad de El Salvador (UES) - Campus San Salvador',
             ],
 
 
