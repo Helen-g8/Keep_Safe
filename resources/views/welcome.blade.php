@@ -3,7 +3,10 @@
 
     <!-- Sección de Bienvenida -->
     <section id="bienvenida" class="py-40 px-2">
+
+        <div>
         <span class="flex justify-center font-bold text-[40px] mb-[60px]">¡Hola, universitario Salvadoreño! </span>
+
 
         <div class="bg-[#3d2A58] rounded-[20px] py-2 px-2 text-white font-bold text-md ml-6 mr-6 text-center italic">
             "Un nuevo mundo se abre ante ti con el inicio de tu viaje universitario. Está repleto de momentos
@@ -29,7 +32,7 @@
         </div>
 
         <div class="flex justify-center">
-            <img src="{{ asset('group.jpg') }}" alt="NearU Logo" width="400" height="200">
+            <img src="{{ asset('group.jpg') }}" alt="NearU Logo" width="400px" height="200">
         </div>
 
 
@@ -93,23 +96,31 @@
     <section id="nuestros-valores" class="relative">
         <img src="{{ asset('studentsU.jpeg') }}" alt="NearU Logo" class="filter brightness-75 w-full h-[700px]" />
 
-        <!-- Contenedor de texto -->
+        <!-- Contenedor de texto para "Nuestra Misión" -->
         <div class="ml-8 absolute top-[60px] left-0 text-white p-4">
-            <h1 class="text-4xl font-bold">Nuestra Mision</h1>
-            <p class="mt-4 text-lg text-center">Compromiso, Excelencia, Innovación</p>
+            <h1 class="text-4xl font-bold">Nuestra Misión</h1>
+            <p class="mt-4 text-lg">Somos una plataforma que brinda la valiosa posibilidad a los universitarios salvadoreños de adquirir un hogar que cumpla con todas sus necesidades de manera segura, promoviendo qué los jóvenes salvadoreños se superen y puedan terminar con su educación superior sin importar la distancia.</p>
         </div>
 
-        <div class="ml-8 absolute bottom-[60px] left-0 text-white p-4">
+        <!-- Contenedor de texto para "Nuestra Visión" -->
+        <div class="mr-8 absolute top-1/2 right-0 transform -translate-y-1/2 text-white p-4 text-right">
+            <h1 class="text-4xl font-bold">Nuestra Visión</h1>
+            <p class="mt-4 text-lg">Ser la plataforma líder de los estudiantes salvadoreños que busquen alojamiento seguro y cercano a sus universidades, proporcionando más que solo soluciones de vivienda convenientes y seguras, sino también fomentando un sentido de comunidad y pertenencia entre los jóvenes con deseos de superación personal.</p>
+        </div>
+
+        <!-- Contenedor de texto para "Nuestros Valores" -->
+        <div class="ml-8 absolute bottom-[80px] left-0 text-white p-4">
             <h1 class="text-4xl font-bold">Nuestros Valores</h1>
-            <p class="mt-4 text-lg">Compromiso, Excelencia, Innovación</p>
-        </div>
 
-        <div class="absolute top-1/2 right-0 transform -translate-y-1/2 text-white p-4">
-            <h1 class="text-4xl font-bold">Nuestros Valores</h1>
-            <p class="mt-4 text-lg">Compromiso, Excelencia, Innovación</p>
+            <p class="mt-4 text-lg">
+                Empatía,
+                Seguridad,
+                Compromiso,
+                Innovación,
+                Conexión</p>
         </div>
-
     </section>
+
 
 
 
