@@ -7,6 +7,14 @@
     <title>Login</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
+    <style>
+        @font-face {
+            font-family: 'MiFuente';
+            src: url('/ruta/a/tu/fuente.ttf') format('truetype');
+            /* Puedes ajustar la ruta a tu fuente según su ubicación en tu sistema de archivos. */
+        }
+    </style>
+    
 </head>
 <body>
     <x-nav.nav/>
