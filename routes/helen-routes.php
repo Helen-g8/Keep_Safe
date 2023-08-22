@@ -25,28 +25,29 @@ Route::post('/login', function () {
 })->name('login');
 
 Route::post('/signup', function () {
-    $attributes = request()->validate([
-        'first_name' => 'required|string|max:100',
-        'last_name' => 'required|string|max:100',
-        'age' => 'required|integer|max_digits:2|min_digits:2',
-        'dui' => 'required|integer|max:9|min:9',
-        'phone' => 'required|integer|max-digits:8|min_digits:8',
-        'email' => 'required|email|max:255',
-        'password' => 'required|string|confirmed|max:255',
-        'role_id' => 'required|integer|exists:roles,id',
-        'sex_id' => 'required|integer|exists:sexes,id',
-    ]);
+    $attributes = request()->validate(
+        [
+            'first_name' => 'required|string|max:100',
+            'last_name' => 'required|string|max:100',
+            'email' => 'required|email|max:255',
+            'role_id' => 'required|integer|exists:roles,id',
+            'sex_id' => 'required|integer|exists:sexes,id',
+            'dui' => 'required|integer|max_digits:9|min_digits:9',
+            'phone' => 'required|integer|max_digits:8|min_digits:8',
+            'age' => 'required|integer|max_digits:2|min_digits:2',
+            'password' => 'required|string|confirmed|max:255',
+        ]
+    );
 
-    $user = User::create($attributes);
-    if(Auth::attempt($user)) {
+    if ($user = User::create($attributes)) {
         Auth::login($user);
         request()->session()->regenerate();
-        return redirect('/profile');    
+        return redirect('/profile');
     }
-    return back()->withErrors();
+    return back()->WithErrors();
 });
 
-Route::post('/rental/create', function(){
+Route::post('/rental/create', function () {
     $attributes = validateRentalAttributes();
 
     $RentalLocation = RentalLocation::create($attributes);
@@ -68,22 +69,22 @@ Route::patch('/rental/{rental}', function (RentalLocation $rental) {
     return redirect('rental/' + $rental->id);
 });
 
-function validateRentalAttributes() {
+function validateRentalAttributes()
+{
     return request()->validate([
         'user_id' => 'required|numeric|exists:users,id',
         'rooms' => 'required|integer|min:1|max:25',
         'coordinates' => 'required|string|max:255',
-        'district_id'=>'required|numeric|exists:districts,id',
+        'district_id' => 'required|numeric|exists:districts,id',
         'address' => 'required|string|max:255',
         'price' => 'required|integer|min:50|max:500',
     ]);
 }
 
-Route::view('profile','profile');
+Route::view('profile', 'profile');
 
 Route::get('/profile', function () {
     return view('profile', [
         'user' => Auth::user(),
     ]);
 })->middleware('auth');
-

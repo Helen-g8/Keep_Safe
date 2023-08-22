@@ -19,7 +19,7 @@
 <body>
     <x-nav.nav/>
 
-    <div class="mt-[68px]">
+    <div class="mt-[56px]">
         {{ $slot }}
     </div>
 </body>
