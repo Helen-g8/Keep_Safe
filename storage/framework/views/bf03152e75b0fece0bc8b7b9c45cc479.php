@@ -7,15 +7,11 @@
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
-
-    <div class="bg-orange-300 min-h-screen flex flex-col place-content-center">
-        <label class="text-center block mb-2 text-xl font-bold">Selecciona tu rol</label>
-        <div class="grid gap-6 md:grid-cols-2 mb-4 mt-5 px-20 mx-4">
-            <a href="/signUp?rol=1" type="button"
-                class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Arrendador</a>
-
-            <a href="/signUp?rol=2" type="button"
-                class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Arrendatario</a>
+    <div class="bg-gradient-to-br from-orange-400 to-orange-300 min-h-screen flex flex-col justify-center items-center">
+        <label class="text-center block mb-4 text-3xl font-bold text-white">Choose your role</label>
+        <div class="grid gap-6 md:grid-cols-2 px-4 mt-6">
+            <a href="/signUp?rol=1" type="button" class="text-white bg-[#3d2A58] hover:bg-purple-600 focus:ring-4 focus:outline-none font-semibold rounded-lg text-lg px-8 py-3 text-center transition-all duration-300 transform hover:scale-105">I'm a Landlord</a>
+            <a href="/signUp?rol=2" type="button" class="text-white bg-[#3d2A58] hover:bg-purple-600 focus:ring-4 focus:outline-none font-semibold rounded-lg text-lg px-8 py-3 text-center transition-all duration-300 transform hover:scale-105">I'm a Tenant</a>
         </div>
     </div>
  <?php echo $__env->renderComponent(); ?>
@@ -24,4 +20,5 @@
 <?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
 <?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
 <?php endif; ?>
+
 <?php /**PATH /home/alexticas2006/GitHub/Keep_Safe/resources/views/selectRole.blade.php ENDPATH**/ ?>

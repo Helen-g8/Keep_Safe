@@ -1,30 +1,20 @@
 <div class="">
-    <nav class="bg-[#F2BA52] fixed w-full z-10 top-0 left-0 border-b border-gray-200">
+    <nav class="bg-[#F2BA52] fixed w-full z-10 top-0 left-0">
         <div class="max-w-screen-xl flex flex-wrap justify-between items-center mx-auto p-2">
 
             <div class="flex items-center space-x-6 font-bold">
-                <a href="#bienvenida"
-                    class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">¡Bienvenida!</a>
-                <a href="#quienes-somos"
-                    class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">¿Quiénes
-                    somos?</a>
-                <a href="#que-hacemos"
-                    class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">¿Qué
-                    hacemos?</a>
-                <a href="#nuestros-valores"
-                    class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Nuestros valores</a>
+                <a href="#bienvenida" class="block py-2 pl-3 pr-4 rounded transition-all hover:text-blue-700">Welcome!</a>
+                <a href="#quienes-somos" class="block py-2 pl-3 pr-4 rounded transition-all hover:text-blue-700">Who are we?</a>
+                <a href="#que-hacemos" class="block py-2 pl-3 pr-4 rounded transition-all hover:text-blue-700">What do we do?</a>
+                <a href="#nuestros-valores" class="block py-2 pl-3 pr-4 rounded transition-all hover:text-blue-700">Our values</a>
             </div>
-
 
             <div class="flex items-center space-x-3">
                 <a href="/selectRole">
-                    <button type="button"
-                        class="text-white bg-[#BF7534] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-2 text-center">Registrarse</button>
+                    <button type="button" class="text-white bg-[#BF7534] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-2 text-center">Sign up</button>
                 </a>
                 <a href="/login">
-                    <button type="button"
-                        class="text-white bg-[#BF7534] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-2 text-center">Iniciar
-                        sesión</button>
+                    <button type="button" class="text-white bg-[#BF7534] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-2 text-center">Login</button>
                 </a>
             </div>
 

@@ -10,6 +10,9 @@ Route::view('welcome', 'welcome');
 
 Route::view('login', 'login');
 
+Route::view('chat', 'chat');
+
+
 Route::view('card', 'card');
 
 Route::view('selectRole', 'selectRole');
