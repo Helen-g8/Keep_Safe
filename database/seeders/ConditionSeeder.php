@@ -22,14 +22,11 @@ class ConditionSeeder extends Seeder
             'Compartir ducha',
             'Compartir sala de estar',
             'Tendra servicio de wifi',
-
         ];
         //anwers es si la persona acepto la condiciones de arriba
 
-
-
         $condiciones = Condition::factory(count($conditions))->sequence(fn ($sqn) => [
-            'name' => $condition[$sqn->index]
+            'name' => $conditions[$sqn->index]
         ])->create();
 
         $rentals = RentalLocation::all()->pluck('id');
