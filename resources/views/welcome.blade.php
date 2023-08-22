@@ -1,19 +1,16 @@
 <x-layout>
 
-
     <!-- Sección de Bienvenida -->
-    <section id="bienvenida" class="py-30 px-2 mt-[-70px] pt-[70px]">
+    <section id="bienvenida" class="py-30 px-2 mt-[-70px] pt-[70px] min-h-screen">
 
         <div class="flex justify-around mb-6 items-center">
-
-            <img src="{{ asset('element4.jpeg') }}" alt="NearU Logo" width="300" height="200">
-            <span class="font-bold text-[40px]">Hello, Salvadoran college student!</span>
-            <img src="{{ asset('element3.jpeg') }}" alt="NearU Logo" width="300" height="200">
-
+            <img src="{{ asset('element4.jpeg') }}" alt="NearU Logo" width="50" height="100">
+            <span class="font-bold  font-[Acme] text-[40px]">Hello, Salvadoran college student!</span>
+            <img src="{{ asset('element3.jpeg') }}" alt="NearU Logo" width="50" height="100">
         </div>
 
         <div
-            class="bg-[#3d2A58] rounded-[20px] py-2 px-2 text-white font-bold text-md ml-6 mr-6 text-center italic mt-6">
+            class="bg-[#3d2A58] rounded-[20px] py-2 px-2 text-white font-[Acme] text-md ml-6 mr-6 text-center mt-6">
             "A whole new world unfolds before you as you embark on your college journey. It's filled with unforgettable
             moments that will shape your future and connections that will stand the test of time. However, we understand
             that, amidst all the excitement, distance can sometimes pose a challenge.
@@ -28,7 +25,7 @@
 
 
     <!-- Sección de Quiénes Somos -->
-    <section id="quienes-somos" class="py-20 mb-[80px]">
+    <section id="quienes-somos" class="py-20 mb-[80px] min-h-screen">
         <div class="flex justify-center">
             <img src="{{ asset('NearU .png') }}" alt="NearU Logo" width="300" height="200">
         </div>
@@ -36,7 +33,6 @@
         <div class="flex justify-center">
             <img src="{{ asset('group.jpg') }}" alt="NearU Logo" width="400px" height="200">
         </div>
-
 
         <div class="flex justify-around">
             <div class="text-center">
@@ -80,12 +76,12 @@
 
 
     <!-- Sección de Qué Hacemos -->
-    <section id="que-hacemos" class="py-60 mt-[-50vh] pt-[50vh]">
+    <section id="que-hacemos" class="py-60 mt-[-70px] pt-[70px] min-h-screen">
         <div class="container mx-auto">
             <img src="{{ asset('NearU .png') }}" alt="NearU Logo" width="300" height="200" class="mx-auto mb-8">
 
             <div
-                class="py-6 px-4 text-white font-bold text-lg bg-[#3d2A58] ml-6 mr-6 text-center italic rounded-lg shadow-lg">
+                class="py-6 px-4 text-white font-[Acme] text-lg bg-[#3d2A58] ml-6 mr-6 text-center italic rounded-lg shadow-lg">
                 <p class="text-xl leading-relaxed">
                     En NearU, transformamos tu experiencia universitaria en un viaje emocionante y sin preocupaciones.
                     Sabemos que este período está lleno de momentos inolvidables que marcarán tu futuro y conexiones que

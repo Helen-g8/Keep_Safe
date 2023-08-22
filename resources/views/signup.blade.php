@@ -1,12 +1,11 @@
 <x-layout>
     @csrf
     <form
-        class="min-h-screen flex flex-col justify-center bg-gradient-to-br from-orange-300 via-orange-400 to-orange-500 text-white"
-        x-data="{ state: '', town: '', district: '' }" method="POST" action="/signup">
+        class="min-h-screen flex flex-col justify-center bg-gradient-to-br from-orange-300 via-orange-400 to-orange-500 text-white relative"
+        x-data="{ state: '', town: '', district: '' }">
         <input type="number" value="{{ $rol }}" class="hidden" name="role_id">
-        @csrf
-        <div class="mx-6 grid gap-6 md:grid-cols-2">
-    
+        <div class="mx-[90px] grid gap-6 md:grid-cols-2">
+
             <x-input label="First Name" placeholder="E.g. Kevin Antonio" name="first_name" required />
             <x-input label="Last Name" placeholder="E.g. Hernandez Molina" name="last_name" required />
             <x-input label="Age" placeholder="Enter your age" name="age" type="number" required />
@@ -36,6 +35,8 @@
                 type='password' required />
 
             @if ($rol == 1)
+
+
                 <div>
                     <label for="criminal_records" class="block mb-2 text-sm font-medium">Criminal Records</label>
                     <input type="file" id="cR"
@@ -46,6 +47,13 @@
 
             @if ($rol == 2)
                 <x-input label="University ID" type='file' name="address" required />
+
+                <div>
+                    <label for="criminal_records" class="block mb-2 text-sm font-medium">Criminal Records</label>
+                    <input type="file" id="cR"
+                        class="bg-white border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        required>
+                </div>
 
                 <div>
                     <label for="states" class="mb-2 text-sm font-medium">Departments</label>
@@ -102,7 +110,6 @@
             <button type="submit"
                 class="w-full bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 text-white font-medium rounded-lg text-lg py-2.5 transition-all duration-300 transform hover:scale-105 focus:ring focus:ring-opacity-50">Register</button>
         </div>
-    
+
     </form>
-    {{        $errors }}
 </x-layout>
