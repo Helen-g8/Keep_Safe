@@ -2,12 +2,6 @@
 
 Route::view('places', 'places');
 
-Route::get('/mostrarArrendamientos', function () {
-    return view('mostrarArrendamientos', [
-        'user' => Auth::user(),
-    ]);
-})->middleware('auth');
-
 Route::get('/arrendadorHome', function () {
     return view('arrendadorHome', [
         'user' => Auth::user(),
