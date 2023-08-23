@@ -15,13 +15,13 @@ class ConditionSeeder extends Seeder
     public function run(): void
     {
         $conditions = [
-            'Mascotas permitidas',
-            'Traer muebles propios',
-            'Conpartir baño sanitario',
-            'Compartir la cocina',
-            'Compartir ducha',
-            'Compartir sala de estar',
-            'Tendra servicio de wifi',
+            'Pets allowed',
+            'Bring your own furniture',
+            'Share bathroom facilities',
+            'Share kitchen',
+            'Sharing shower',
+            'Share living room',
+            'Will have wifi service',
         ];
         //anwers es si la persona acepto la condiciones de arriba
 
