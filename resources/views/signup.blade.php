@@ -1,7 +1,7 @@
 <x-layout>
     @csrf
     <form
-        class="min-h-screen flex flex-col justify-center bg-gradient-to-br from-orange-300 via-orange-400 to-orange-500 text-white relative"
+        class="min-h-screen flex flex-col justify-center bg-gradient-to-br from-orange-300 via-orange-400 to-orange-500 text-white relative mt-8"
         x-data="{ state: '', town: '', district: '' }">
         <input type="number" value="{{ $rol }}" class="hidden" name="role_id">
         <div class="mx-[90px] grid gap-6 md:grid-cols-2">
@@ -108,7 +108,7 @@
             @endif
 
             <button type="submit"
-                class="w-full bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 text-white font-medium rounded-lg text-lg py-2.5 transition-all duration-300 transform hover:scale-105 focus:ring focus:ring-opacity-50">Register</button>
+                class=" bg-purple-800 hover:bg-purple-700 text-white font-medium rounded-lg text-lg py-2 px-6 transition-all duration-300 transform hover:scale-105 focus:ring focus:ring-opacity-50">Register</button>
         </div>
 
     </form>

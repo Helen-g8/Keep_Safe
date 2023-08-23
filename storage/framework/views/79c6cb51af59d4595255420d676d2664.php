@@ -1,12 +1,12 @@
 <div class="">
-    <nav class="bg-[#F2BA52] fixed w-full z-10 top-0 left-0">
+    <nav class="bg-[#F2BA52] fixed w-full z-10 top-0 left-0 shadow-md">
         <div class="max-w-screen-xl flex flex-wrap justify-between items-center mx-auto p-2">
 
             <div class="flex items-center space-x-6 font-bold">
-                <a href="#bienvenida" class="block py-2 pl-3 pr-4 rounded transition-all hover:text-blue-700">Welcome!</a>
-                <a href="#quienes-somos" class="block py-2 pl-3 pr-4 rounded transition-all hover:text-blue-700">Who are we?</a>
-                <a href="#que-hacemos" class="block py-2 pl-3 pr-4 rounded transition-all hover:text-blue-700">What do we do?</a>
-                <a href="#nuestros-valores" class="block py-2 pl-3 pr-4 rounded transition-all hover:text-blue-700">Our values</a>
+                <a href="#bienvenida" class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Welcome</a>
+                <a href="#quienes-somos" class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Who are we?</a>
+                <a href="#que-hacemos" class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">What do we do?</a>
+                <a href="#our-values" class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Our values</a>
             </div>
 
             <div class="flex items-center space-x-3">
@@ -21,4 +21,5 @@
         </div>
     </nav>
 </div>
+
 <?php /**PATH /home/alexticas2006/GitHub/Keep_Safe/resources/views/components/nav/nav.blade.php ENDPATH**/ ?>
