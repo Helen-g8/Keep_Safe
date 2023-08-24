@@ -1,5 +1,6 @@
 <x-layout>
-    
+
+<nav>
 
     <div class="flex justify-center items-center min-h-screen">
         <a href="addLease">
@@ -15,5 +16,6 @@
             Active leases
         </button>
     </div>
+</nav>
 </x-layout>
 
