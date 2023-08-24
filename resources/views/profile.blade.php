@@ -3,7 +3,7 @@
         <div class="flex justify-around items-center mb-4">
             <div class="mb-4">
                 <label class="text-lg font-bold">Rol</label>
-                <p class="text-xl">Arrendatario</p>
+                <p class="text-xl">tenant</p>
             </div>
             <div class="mb-4">
                 <label class="text-lg font-bold">Edad</label>
