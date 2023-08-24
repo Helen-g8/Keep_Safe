@@ -1,6 +1,5 @@
 <x-layout>
 
-    <img src="{{ asset('landlord.jpg') }}" alt="NearU Logo" class=" w-full h-[600px]" />
-
+    <img src="{{ asset('chat.jpg') }}" alt="NearU Logo" class=" w-full h-[600px]" />
 
 </x-layout>

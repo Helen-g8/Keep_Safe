@@ -111,11 +111,11 @@
     </section>
 
 
-    <section id="our-values" class="relative py-30">
-        <img src="{{ asset('studentsU.jpeg') }}" alt="NearU Logo" class="filter brightness-75 w-full h-[700px]" />
+    <section id="our-values" class="relative py-25">
+        <img src="{{ asset('studentsU.jpeg') }}" alt="NearU Logo" class="filter brightness-75 h-full w-screen" />
 
         <!-- Contenedor de texto para "Nuestra Misión" -->
-        <div class="ml-8 absolute top-[60px] left-0 text-white p-4">
+        <div class="ml-8 absolute top-[60px] left-0 text-white">
             <h1 class="text-4xl font-bold">Our mission</h1>
             <p class="mt-4 text-lg">"We are a platform that provides the valuable opportunity for Salvadoran university
                 students to acquire a home that meets all their needs safely, promoting that young Salvadorans excel and

@@ -16,7 +16,7 @@
 <body>
     <x-nav.nav />
 
-    <div class="mt-[56px]">
+    <div class="h-screen pt-[52px]">
         {{ $slot }}
     </div>
 </body>

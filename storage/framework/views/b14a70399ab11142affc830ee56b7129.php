@@ -30,7 +30,7 @@
 <?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
 <?php endif; ?>
 
-    <div class="mt-[56px]">
+    <div class="h-screen pt-[52px]">
         <?php echo e($slot); ?>
 
     </div>

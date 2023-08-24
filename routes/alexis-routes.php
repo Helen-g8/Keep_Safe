@@ -38,7 +38,10 @@ Route::get('mostrarArrendamientos', function () {
 
 Route::view('activeRentals', 'activeRentals');
 
-Route::view('chat2', 'chat2');
+Route::view('chat', 'chat');
+
+Route::view('profile', 'profile');
+
 
 
 Route::view('arrendadorHome', 'arrendadorHome');
