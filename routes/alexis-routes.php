@@ -12,6 +12,8 @@ Route::view('login', 'login');
 
 Route::view('chat', 'chat');
 
+Route::view('activeL', 'activeL');
+
 
 Route::view('card', 'card');
 
@@ -35,6 +37,9 @@ Route::get('mostrarArrendamientos', function () {
 });
 
 Route::view('activeRentals', 'activeRentals');
+
+Route::view('chat2', 'chat2');
+
 
 Route::view('arrendadorHome', 'arrendadorHome');
 

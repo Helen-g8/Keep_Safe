@@ -1,13 +1,15 @@
 <x-layout>
-    <div class="min-h-screen flex flex-col items-center bg-gradient-to-br from-orange-300 via-orange-400 to-orange-500 text-white relative ">
+    <div class="min-h-screen flex flex-col items-center bg-gradient-to-br from-white-300 to-gray-500 text-white relative ">
         <form x-data="{ state: '', town: '', district: '' }" method="post" action="rentalInformation">
             @csrf
 
-            <x-input label="Ubication" placeholder="Ubicacion" name="ubication" required />
+            <x-input label="Location" placeholder="Location" name="ubication" required />
             <x-input label="rooms" placeholder="Number of rooms" name="number" required />
             <x-input label="Price" placeholder=" price of you acommodation" name="number" required />
             <x-input label="Rules" placeholder="Restrinciones personalizadas" name="text" required />
+            <x-input label="Lease pictures" type="file" placeholder="Upload good-quiality pictures of your lease" name="leasePhoto" required />
 
+            <br>
             <div>
                 @foreach ( $conditions as $condition)
                     <div class="flex items-center mb-4">
