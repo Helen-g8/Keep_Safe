@@ -5,8 +5,8 @@ use App\Models\Sex;
 use App\Models\State;
 use App\Models\Town;
 
-Route::get('rentalInformation', function () {
-   return view('rentalInformation', [
+Route::get('addLease', function () {
+   return view('addLease', [
        'districts' => District::all(),
        'states' => State::all(),
        'towns' => Town::all(),
@@ -14,8 +14,7 @@ Route::get('rentalInformation', function () {
    ]);
 });
 
-Route::post('rentalInformation', function () {
+Route::post('addLease', function () {
     $attributes = request()->validate([
-
     ]);
 });
