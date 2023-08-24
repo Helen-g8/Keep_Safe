@@ -50,7 +50,7 @@
         function rate(rating) {
             selectedRating = rating;
             updateStars();
-            document.getElementById('selectedRating').textContent = `Votación: ${rating} estrellas`;
+            document.getElementById('selectedRating').textContent = `balloting: ${rating} stars`;
         }
 
         function updateStars() {
