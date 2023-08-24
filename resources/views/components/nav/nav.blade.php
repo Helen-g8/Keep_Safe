@@ -18,34 +18,38 @@
                 </a>
                 <a href="/login">
                     <button type="button" class="text-white bg-[#BF7534] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-2 text-center">Login</button>
-
                 </a>
                 @endguest
-            </div>
-
-            <div class="flex justify-end">
-                <div class="mx-4 mt-2">
-
-                    <a href="chat2">
+                @auth
+                <a href="chat2">
                     <button type="button"
                         class="focus:outline-none text-white bg-[#BF7534] hover:bg-[#2C1D45] focus:ring-4 focus:ring-[#BF7534] font-medium rounded-lg text-sm px-4 py-2 mr-2 mb-2">
                         Chat
                     </button>
                     </a>
 
-                    <a href="chat">
+                    <a href="">
                         <button type="button"
                             class="focus:outline-none text-white bg-[#BF7534] hover:bg-[#F0A33B] focus:ring-4 focus:ring-[#BF7534] font-medium rounded-lg text-sm px-4 py-2 mr-2 mb-2">
                             Profile
                         </button>
                     </a>
 
-                    <a href="profile">
+                    <a href="">
                         <button type="button"
                             class="focus:outline-none text-white bg-[#BF7534] hover:bg-[#F0A33B] focus:ring-4 focus:ring-[#BF7534] font-medium rounded-lg text-sm px-4 py-2 mr-2 mb-2">
                             Other Landlords' Leases
                         </button>
-                </div>
+                    </a>
+
+                    <form action="logout" method="POST" class="inline-block">
+                        @csrf
+                        <button type="submit"
+                            class="focus:outline-none text-white bg-[#BF7534] hover:bg-[#F0A33B] focus:ring-4 focus:ring-[#BF7534] font-medium rounded-lg text-sm px-4 py-2 mr-2 mb-2">
+                            Log out
+                        </button>
+                    </form>
+                @endauth
             </div>
         </div>
     </nav>

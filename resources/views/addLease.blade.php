@@ -1,14 +1,21 @@
 <x-layout>
-    <div class="min-h-screen flex flex-col items-center bg-gradient-to-br from-white-300 to-gray-500 text-white relative">
+    <div
+        class="min-h-screen flex flex-col items-center bg-gradient-to-br from-white-300 to-gray-500 relative">
         <form x-data="{ state: '', town: '', district: '' }" method="post" action="addLease">
             @csrf
+            <div>
+                <x-input label="Address" type="text" placeholder="Type more information about the address" name="address"
+                    required />
+                <x-input label="Rooms" type="number" placeholder="Number of rooms" name="number" required />
 
-<label for="Adress"></label>
-            <x-input label="Adress" type="text" placeholder="Type more information about the adress" name="ubication" required />
-            <x-input label="Rooms" type="number" placeholder="Number of rooms" name="number" required />
-            <x-input label="Price" type="number" placeholder="Price of your accommodation" name="price" required />
-            <x-input label="Rules" placeholder="Customized restrictions" name="text" required />
-            <x-input label="Lease pictures" type="file" placeholder="Upload high-quality pictures of your lease" name="leasePhoto" required />
+                <x-input label="Price" type="number" placeholder="Price of your accommodation" name="price"
+                    required />
+
+                <x-input label="Rules" placeholder="Customized restrictions" name="text" required />
+
+                <x-input label="Lease pictures" type="file" placeholder="Upload high-quality pictures of your lease"
+                    name="leasePhoto" required />
+            </div>
 
             <br>
 
@@ -17,7 +24,8 @@
                     <div class="flex items-center mb-4">
                         <input id="{{ $condition->name }}" type="checkbox" value="{{ $condition->name }}"
                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="{{ $condition->name }}" class="ml-2 text-sm font-medium text-gray-900">{{ $condition->name }}</label>
+                        <label for="{{ $condition->name }}"
+                            class="ml-2 text-sm font-medium text-gray-900">{{ $condition->name }}</label>
                     </div>
                 @endforeach
             </div>
@@ -66,4 +74,3 @@
         </form>
     </div>
 </x-layout>
-

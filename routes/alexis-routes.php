@@ -48,3 +48,8 @@ Route::get('pupilaje/{rental}', function (RentalLocation $rental) {
         'arrendamiento' => $rental,
     ]);
 })->name('arrendamiento');
+
+Route::post('logout', function() {
+    Auth::logout();
+    return redirect('welcome');
+});
