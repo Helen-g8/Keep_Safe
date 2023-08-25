@@ -4,9 +4,8 @@ use App\Models\District;
 use App\Models\Sex;
 use App\Models\State;
 use App\Models\Town;
-use Symfony\Component\Routing\Route;
 
-Route::get('addLease', function () {
+Illuminate\Routing\Route::get('addLease', function () {
    return view('addLease', [
        'districts' => District::all(),
        'states' => State::all(),
@@ -15,7 +14,7 @@ Route::get('addLease', function () {
    ]);
 });
 
-Route::post('addLease', function () {
+Illuminate\Routing\Route::post('addLease', function () {
     $attributes = request()->validate([
     ]);
 });
