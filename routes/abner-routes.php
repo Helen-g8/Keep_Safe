@@ -4,6 +4,7 @@ use App\Models\District;
 use App\Models\Sex;
 use App\Models\State;
 use App\Models\Town;
+use Symfony\Component\Routing\Route;
 
 Route::get('addLease', function () {
    return view('addLease', [
