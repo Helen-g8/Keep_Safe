@@ -1,5 +1,6 @@
 <?php
 use App\Models\RentalLocation;
+use App\Models\Role;
 use App\Models\Student;
 use App\Models\User;
 
@@ -88,3 +89,10 @@ Route::get('/profile', function () {
         'user' => Auth::user(),
     ]);
 })->middleware('auth');
+
+Route::get('user', function () {
+    return view('profile', [
+        'user' => User::all(),
+    ]);
+});
+
