@@ -5,7 +5,7 @@
             <div class="flex items-center space-x-6 font-bold">
                 @guest
                     <a href="#bienvenida"
-                        class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Welcome</a>
+                        class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white ml-4">Welcome</a>
                     <a href="#quienes-somos"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Who are
                         we?</a>
@@ -33,7 +33,7 @@
                         <x-button label="Chat" />
                     </a>
 
-                    <a href="">
+                    <a href="otherLeases">
                         <x-button label="Other landlord's leases" />
                     </a>
 

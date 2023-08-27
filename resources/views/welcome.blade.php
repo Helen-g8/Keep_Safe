@@ -32,120 +32,124 @@
     </section>
 
 
+<!-- Sección de Quiénes Somos -->
+<section id="quienes-somos" class="py-20 mb-[80px] min-h-screen bg-gradient-to-r from-gray-100 via-gray-200 to-gray-100">
+    <div class="container mx-auto text-center">
+        <h1 class="font-[Acme] text-4xl text-gray-800">We are NearU!</h1>
+        <p class="text-lg text-gray-600">We are the passionate individuals behind NearU.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-6">
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="{{ asset('alexis.jpg') }}" alt="Alexis Ticas" class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h2 class="text-lg font-bold text-gray-800">Alexis Ticas</h2>
+                        <p class="text-sm text-gray-600">Frontend Developer</p>
+                    </div>
+                </div>
+                <!-- Repite este bloque para otros miembros del equipo -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="{{ asset('bryan.jpg') }}" alt="Brayan Palacios" class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h2 class="text-lg font-bold text-gray-800">Brayan Palacios</h2>
+                        <p class="text-sm text-gray-600">Marketing</p>
+                    </div>
+                </div>
 
-    <!-- Sección de Quiénes Somos -->
-    <section id="quienes-somos" class="py-20 mb-[80px] min-h-screen">
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="{{ asset('wesly.jpg') }}" alt="Wesly Perez" class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h2 class="text-lg font-bold text-gray-800">Wesly Perez</h2>
+                        <p class="text-sm text-gray-600">Backend Developer</p>
+                    </div>
+                </div>
 
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="{{ asset('abner.jpg') }}" alt="Abner Canales" class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h2 class="text-lg font-bold text-gray-800">Abner Canales</h2>
+                        <p class="text-sm text-gray-600">Backend Developer</p>
+                    </div>
+                </div>
 
-        <div class="flex row justify-end items-center">
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="{{ asset('helen.jpg') }}" alt="Helen Quijada" class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h2 class="text-lg font-bold text-gray-800">Helen Quijada</h2>
+                        <p class="text-sm text-gray-600">Backend Developer</p>
+                    </div>
+                </div>
 
-            <span class="font-[Acme] text-[60px] flex justify-start items-center mr-[220px]">We are NearU</span>
-
-            <img src="{{ asset('team.jpg') }}" alt="NearU Logo" width="400" height="100"
-                class="mr-[160px] transform hover:scale-105 transition-transform duration-300 rounded-md">
-        </div>
-
-        <div class="flex justify-center mt-8 space-x-6">
-            <div class="text-center">
-                <img src="{{ asset('profile2.png') }}" alt="Profile 1" width="200" height="300">
-                <p class="mt-2 text-sm font-bold">Alexis Ticas</p>
-                <p class="text-xs">Frontend</p>
-            </div>
-
-            <div class="text-center">
-                <img src="{{ asset('profile2.png') }}" alt="Profile 2" width="200" height="300">
-                <p class="mt-2 text-sm font-bold">Brayan Palacios</p>
-                <p class="text-xs">Marketing</p>
-            </div>
-
-            <div class="text-center">
-                <img src="{{ asset('profile2.png') }}" alt="Profile 3" width="200" height="300">
-                <p class="mt-2 text-sm font-bold">Wesly Moran</p>
-                <p class="text-xs">Backend</p>
-            </div>
-
-            <div class="text-center">
-                <img src="{{ asset('profile2.png') }}" alt="Profile 2" width="200" height="300">
-                <p class="mt-2 text-sm font-bold">Abner Canales</p>
-                <p class="text-xs">Backend</p>
-            </div>
-
-            <div class="text-center">
-                <img src="{{ asset('profile2.png') }}" alt="Profile 2" width="200" height="300">
-                <p class="mt-2 text-sm font-bold">Helen Quijada</p>
-                <p class="text-xs">Backend</p>
-            </div>
-
-            <div class="text-center">
-                <img src="{{ asset('profile2.png') }}" alt="Profile 2" width="200" height="300">
-                <p class="mt-2 text-sm font-bold">Allison Ruballo</p>
-                <p class="text-xs">Frontend</p>
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="{{ asset('allison.jpg') }}" alt="Allison Ruballo" class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h2 class="text-lg font-bold text-gray-800">Allison Ruballo</h2>
+                        <p class="text-sm text-gray-600">Frontend Developer</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
 
-    <section id="que-hacemos" class="mt-[-70px] pt-[70px] min-h-screen">
-        <div class="container mx-auto">
+
+
+    <section id="que-hacemos" class="py-20 min-h-screen bg-gradient-to-r from-[#F2BA52] to-[#BF7534]">
+        <div class="container mx-auto text-center">
             <img src="{{ asset('NearU .png') }}" alt="NearU Logo" width="300" height="200" class="mx-auto mb-8">
 
-            <div
-                class="py-6 px-4 text-white font-[Acme] text-lg bg-[#3d2A58] ml-6 mr-6 text-center rounded-lg shadow-lg">
-                <p class="text-xl leading-relaxed">
-                    At NearU, we transform your college experience into an exciting and worry-free journey. We know this
-                    period is filled with unforgettable moments that will shape your future and connections that will
-                    last a lifetime.
+            <div class="py-6 px-4 text-white font-[Acme] text-lg bg-[#3d2A58] ml-6 mr-6 text-center rounded-lg shadow-lg">
+                <h2 class="text-3xl font-[Acme] text-white mb-6">Unlocking Your College Journey</h2>
+                <p class="text-lg leading-relaxed">
+                    At NearU, we redefine your college experience into an exciting and worry-free journey. We understand
+                    that this time is filled with unforgettable moments that will shape your future, and connections that
+                    will last a lifetime.
                 </p>
-                <p class="text-xl leading-relaxed mt-4">
-                    Our mission is to eliminate the barriers that distance can pose. We connect students with secure and
-                    convenient accommodation owners, facilitating safe and reliable agreements. We help you find a
+                <p class="text-lg leading-relaxed mt-4">
+                    Our mission is to break down the barriers that distance can create, through the connection of students with landlords, facilitating safe and reliable agreements. We help you discover a
                     second home that brings you closer to your university.
                 </p>
-                <p class="text-xl leading-relaxed mt-4">
-                    So, imagine a college journey filled with possibilities, with NearU as your constant ally. Your
-                    bright future is just steps away from your doorstep.
+                <p class="text-lg leading-relaxed mt-4">
+                    Imagine a college journey filled with endless possibilities, with NearU as your trusted companion.
+                    Your bright future is just steps away from your doorstep.
                 </p>
             </div>
         </div>
     </section>
 
 
-    <section id="our-values" class="relative py-25">
-        <img src="{{ asset('studentsU.jpeg') }}" alt="NearU Logo" class="filter brightness-75 h-full w-screen" />
+    <section id="our-values" class="relative py-30">
+        <img src="{{ asset('studentsU.jpeg') }}" alt="NearU Logo" class="filter brightness-75 w-full h-[700px]" />
 
         <!-- Contenedor de texto para "Nuestra Misión" -->
-        <div class="ml-8 absolute top-[60px] left-0 text-white">
-            <h1 class="text-4xl font-bold">Our mission</h1>
-            <p class="mt-4 text-lg">"We are a platform that provides the valuable opportunity for Salvadoran university
-                students to acquire a home that meets all their needs safely, promoting that young Salvadorans excel and
-                can complete their higher education regardless of distance."
-            </p>
+        <div class="ml-8 absolute top-[70px] left-0 text-white">
+            <h1 class="text-4xl font-bold">Nuestra Misión</h1>
+            <p class="mt-4 text-lg">Somos una plataforma que brinda la valiosa posibilidad a los universitarios
+                salvadoreños de adquirir un hogar que cumpla con todas sus necesidades de manera segura, promoviendo qué
+                los jóvenes salvadoreños se superen y puedan terminar con su educación superior sin importar la
+                distancia.</p>
         </div>
 
         <!-- Contenedor de texto para "Nuestra Visión" -->
-        <div class="mr-8 absolute top-1/2 right-0 transform -translate-y-1/2 text-white p-4 text-right">
-            <h1 class="text-4xl font-bold">Our vission</h1>
-            <p class="mt-4 text-lg">"To be the leading platform for Salvadoran students seeking safe and close
-                accommodation to their universities, providing more than just convenient and secure housing solutions,
-                but also fostering a sense of community and belonging among young individuals with aspirations for
-                personal growth."
-            </p>
+        <div class="mr-8 absolute top-[320px] right-0 transform -translate-y-1/2 text-white text-right">
+            <h1 class="text-4xl font-bold">Nuestra Visión</h1>
+            <p class="mt-4 text-lg">Ser la plataforma líder de los estudiantes salvadoreños que busquen alojamiento
+                seguro y cercano a sus universidades, proporcionando más que solo soluciones de vivienda convenientes y
+                seguras, sino también fomentando un sentido de comunidad y pertenencia entre los jóvenes con deseos de
+                superación personal.</p>
         </div>
 
         <!-- Contenedor de texto para "Nuestros Valores" -->
-        <div class="ml-8 absolute bottom-[80px] left-0 text-white p-4">
-            <h1 class="text-4xl font-bold">Our values</h1>
+        <div class="ml-8 absolute bottom-[150px] left-0 text-white p-4">
+            <h1 class="text-4xl font-bold">Nuestros Valores</h1>
 
             <p class="mt-4 text-lg">
-                Empathy,
-                Security,
-                Commitment,
-                Innovation,
-                Connection.</p>
+                Empatía,
+                Seguridad,
+                Compromiso,
+                Innovación,
+                Conexión</p>
         </div>
     </section>
-
 
 
     <script>

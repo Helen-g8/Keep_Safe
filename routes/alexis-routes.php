@@ -52,6 +52,16 @@ Route::get('pupilaje/{rental}', function (RentalLocation $rental) {
     ]);
 })->name('arrendamiento');
 
+
+Route::view('otherLeases', 'otherLeases');
+
+Route::get('pupilaje/{rental}', function (RentalLocation $rental) {
+    return view('arrendamiento', [
+        'arrendamiento' => $rental,
+    ]);
+})->name('arrendamiento');
+
+
 Route::post('logout', function() {
     Auth::logout();
     return redirect('welcome');

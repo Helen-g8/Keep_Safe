@@ -1,7 +1,6 @@
 <?php
 use App\Models\Condition;
 use App\Models\District;
-use App\Models\Sex;
 use App\Models\State;
 use App\Models\Town;
 

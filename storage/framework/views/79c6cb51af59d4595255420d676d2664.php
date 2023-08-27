@@ -5,7 +5,7 @@
             <div class="flex items-center space-x-6 font-bold">
                 <?php if(auth()->guard()->guest()): ?>
                     <a href="#bienvenida"
-                        class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Welcome</a>
+                        class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white ml-4">Welcome</a>
                     <a href="#quienes-somos"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Who are
                         we?</a>
@@ -75,7 +75,7 @@
 <?php endif; ?>
                     </a>
 
-                    <a href="">
+                    <a href="otherLeases">
                         <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.button','data' => ['label' => 'Other landlord\'s leases']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('button'); ?>
