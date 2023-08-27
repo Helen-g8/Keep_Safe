@@ -120,34 +120,29 @@
     <section id="our-values" class="relative py-30">
         <img src="{{ asset('studentsU.jpeg') }}" alt="NearU Logo" class="filter brightness-75 w-full h-[700px]" />
 
-        <!-- Contenedor de texto para "Nuestra Misión" -->
+        <!-- Text container for "Our Mission" -->
         <div class="ml-8 absolute top-[70px] left-0 text-white">
-            <h1 class="text-4xl font-bold">Nuestra Misión</h1>
-            <p class="mt-4 text-lg">Somos una plataforma que brinda la valiosa posibilidad a los universitarios
-                salvadoreños de adquirir un hogar que cumpla con todas sus necesidades de manera segura, promoviendo qué
-                los jóvenes salvadoreños se superen y puedan terminar con su educación superior sin importar la
-                distancia.</p>
+            <h1 class="text-4xl font-bold">Our Mission</h1>
+            <p class="mt-4 text-lg">We are a platform that provides valuable opportunities for Salvadoran university students to acquire a home that meets all their needs safely, promoting the idea that young Salvadorans can excel and complete their higher education regardless of distance.</p>
         </div>
 
-        <!-- Contenedor de texto para "Nuestra Visión" -->
+        <!-- Text container for "Our Vision" -->
         <div class="mr-8 absolute top-[320px] right-0 transform -translate-y-1/2 text-white text-right">
-            <h1 class="text-4xl font-bold">Nuestra Visión</h1>
-            <p class="mt-4 text-lg">Ser la plataforma líder de los estudiantes salvadoreños que busquen alojamiento
-                seguro y cercano a sus universidades, proporcionando más que solo soluciones de vivienda convenientes y
-                seguras, sino también fomentando un sentido de comunidad y pertenencia entre los jóvenes con deseos de
-                superación personal.</p>
+            <h1 class="text-4xl font-bold">Our Vision</h1>
+            <p class="mt-4 text-lg ml-4 text-justified">To be the leading platform for Salvadoran students seeking safe and close-to-university housing, providing more than just convenient and secure housing solutions, but also fostering a sense of community and belonging among young people with aspirations for personal growth.</p>
         </div>
 
-        <!-- Contenedor de texto para "Nuestros Valores" -->
+        <!-- Text container for "Our Values" -->
         <div class="ml-8 absolute bottom-[150px] left-0 text-white p-4">
-            <h1 class="text-4xl font-bold">Nuestros Valores</h1>
+            <h1 class="text-4xl font-bold">Our Values</h1>
 
             <p class="mt-4 text-lg">
-                Empatía,
-                Seguridad,
-                Compromiso,
-                Innovación,
-                Conexión</p>
+                Empathy,
+                Security,
+                Commitment,
+                Innovation,
+                Connection
+            </p>
         </div>
     </section>
 
