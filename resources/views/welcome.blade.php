@@ -36,8 +36,15 @@
     <section id="quienes-somos"
         class="py-20 mb-[80px] min-h-screen bg-white">
         <div class="container mx-auto text-center">
-            <h1 class="font-[Acme] font-bold text-4xl text-black">We are NearU</h1>
-            <p class="text-lg text-black italic font-bold">We are the passionate individuals behind NearU.</p>
+            <h1 class="font-[Acme] font-bold text-4xl text-black tracking-wider">We are NearU</h1>
+
+            <div>
+            <img src="{{ asset('team.jpg') }}" class="mx-auto bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 w-[400px] h-[290px] mt-6" alt="Alexis Ticas"
+            class="w-full h-64 object-cover rounded-t-lg">
+            <div class="p-4">
+                <p class="text-lg text-black italic font-bold">We are the passionate individuals behind NearU.</p>
+            </div>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-6">
                 <div
                     class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
@@ -48,7 +55,7 @@
                         <p class="text-sm text-gray-600">Frontend Developer</p>
                     </div>
                 </div>
-                <!-- Repite este bloque para otros miembros del equipo -->
+
                 <div
                     class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
                     <img src="{{ asset('bryan.jpg') }}" alt="Brayan Palacios"
@@ -132,13 +139,13 @@
     </section>
 
 
-    <section id="why-nearu" class="py-1 min-h-screen bg-gradient-to-r from-purple-600 to-[#BF7534]">
+    <section id="why-nearu" class="py-1 min-h-screen bg-white">
         <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-extrabold flex justify-center mt-[90px] text-white">Why NearU?</h1>
+            <h1 class="text-4xl font-extrabold flex justify-center mt-[90px] text-black">Why NearU?</h1>
 
             <div class="flex flex-col md:flex-row mt-4 ml-2 mr-2 rounded-lg shadow-lg">
                 <div class="w-full md:w-1/2 py-6 px-4 text-white font-[Acme] text-lg text-left bg-[#3d2A58] rounded-lg md:mr-2">
-                    <h2 class="text-xl font-[Acme] text-white mb-2">For landlords...</h2>
+                    <h2 class="text-xl font-[Acme] text-white mb-2 text-center">For landlords</h2>
                     <p class="text-lg leading-relaxed">
                         Are you a property owner looking to maximize your investment in El Salvador? NearU presents a unique
                         opportunity to tap into the thriving student housing market. There isn't a
@@ -149,8 +156,8 @@
                     </p>
                 </div>
 
-                <div class="w-full md:w-1/2 py-6 px-4 text-white font-[Acme] text-lg text-left bg-[#3d2A58] rounded-lg md:ml-2 mt-4 md:mt-0">
-                    <h2 class="text-xl font-[Acme] text-white mb-2">For tenants...</h2>
+                <div class="w-full md:w-1/2 py-6 px-4 text-white font-[Acme] text-lg text-left bg-[#BF7534]  rounded-lg md:ml-2 mt-4 md:mt-0">
+                    <h2 class="text-xl font-[Acme] text-white mb-2 text-center">For tenants</h2>
                     <p class="text-lg leading-relaxed">
                         For Tenants:
                         Embarking on your college journey is an exhilarating experience, but we understand that distance can

@@ -11,7 +11,7 @@
 
                 <div class="mt-6">
                     <button type="submit"
-                            class="text-white w-full bg-[#3d2A58] hover:bg-purple-600 focus:ring-4 focus:outline-none font-semibold rounded-lg text-lg px-8 py-3 text-center transition-all duration-300 transform hover:scale-105"
+                            class="text-white w-full bg-[#3d2A58] hover:bg-[#4B2579] focus:ring-4 focus:outline-none font-semibold rounded-lg text-lg px-8 py-3 text-center transition-all duration-300 transform hover:scale-105"
                             >Login</button>
                 </div>
             </form>
