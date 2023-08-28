@@ -96,3 +96,11 @@ Route::get('user', function () {
     ]);
 });
 
+Route::get('rentallocation', function () {
+    return view('retalinformation', [
+        'rentallocation' => RentalLocation::all(),
+    ]);
+});
+
+Route::view('retalInformation', 'rentalInformation');
+
