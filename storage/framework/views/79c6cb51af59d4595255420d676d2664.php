@@ -1,5 +1,5 @@
 <div class="">
-    <nav class="bg-[#F2BA52] fixed w-full z-10 top-0 left-0 shadow-md">
+    <nav class="bg-[#F2BA52] fixed w-full z-10 top-0 left-0 shadow-md font-[Acme]">
         <div class="max-w-screen-xl flex flex-wrap justify-between items-center mx-auto p-2">
 
             <div class="flex items-center space-x-6 font-bold">

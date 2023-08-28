@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body class="font-[Acme]">
     <x-nav.nav />
 
     <div class="h-screen pt-[52px]">

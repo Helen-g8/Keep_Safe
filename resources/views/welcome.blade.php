@@ -7,7 +7,7 @@
 
             <div class="absolute inset-0">
                 <div class="text-center text-white mt-[120px]">
-                    <span class="font-bold font-[Acme] text-[40px]">Hello, Salvadoran college student!</span>
+                    <span class="font-bold text-[40px]">Hello, Salvadoran college student!</span>
                 </div>
             </div>
 
@@ -36,13 +36,13 @@
     <section id="quienes-somos"
         class="py-20 mb-[80px] min-h-screen bg-white">
         <div class="container mx-auto text-center">
-            <h1 class="font-[Acme] font-bold text-4xl text-black tracking-wider">We are NearU</h1>
+            <h1 class="font-[Acme] font-bold text-4xl text-black tracking-wider underline">We are NearU</h1>
 
             <div>
             <img src="{{ asset('team.jpg') }}" class="mx-auto bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 w-[400px] h-[290px] mt-6" alt="Alexis Ticas"
             class="w-full h-64 object-cover rounded-t-lg">
             <div class="p-4">
-                <p class="text-lg text-black italic font-bold">We are the passionate individuals behind NearU.</p>
+                <p class="text-xl text-black italic font-bold">We are the passionate individuals behind NearU.</p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-6">
