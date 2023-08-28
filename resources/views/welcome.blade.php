@@ -34,11 +34,11 @@
 
     <!-- Sección de Quiénes Somos -->
     <section id="quienes-somos"
-        class="py-20 mb-[80px] min-h-screen bg-purple-800">
+        class="py-20 mb-[80px] min-h-screen bg-white">
         <div class="container mx-auto text-center">
-            <h1 class="font-[Acme] font-bold text-4xl text-white">We are NearU</h1>
-            <p class="text-lg text-white italic font-bold">We are the passionate individuals behind NearU.</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-6">
+            <h1 class="font-[Acme] font-bold text-4xl text-black">We are NearU</h1>
+            <p class="text-lg text-black italic font-bold">We are the passionate individuals behind NearU.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-6">
                 <div
                     class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
                     <img src="{{ asset('alexis.jpg') }}" alt="Alexis Ticas"
