@@ -5,16 +5,20 @@
             <div class="flex items-center space-x-6 font-bold">
                 @guest
                     <a href="#bienvenida"
-                        class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white ml-4">Welcome</a>
+                        class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white ml-4">Welcome!</a>
                     <a href="#quienes-somos"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Who are
                         we?</a>
                     <a href="#que-hacemos"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">What do we
                         do?</a>
+                    <a href="#why-nearu"
+                        class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Why
+                        NearU?</a>
                     <a href="#our-values"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Our
                         values</a>
+
                 @endguest
             </div>
 
@@ -41,9 +45,13 @@
                         <x-button label="Profile" />
                     </a>
 
+                    <a href="arrendadorHome">
+                        <x-button label="Home" />
+                    </a>
+
                     <form action="logout" method="POST" class="inline-block">
                         @csrf
-                        <x-button label="Log out" type="submit"/>
+                        <x-button label="Log out" type="submit" />
                     </form>
 
 
