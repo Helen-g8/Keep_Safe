@@ -61,10 +61,7 @@
                     <p class="text-xl">{{ $user->dui }}</p>
                 </div>
 
-                <div class="mt-4">
-                    <label class="text-lg font-semibold">Average monthly income:</label>
-                    <p class="text-xl">$280</p>
-                </div>
+               
 
 
             </div>
