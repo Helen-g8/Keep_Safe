@@ -61,9 +61,6 @@
                     <p class="text-xl">{{ $user->dui }}</p>
                 </div>
 
-
-
-
             </div>
         </div>
     </div>
