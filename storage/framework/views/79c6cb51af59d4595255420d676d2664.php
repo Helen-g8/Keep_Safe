@@ -1,24 +1,25 @@
 <div class="">
     <nav class="bg-[#F2BA52] fixed w-full z-10 top-0 left-0 shadow-md font-[Acme]">
         <div class="max-w-screen-xl flex flex-wrap justify-between items-center mx-auto p-2">
-
+            <?php
+                $url = Route::getCurrentRoute()->uri;
+            ?>
             <div class="flex items-center space-x-6 font-bold">
                 <?php if(auth()->guard()->guest()): ?>
-                    <a href="#bienvenida"
+                    <a href="<?php echo e($url != 'welcome' ? '/welcome' : ''); ?>#bienvenida"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white ml-4">Welcome!</a>
-                    <a href="#quienes-somos"
+                    <a href="<?php echo e($url != 'welcome' ? '/welcome' : ''); ?>#quienes-somos"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Who are
                         we?</a>
-                    <a href="#que-hacemos"
+                    <a href="<?php echo e($url != 'welcome' ? '/welcome' : ''); ?>#que-hacemos"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">What do we
                         do?</a>
-                    <a href="#why-nearu"
+                    <a href="<?php echo e($url != 'welcome' ? '/welcome' : ''); ?>#why-nearu"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Why
                         NearU?</a>
-                    <a href="#our-values"
+                    <a href="<?php echo e($url != 'welcome' ? '/welcome' : ''); ?>#our-values"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Our
                         values</a>
-
                 <?php endif; ?>
             </div>
 
@@ -79,16 +80,16 @@
 <?php endif; ?>
                     </a>
 
-                    <a href="otherLeases">
+                    <a href="/mostrarArrendamientos">
                         <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.button','data' => ['label' => 'Other landlord\'s leases']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.button','data' => ['class' => \Illuminate\Support\Arr::toCssClasses(['hidden' => Auth::user()->role->name != 'Arrendador']),'label' => 'Other landlord\'s leases']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('button'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag && $constructor = (new ReflectionClass(Illuminate\View\AnonymousComponent::class))->getConstructor()): ?>
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['label' => 'Other landlord\'s leases']); ?>
+<?php $component->withAttributes(['class' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute(\Illuminate\Support\Arr::toCssClasses(['hidden' => Auth::user()->role->name != 'Arrendador'])),'label' => 'Other landlord\'s leases']); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
@@ -115,7 +116,7 @@
 <?php endif; ?>
                     </a>
 
-                    <a href="arrendadorHome">
+                    <a href="<?php echo e(Auth::user()->role->name == 'Arrendador' ? 'arrendadorHome' : 'mostrarArrendamientos'); ?>">
                         <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.button','data' => ['label' => 'Home']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('button'); ?>

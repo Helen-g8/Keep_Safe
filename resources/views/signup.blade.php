@@ -1,7 +1,7 @@
 <x-layout>
-    @csrf
     <form class="min-h-screen flex flex-col justify-center bg-gradient-to-br from-orange-300 via-orange-400 to-orange-500 text-white relative"
-        x-data="{ state: '', town: '', district: '' }">
+        x-data="{ state: '', town: '', district: '' }" action="/signup" method="POST">
+        @csrf
         <input type="number" value="{{ $rol }}" class="hidden" name="role_id">
         <div class="mx-[90px] mt-4 grid gap-6 md:grid-cols-2">
             <x-input label="First Name" placeholder="E.g. Kevin Antonio" name="first_name" required />
@@ -25,17 +25,7 @@
             <x-input label="Confirm Password" placeholder="Confirm your password" name="password_confirmation"
                 type='password' required />
 
-            <div>
-                <label for="university" class="block mb-2 text-sm font-medium">University</label>
-                <select id="universitySign"
-                    class="bg-white border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                    required>
-                    <option value="" selected disabled>Select your university</option>
-                    @foreach ($universities as $university)
-                        <option class="text-black" value="{{ $university->id }}">{{ $university->name }}</option>
-                    @endforeach
-                </select>
-            </div>
+
 
             @if ($rol == 1)
                 <div>
@@ -98,7 +88,7 @@
         </div>
 
         <!-- Mover el botón de submit aquí -->
-        <x-button type="submit" label="Submit" />
+        <x-button @endif type="submit" label="Submit"/>
     </form>
 </x-layout>
 

@@ -37,6 +37,11 @@ class RentalLocation extends Model
         return $this->hasMany(RentalReview::class);
     }
 
+    public function conditions()
+    {
+        return $this->belongsToMany(Condition::class)->withPivot('answer');
+    }
+
     public function rule(){
         return $this->hasMany(Rule::class);
     }

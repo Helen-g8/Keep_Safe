@@ -1,7 +1,7 @@
 <x-layout>
     <div class="flex">
         <!-- Primera mitad (parte izquierda) -->
-        <div class="w-1/2 bg-gray-100 py-12 flex items-center justify-center">
+        <div class="w-1/2 py-12 flex items-center justify-center">
             <div class="text-center">
                 <img src="{{ asset('Casa.jpg') }}" alt="NearU Logo" width="300" height="200"
                     class="mx-auto my-4 rounded-lg shadow-lg">
@@ -31,13 +31,28 @@
                     District: {{ $arrendamiento->district->name }}
                 </p>
             </div>
+
+            {{ $arrendamiento->conditions[0]->name }}: {{ $arrendamiento->conditions[0]->pivot->answer == 0 ? 'Permitido' : 'No Permitido' }}
+
+
+<br>
+
             @if ($arrendamiento->rooms > 0)
-                <button class="mt-4 px-6 py-3 bg-[#F2BA52] hover:bg-[#BF7534] text-white font-bold rounded-lg shadow-lg">
-                    Get in touch with the owner
-                </button>
+                <a href="chat.jpg">
+                    <button
+                        class="mt-4 px-6 py-3 bg-[#F2BA52] hover:bg-[#BF7534] text-white font-bold rounded-lg shadow-lg">
+                        Get in touch with the owner
+                    </button>
+                </a>
             @else
                 <p class="mt-4 text-red-500 font-semibold">Not available</p>
             @endif
+
+            <button
+                        class="mt-4 px-6 py-3 bg-[#F2BA52] hover:bg-[#BF7534] text-white font-bold rounded-lg shadow-lg">
+                        See reviews
+                    </button>
+
         </div>
     </div>
 </x-layout>

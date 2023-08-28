@@ -1,24 +1,25 @@
 <div class="">
     <nav class="bg-[#F2BA52] fixed w-full z-10 top-0 left-0 shadow-md font-[Acme]">
         <div class="max-w-screen-xl flex flex-wrap justify-between items-center mx-auto p-2">
-
+            @php
+                $url = Route::getCurrentRoute()->uri;
+            @endphp
             <div class="flex items-center space-x-6 font-bold">
                 @guest
-                    <a href="#bienvenida"
+                    <a href="{{$url != 'welcome' ? '/welcome' : ''}}#bienvenida"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white ml-4">Welcome!</a>
-                    <a href="#quienes-somos"
+                    <a href="{{$url != 'welcome' ? '/welcome' : ''}}#quienes-somos"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Who are
                         we?</a>
-                    <a href="#que-hacemos"
+                    <a href="{{$url != 'welcome' ? '/welcome' : ''}}#que-hacemos"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">What do we
                         do?</a>
-                    <a href="#why-nearu"
+                    <a href="{{$url != 'welcome' ? '/welcome' : ''}}#why-nearu"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Why
                         NearU?</a>
-                    <a href="#our-values"
+                    <a href="{{$url != 'welcome' ? '/welcome' : ''}}#our-values"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Our
                         values</a>
-
                 @endguest
             </div>
 
@@ -37,15 +38,15 @@
                         <x-button label="Chat" />
                     </a>
 
-                    <a href="otherLeases">
-                        <x-button label="Other landlord's leases" />
+                    <a href="/mostrarArrendamientos">
+                        <x-button @class(['hidden' => Auth::user()->role->name != 'Arrendador']) label="Other landlord's leases" />
                     </a>
 
                     <a href="profile">
                         <x-button label="Profile" />
                     </a>
 
-                    <a href="arrendadorHome">
+                    <a href="{{ Auth::user()->role->name == 'Arrendador' ? 'arrendadorHome' : 'mostrarArrendamientos' }}">
                         <x-button label="Home" />
                     </a>
 

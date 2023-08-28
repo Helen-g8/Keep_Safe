@@ -26,24 +26,26 @@ Route::post('/login', function () {
 })->name('login');
 
 Route::post('/signup', function () {
-    $attributes = request()->validate(
-        [
+    $attributes = request()->validate([
             'first_name' => 'required|string|max:100',
             'last_name' => 'required|string|max:100',
-            'email' => 'required|email|max:255',
+            'email' => 'required|email|max:255|unique:users,email',
             'role_id' => 'required|integer|exists:roles,id',
             'sex_id' => 'required|integer|exists:sexes,id',
             'dui' => 'required|integer|max_digits:9|min_digits:9',
             'phone' => 'required|integer|max_digits:8|min_digits:8',
             'age' => 'required|integer|max_digits:2|min_digits:2',
             'password' => 'required|string|confirmed|max:255',
-        ]
-    );
+    ]);
 
     if ($user = User::create($attributes)) {
         Auth::login($user);
         request()->session()->regenerate();
-        return redirect('/profile');
+        if ($user->role->name == 'Arrendador') {
+            return redirect('/arrendadorHome');
+        } else {
+            return redirect('/mostrarArrendamientos');
+        }
     }
     return back()->WithErrors();
 });
@@ -97,10 +99,10 @@ Route::get('user', function () {
 });
 
 Route::get('rentallocation', function () {
-    return view('retalinformation', [
-        'rentallocation' => RentalLocation::all(),
+    return view('rentalInfo', [
+        'rentalInfo' => RentalLocation::all(),
     ]);
 });
 
-Route::view('retalInformation', 'rentalInformation');
+Route::view('rentalInfo', 'rentalInfo');
 

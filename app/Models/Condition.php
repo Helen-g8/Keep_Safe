@@ -9,6 +9,7 @@ class Condition extends Model
 {
     use HasFactory;
 
+    
     public function rental_locations()
     {
         return $this->belongsToMany(RentalLocation::class)->withPivot('answer');

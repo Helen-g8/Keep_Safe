@@ -1,4 +1,5 @@
 <?php
+use App\Models\Condition;
 use App\Models\District;
 use App\Models\RentalLocation;
 use App\Models\Sex;
