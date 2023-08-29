@@ -16,7 +16,7 @@
         <!-- Segunda mitad (parte derecha) -->
         <div class="w-1/2 bg-white py-12 px-6">
 
-            <label class="mb-2 underline text-lg font-extrabold flex justify-center text">General lease
+            <label class="underline text-lg font-extrabold flex justify-center text">General lease
                 information</label>
 
             <div>
@@ -26,7 +26,7 @@
 
 
                 <p class="text-lg font-bold">
-                    Price: <span class="text-[#BF7534]">{{ $arrendamiento->price }}</span>
+                    Price: <span class="text-[#BF7534]">${{ $arrendamiento->price }}</span>
                 </p>
 
                 <p class="text-lg font-bold">
@@ -43,7 +43,7 @@
 
             </div>
 
-            <label class="mt-4 mb-2 underline text-lg font-extrabold flex justify-center text">Lease conditions</label>
+            <label class="mt-4 underline text-lg font-extrabold flex justify-center text">Lease conditions</label>
             <p class="text-lg font-bold"> Pets: <span class="text-[#BF7534]">Allowed</span>
                 <br>
                 Bring your own furniture: <span class="text-[#BF7534]">Allowed</span>
@@ -60,10 +60,10 @@
             </p>
 
 
-            <label class="mt-4 mb-2 underline text-lg font-extrabold flex justify-center text">Lease services</label>
+            <label class="mt-4 underline text-lg font-extrabold flex justify-center text">Lease services</label>
             <p class="text-lg font-bold"> Wifi service: <span class="text-[#BF7534]">Yes</span>
                 <br>
-                TV service: <span class="text-[#BF7534]">Yes</span>
+                TV service: <span class="text-[#BF7534]">No</span>
                 <br>
 
             <br>
@@ -76,7 +76,7 @@
                     </button>
                 </a>
             @else
-                <p class="mt-4 text-red-500 font-semibold">Not available</p>
+                <p class="mt-4 text-xl text-red-500 font-extrabold">Not available</p>
             @endif
 
             <button class="mt-4 px-6 py-3 bg-[#F2BA52] hover:bg-[#BF7534] text-white font-bold rounded-lg shadow-lg">
