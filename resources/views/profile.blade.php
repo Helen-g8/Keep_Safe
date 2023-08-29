@@ -2,9 +2,8 @@
     <div class="bg-orange-300 min-h-screen flex justify-center items-center mt-[-20px]">
         <div class="block bg-white p-[40px] rounded-lg shadow-lg max-w-lg w-full relative">
 
-            <div class="mt-[-5px] text-center">
-                <h1 class="text-xl font-semibold">Name:</h1>
-                <p class="text-xl italic">{{ $user->first_name }} {{ $user->last_name }}</p>
+            <div class="mt-[-5px]">
+                <p class="text-xl text-center italic">{{ $user->first_name }} {{ $user->last_name }}</p>
 
 
                 <div class="mt-4 flex items-center justify-center">

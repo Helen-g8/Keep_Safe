@@ -44,52 +44,41 @@
             </div>
 
             <label class="mt-4 underline text-lg font-extrabold flex justify-center text">Lease conditions</label>
-            <p class="text-lg font-bold"> Pets: <span class="text-[#BF7534]">Allowed</span>
-                <br>
-                Bring your own furniture: <span class="text-[#BF7534]">Allowed</span>
-                <br>
-                Share bathroom facilities: <span class="text-[#BF7534]">Not allowed</span>
-                <br>
-                Share kitchen: <span class="text-[#BF7534]">Alllowed</span>
-                <br>
-                Share shower: <span class="text-[#BF7534]">Alllowed</span>
-                <br>
-                Share living room: <span class="text-[#BF7534]">Not alllowed</span>
-                <br>
-                Will have wifi service: <span class="text-[#BF7534]">Alllowed</span>
-            </p>
+                @foreach ($arrendamiento->conditions as $condition)
+                    <p class="text-lg font-bold">
+                        {{ $condition->name }}: <span
+                            class="text-[#BF7534]">{{ $condition->pivot->answer == 0 ? 'Allowed' : 'Not allowed' }}</span>
+                    </p>
+                @endforeach
 
 
             <label class="mt-4 underline text-lg font-extrabold flex justify-center text">Lease services</label>
-            <p class="text-lg font-bold"> Wifi service: <span class="text-[#BF7534]">Yes</span>
+                @foreach ($arrendamiento->services as $service)
+                <p class="text-lg font-bold">
+                    {{ $service->name }}: <span
+                        class="text-[#BF7534]">{{ $service->pivot->answer == 0 ? 'Yes' : 'No' }}</span>
+                </p>
+            @endforeach
+
+
                 <br>
-                TV service: <span class="text-[#BF7534]">No</span>
-                <br>
 
-            <br>
+                @if ($arrendamiento->rooms > 0)
+                    <a href="chat.jpg">
+                        <button
+                            class="mt-4 px-6 py-3 bg-[#F2BA52] hover:bg-[#BF7534] text-white font-bold rounded-lg shadow-lg">
+                            Get in touch with the owner
+                        </button>
+                    </a>
+                @else
+                    <p class="mt-4 text-xl text-red-500 font-extrabold">Not available</p>
+                @endif
 
-            @if ($arrendamiento->rooms > 0)
-                <a href="chat.jpg">
-                    <button
-                        class="mt-4 px-6 py-3 bg-[#F2BA52] hover:bg-[#BF7534] text-white font-bold rounded-lg shadow-lg">
-                        Get in touch with the owner
-                    </button>
-                </a>
-            @else
-                <p class="mt-4 text-xl text-red-500 font-extrabold">Not available</p>
-            @endif
-
-            <button class="mt-4 px-6 py-3 bg-[#F2BA52] hover:bg-[#BF7534] text-white font-bold rounded-lg shadow-lg">
-                See reviews
-            </button>
+                <button
+                    class="mt-4 px-6 py-3 bg-[#F2BA52] hover:bg-[#BF7534] text-white font-bold rounded-lg shadow-lg">
+                    See reviews
+                </button>
 
         </div>
     </div>
 </x-layout>
-
-{{-- @foreach ($arrendamiento->conditions as $condition)
-    <p class="text-lg font-bold">
-        {{ $condition->name }}: <span
-            class="text-[#BF7534]">{{ $condition->pivot->answer == 0 ? 'Permitido' : 'No Permitido' }}</span>
-    </p>
-@endforeach --}}

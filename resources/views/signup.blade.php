@@ -3,7 +3,7 @@
         x-data="{ state: '', town: '', district: '' }" action="/signup" method="POST">
         @csrf
         <input type="number" value="{{ $rol }}" class="hidden" name="role_id">
-        <div class="mx-[90px] mt-4 grid gap-6 md:grid-cols-2">
+        <div class="mx-[90px] mt-2 grid gap-6 md:grid-cols-2">
             <x-input label="First Name" placeholder="E.g. Kevin Antonio" name="first_name" required />
             <x-input label="Last Name" placeholder="E.g. Hernandez Molina" name="last_name" required />
             <x-input label="Age" placeholder="Enter your age" name="age" type="number" required />
@@ -88,7 +88,7 @@
         </div>
 
         <!-- Mover el botón de submit aquí -->
-        <x-button @endif type="submit" label="Submit"/>
+        <x-button @endif class="py-auto mx-auto mt-4" type="submit" label="Submit"/>
     </form>
 </x-layout>
 

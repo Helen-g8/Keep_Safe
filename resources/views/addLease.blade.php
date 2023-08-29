@@ -18,7 +18,7 @@
                     placeholder="Upload high-quality pictures of your lease" name="leasePhoto" required />
             </div>
 
-            <h2 class="text-xl font-bold italic mt-6 text-center">Lease Restrictions</h2>
+            <h2 class="text-xl font-bold italic mt-10 text-center">Lease Restrictions</h2>
             <div class="mt-2 grid gap-2 md:grid-cols-2">
                 @foreach ($conditions as $condition)
                     <div class="flex items-center">
@@ -30,7 +30,19 @@
                 @endforeach
             </div>
 
-            <h2 class="text-xl font-bold italic mt-6 text-center">Lease Location</h2>
+            <h2 class="text-xl font-bold italic mt-10 text-center">Lease services</h2>
+            <div class="mt-2 grid gap-2 md:grid-cols-2">
+                @foreach ($services as $service)
+                    <div class="flex items-center">
+                        <input id="{{ $service->name }}" type="checkbox" value="{{ $service->name }}"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="{{ $service->name }}"
+                            class="ml-2 text-sm font-medium text-gray-900">{{ $service->name }}</label>
+                    </div>
+                @endforeach
+            </div>
+
+            <h2 class="text-xl font-bold italic mt-10 text-center">Lease Location</h2>
             <div>
                 <label for="state" class="text-sm font-medium text-gray-900">Departamentos</label>
                 <select id="state" x-model="state"

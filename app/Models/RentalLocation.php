@@ -42,6 +42,11 @@ class RentalLocation extends Model
         return $this->belongsToMany(Condition::class)->withPivot('answer');
     }
 
+    public function services()
+    {
+        return $this->belongsToMany(Service::class)->withPivot('answer');
+    }
+
     public function rule(){
         return $this->hasMany(Rule::class);
     }

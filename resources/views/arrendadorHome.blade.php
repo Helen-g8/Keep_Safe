@@ -3,7 +3,7 @@
         <x-button label="Add lease" />
     </a>
 
-<label class="flex justify-center items-center">h</label>
+<label class="flex justify-center items-center text-4xl">You haven't added any lease yet!</label>
 
 
 

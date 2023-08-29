@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
             StudentSeeder::class,
             RentalLocationSeeder::class,
             ConditionSeeder::class,
+            ServiceSeeder::class,
             RentalReviewSeeder::class,
             RuleSeeder::class,
             PaymentSeeder::class,
