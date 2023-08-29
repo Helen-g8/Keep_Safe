@@ -15,24 +15,34 @@
         <!-- Segunda mitad (parte derecha) -->
         <div class="w-1/2 bg-white py-12 px-6">
             <div>
-                <p class="text-lg font-semibold">
-                    Rooms: {{ $arrendamiento->rooms }}
+                <p class="text-lg font-bold">
+                    Rooms: <span class="text-[#BF7534]">{{ $arrendamiento->rooms }}</span>
                 </p>
-                <p class="text-lg">
-                    Price: ${{ $arrendamiento->price }}
+
+
+                <p class="text-lg font-bold">
+                    Price: <span class="text-[#BF7534]">{{ $arrendamiento->price }}</span>
                 </p>
-                <p class="text-lg">
-                    State: {{ $arrendamiento->state->name }}
+
+                <p class="text-lg font-bold">
+                    State: <span class="text-[#BF7534]">{{ $arrendamiento->state->name }}</span>
                 </p>
-                <p class="text-lg">
-                    Town: {{ $arrendamiento->town->name }}
+
+                <p class="text-lg font-bold">
+                    Town: <span class="text-[#BF7534]">{{ $arrendamiento->town->name }}</span>
                 </p>
-                <p class="text-lg">
-                    District: {{ $arrendamiento->district->name }}
+
+                <p class="text-lg font-bold">
+                    District: <span class="text-[#BF7534]">{{ $arrendamiento->district->name }}</span>
                 </p>
             </div>
 
-            {{ $arrendamiento->conditions[0]->name }}: {{ $arrendamiento->conditions[0]->pivot->answer == 0 ? 'Permitido' : 'No Permitido' }}
+            @foreach ($arrendamiento->conditions as $condition)
+    <p class="text-lg font-bold">
+        {{ $condition->name }}: <span class="text-[#BF7534]">{{ $condition->pivot->answer == 0 ? 'Permitido' : 'No Permitido' }}</span>
+    </p>
+@endforeach
+
 
 
 <br>
