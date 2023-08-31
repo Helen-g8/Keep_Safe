@@ -44,16 +44,16 @@
             </div>
 
             <label class="mt-4 underline text-lg font-extrabold flex justify-center text">Lease conditions</label>
-                @foreach ($arrendamiento->conditions as $condition)
-                    <p class="text-lg font-bold">
-                        {{ $condition->name }}: <span
-                            class="text-[#BF7534]">{{ $condition->pivot->answer == 0 ? 'Allowed' : 'Not allowed' }}</span>
-                    </p>
-                @endforeach
+            @foreach ($arrendamiento->conditions as $condition)
+                <p class="text-lg font-bold">
+                    {{ $condition->name }}: <span
+                        class="text-[#BF7534]">{{ $condition->pivot->answer == 0 ? 'Allowed' : 'Not allowed' }}</span>
+                </p>
+            @endforeach
 
 
             <label class="mt-4 underline text-lg font-extrabold flex justify-center text">Lease services</label>
-                @foreach ($arrendamiento->services as $service)
+            @foreach ($arrendamiento->services as $service)
                 <p class="text-lg font-bold">
                     {{ $service->name }}: <span
                         class="text-[#BF7534]">{{ $service->pivot->answer == 0 ? 'Yes' : 'No' }}</span>
@@ -61,23 +61,17 @@
             @endforeach
 
 
-                <br>
+            <br>
 
-                @if ($arrendamiento->rooms > 0)
-                    <a href="chat.jpg">
-                        <button
-                            class="mt-4 px-6 py-3 bg-[#F2BA52] hover:bg-[#BF7534] text-white font-bold rounded-lg shadow-lg">
-                            Get in touch with the owner
-                        </button>
-                    </a>
-                @else
-                    <p class="mt-4 text-xl text-red-500 font-extrabold">Not available</p>
-                @endif
+            @if ($arrendamiento->rooms>0)
+                <a href="chat.jpg">
+                    <x-button  @class(['hidden' => Auth::user()->role->name != 'Tenant']) class="text-xl bg-[#F2BA52]" label='Get in touch with the owner' />
+                </a>
+            @else
+                <p class="mt-4 text-xl text-red-500 font-extrabold">Not available</p>
+            @endif
 
-                <button
-                    class="mt-4 px-6 py-3 bg-[#F2BA52] hover:bg-[#BF7534] text-white font-bold rounded-lg shadow-lg">
-                    See reviews
-                </button>
+            <x-button class="text-xl bg-[#F2BA52]" label='See reviews' />
 
         </div>
     </div>

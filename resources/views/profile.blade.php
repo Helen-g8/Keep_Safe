@@ -1,9 +1,9 @@
 <x-layout>
     <div class="bg-orange-300 min-h-screen flex justify-center items-center mt-[-20px]">
-        <div class="block bg-white p-[40px] rounded-lg shadow-lg max-w-lg w-full relative">
+        <div class="block bg-white p-[40px] rounded-lg shadow-lg h-full w-[650px] relative">
 
             <div class="mt-[-5px]">
-                <p class="text-xl text-center italic">{{ $user->first_name }} {{ $user->last_name }}</p>
+                <p class="ml-6 text-xl text-center italic">{{ $user->first_name }} {{ $user->last_name }}</p>
 
 
                 <div class="mt-4 flex items-center justify-center">
@@ -39,25 +39,44 @@
                     </svg>
                 </div>
 
-                <div class="mt-4">
-                    <label class="text-lg font-semibold">Rol:</label>
-                    <p class="text-xl">
-                        @if ($user->role_id == 1)
-                            Landlord
-                        @elseif ($user->role_id == 2)
-                            Tenant
-                        @endif
-                    </p>
+
+                <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                    <div class="mt-8 ml-20">
+                        <label class="text-lg font-semibold">Rol:</label>
+                        <p class="text-xl">
+                            @if ($user->role_id == 1)
+                                Landlord
+                            @elseif ($user->role_id == 2)
+                                Tenant
+                            @endif
+                        </p>
+                    </div>
+
+                    <div class="mt-4 ml-20">
+                        <label class="text-lg font-semibold">Age:</label>
+                        <p class="text-xl">{{ $user->age }}</p>
+                    </div>
+
+                    <div class="mt-4 ml-20">
+                        <label class="text-lg font-semibold">DUI:</label>
+                        <p class="text-xl">{{ $user->dui }}</p>
+                    </div>
+
+                    <div class="mt-4 ml-20">
+                        <label class="text-lg font-semibold">Phone:</label>
+                        <p class="text-xl">{{ $user->phone }}</p>
+                    </div>
+
+                    <div class="mt-4 ml-20">
+                        <label class="text-lg font-semibold">E-mail</label>
+                        <p class="text-xl">{{ $user->email }}</p>
+                    </div>
+
                 </div>
 
-                <div class="mt-4">
-                    <label class="text-lg font-semibold">Age:</label>
-                    <p class="text-xl">{{ $user->age }}</p>
-                </div>
-
-                <div class="mt-4">
-                    <label class="text-lg font-semibold">DUI:</label>
-                    <p class="text-xl">{{ $user->dui }}</p>
+                <div class="mt-4 ml-20">
+                    <label class="text-lg font-semibold">Number of leases</label>
+                    <p class="text-xl">5</p>
                 </div>
 
             </div>

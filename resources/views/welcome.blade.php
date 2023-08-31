@@ -7,12 +7,12 @@
 
             <div class="absolute inset-0">
                 <div class="text-center text-white mt-[120px]">
-                    <span class="font-bold text-[40px]">Hello, Salvadoran college student!</span>
+                    <span class="font-bold text-4xl">Hello, Salvadoran college student!</span>
                 </div>
             </div>
 
             <div
-                class="bg-[#3d2A58] rounded-[20px] py-2 px-2 text-white font-[Acme] ml-6 mr-6 text-center mt-6 absolute bottom-[140px] left-0 right-0">
+                class="bg-[#3d2A58] text-[18px] rounded-[20px] py-2 px-2 text-white font-[Acme] ml-6 mr-6 text-center mt-6 absolute bottom-[150px] left-0 right-0">
 
                 "A whole new world unfolds before you as you embark on your college journey. It's filled with
                 unforgettable

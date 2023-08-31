@@ -26,11 +26,11 @@
             <div class="flex items-center space-x-3">
                 @guest
                     <a href="/selectRole">
-                        <x-button label="Sign Up" />
+                        <x-button label="Sign up" class="mr-1" />
                     </a>
 
                     <a href="/login">
-                        <x-button label="Login" />
+                        <x-button label="Login" class="mr-3" />
                     </a>
                 @endguest
                 @auth
