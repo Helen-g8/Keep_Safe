@@ -3,7 +3,7 @@
         <form x-data="{ state: '', town: '', district: '' }" method="post" action="addLease"
             class="bg-white p-6 rounded-lg shadow-md w-full max-w-[650px]">
             @csrf
-            <h2 class="text-xl font-bold italic text-center">General Lease Information</h2>
+            <h2 class="text-xl font-bold italic text-center tracking-[1px]">General Lease Information</h2>
             <div class="mt-2 grid gap-6 md:grid-cols-2">
                 <x-input label="Address" class="text-base" type="text" name="address" required
                     placeholder="Type more information about the address" />
@@ -18,7 +18,7 @@
                     placeholder="Upload high-quality pictures of your lease" name="leasePhoto" required />
             </div>
 
-            <h2 class="text-xl font-bold italic mt-10 text-center">Lease Restrictions</h2>
+            <h2 class="text-xl font-bold italic mt-10 text-center tracking-[1px]">Lease Restrictions</h2>
             <div class="mt-2 grid gap-2 md:grid-cols-2">
                 @foreach ($conditions as $condition)
                     <div class="flex items-center">
@@ -30,7 +30,7 @@
                 @endforeach
             </div>
 
-            <h2 class="text-xl font-bold italic mt-10 text-center">Lease services</h2>
+            <h2 class="text-xl font-bold italic mt-10 text-center tracking-[1px]">Lease Services</h2>
             <div class="mt-2 grid gap-2 md:grid-cols-2">
                 @foreach ($services as $service)
                     <div class="flex items-center">
@@ -42,7 +42,7 @@
                 @endforeach
             </div>
 
-            <h2 class="text-xl font-bold italic mt-10 text-center">Lease Location</h2>
+            <h2 class="text-xl font-bold italic mt-10 text-center tracking-[1px]">Lease Location</h2>
             <div>
                 <label for="state" class="text-sm font-medium text-gray-900">Departamentos</label>
                 <select id="state" x-model="state"
@@ -81,10 +81,11 @@
                 </select>
             </div>
 
-            <div class="flex justify-center mt-6">
+            <div class="text-4xl flex justify-center mt-6">
                 <x-button class="w-full" label="Create Lease" type="submit" />
             </div>
         </form>
     </div>
+
 </x-layout>
 

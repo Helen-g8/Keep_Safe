@@ -3,16 +3,16 @@
     <!-- Sección de Bienvenida -->
     <section id="bienvenida" class="mt-[-70px] pt-[70px] min-h-screen relative">
         <section id="nuestros-valores" class="relative py-30">
-            <img src="{{ asset('students.png') }}" alt="NearU Logo" class="filter brightness-50 w-full h-[600px]" />
+            <img src="{{ asset('Students4.jpeg') }}" alt="NearU Logo" class="filter brightness-50 w-full h-[600px]" />
 
             <div class="absolute inset-0">
                 <div class="text-center text-white mt-[120px]">
-                    <span class="font-bold text-4xl">Hello, Salvadoran college student!</span>
+                    <span class="font-bold text-4xl tracking-[5px]">Hello, Salvadoran college student!</span>
                 </div>
             </div>
 
             <div
-                class="bg-[#3d2A58] text-[18px] rounded-[20px] py-2 px-2 text-white font-[Acme] ml-6 mr-6 text-center mt-6 absolute bottom-[150px] left-0 right-0">
+                class="bg-transparent text-xl rounded-[20px] py-2 px-2 text-white font-[Acme] ml-6 mr-6 text-center mt-6 absolute bottom-[160px] left-0 right-0">
 
                 "A whole new world unfolds before you as you embark on your college journey. It's filled with
                 unforgettable
@@ -36,13 +36,13 @@
     <section id="quienes-somos"
         class="py-20 mb-[80px] min-h-screen bg-white">
         <div class="container mx-auto text-center">
-            <h1 class="font-[Acme] font-bold text-4xl text-black tracking-wider underline">We are NearU</h1>
+            <h1 class="font-[Acme] font-bold text-4xl text-black tracking-[8px] underline">We are NearU</h1>
 
             <div>
             <img src="{{ asset('team.jpg') }}" class="mx-auto bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 w-[400px] h-[290px] mt-6" alt="Alexis Ticas"
             class="w-full h-64 object-cover rounded-t-lg">
             <div class="p-4">
-                <p class="text-xl text-black italic font-bold">We are the passionate individuals behind NearU.</p>
+                <p class="text-xl text-black italic font-bold tracking-[2px]">We are the passionate individuals behind NearU.</p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-6">
@@ -118,7 +118,7 @@
 
             <div
                 class="py-6 px-4 text-white font-[Acme] text-lg bg-[#3d2A58] ml-6 mr-6 text-center rounded-lg shadow-lg">
-                <h2 class="text-3xl font-[Acme] text-white mb-6">Unlocking Your College Journey</h2>
+                <h2 class="text-3xl font-[Acme] text-white mb-6 tracking-[6px]">Unlocking Your College Journey</h2>
                 <p class="text-lg leading-relaxed">
                     At NearU, we redefine your college experience into an exciting and worry-free journey. We understand
                     that this time is filled with unforgettable moments that will shape your future, and connections
@@ -139,11 +139,11 @@
     </section>
 
 
-    <section id="why-nearu" class="py-1 min-h-screen bg-white">
+    <section id="why-nearu" class="py-10 min-h-screen bg-white">
         <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-extrabold flex justify-center mt-[90px] text-black">Why NearU?</h1>
+            <h1 class="text-4xl font-extrabold flex justify-center mt-[35px] text-black tracking-[4px]">Why NearU?</h1>
 
-            <div class="flex flex-col md:flex-row mt-4 ml-2 mr-2 rounded-lg shadow-lg">
+            <div class="flex flex-col md:flex-row mt-4 ml-2 mr-2 rounded-lg shadow-2xl">
                 <div class="w-full md:w-1/2 py-6 px-4 text-white font-[Acme] text-lg text-left bg-[#3d2A58] rounded-lg md:mr-2">
                     <h2 class="text-xl font-[Acme] text-white mb-2 text-center">For landlords</h2>
                     <p class="text-lg leading-relaxed">
@@ -177,11 +177,11 @@
 
 
     <section id="our-values" class="relative py-30">
-        <img src="{{ asset('studentsU.jpeg') }}" alt="NearU Logo" class="filter brightness-75 w-full h-[700px]" />
+        <img src="{{ asset('tassels.jpeg') }}" alt="NearU Logo" class="filter brightness-75 w-full h-[700px]" />
 
         <!-- Text container for "Our Mission" -->
         <div class="ml-8 absolute top-[70px] left-0 text-white">
-            <h1 class="text-4xl font-bold">Our Mission</h1>
+            <h1 class="text-4xl font-bold tracking-[4px]">Our Mission</h1>
             <p class="mt-4 text-lg">We are a platform that provides valuable opportunities for Salvadoran university
                 students to acquire a home that meets all their needs safely, promoting the idea that young Salvadorans
                 can excel and complete their higher education regardless of distance.</p>
@@ -189,8 +189,8 @@
 
         <!-- Text container for "Our Vision" -->
         <div class="mr-8 absolute top-[320px] right-0 transform -translate-y-1/2 text-white text-right">
-            <h1 class="text-4xl font-bold">Our Vision</h1>
-            <p class="mt-4 text-lg ml-4 text-justified">To be the leading platform for Salvadoran students seeking safe
+            <h1 class="text-4xl font-bold tracking-[4px]">Our Vision</h1>
+            <p class="mt-4 text-lg ml-4 text-justified ">To be the leading platform for Salvadoran students seeking safe
                 and close-to-university housing, providing more than just convenient and secure housing solutions, but
                 also fostering a sense of community and belonging among young people with aspirations for personal
                 growth.</p>
@@ -198,7 +198,7 @@
 
         <!-- Text container for "Our Values" -->
         <div class="ml-8 absolute bottom-[150px] left-0 text-white p-4">
-            <h1 class="text-4xl font-bold">Our Values</h1>
+            <h1 class="text-4xl font-bold tracking-[4px]">Our Values</h1>
 
             <p class="mt-4 text-lg">
                 Empathy,

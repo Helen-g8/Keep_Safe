@@ -65,13 +65,13 @@
 
             @if ($arrendamiento->rooms>0)
                 <a href="chat.jpg">
-                    <x-button  @class(['hidden' => Auth::user()->role->name != 'Tenant']) class="text-xl bg-[#F2BA52]" label='Get in touch with the owner' />
+                    <x-button  @class(['hidden' => Auth::user()->role->name != 'Landlord']) class="text-xl bg-[#F2BA52]" label='Get in touch with the owner' />
                 </a>
             @else
                 <p class="mt-4 text-xl text-red-500 font-extrabold">Not available</p>
             @endif
 
-            <x-button class="text-xl bg-[#F2BA52]" label='See reviews' />
+            <x-button class="text-xl bg-[#F2BA52] ml-[25 px]" label='See reviews' />
 
         </div>
     </div>

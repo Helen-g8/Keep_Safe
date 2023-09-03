@@ -45,10 +45,11 @@
 <?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
 <?php endif; ?>
 
-                <div class="mt-6">
+                <label class="mt-[2px] font-bold">Forgot password?</label>
+
+                <div class="mt-[20px]">
                     <button type="submit"
-                            class="text-white w-full bg-[#3d2A58] hover:bg-[#4B2579] focus:ring-4 focus:outline-none font-semibold rounded-lg text-lg px-8 py-3 text-center transition-all duration-300 transform hover:scale-105"
-                            >Login</button>
+                        class="text-white w-full bg-[#3d2A58] hover:bg-[#4B2579] focus:ring-4 focus:outline-none font-semibold rounded-lg text-lg px-8 py-3 text-center transition-all duration-300 transform hover:scale-105">Login</button>
                 </div>
             </form>
         </div>

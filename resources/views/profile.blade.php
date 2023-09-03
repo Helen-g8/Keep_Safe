@@ -3,7 +3,7 @@
         <div class="block bg-white p-[40px] rounded-lg shadow-lg h-full w-[650px] relative">
 
             <div class="mt-[-5px]">
-                <p class="ml-6 text-xl text-center italic">{{ $user->first_name }} {{ $user->last_name }}</p>
+                <p class="ml-6 text-2xl text-center italic tracking-[1px]">{{ $user->first_name }} {{ $user->last_name }}</p>
 
 
                 <div class="mt-4 flex items-center justify-center">
@@ -40,7 +40,7 @@
                 </div>
 
 
-                <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                <div class="grid grid-cols-1 gap-4 md:grid-cols-2 mt-4">
                     <div class="mt-8 ml-20">
                         <label class="text-lg font-semibold">Rol:</label>
                         <p class="text-xl">
@@ -74,10 +74,10 @@
 
                 </div>
 
-                <div class="mt-4 ml-20">
+                <!-- <div class="mt-4 ml-20">
                     <label class="text-lg font-semibold">Number of leases</label>
                     <p class="text-xl">5</p>
-                </div>
+                </div> -->
 
             </div>
         </div>

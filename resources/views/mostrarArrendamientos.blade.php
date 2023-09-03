@@ -1,13 +1,45 @@
 <x-layout>
 
+    <div class="flex justify-around mb-8 mt-10">
 
-<select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full my-5  p-2.5 ">
-  <option selected>Filters</option>
-  <option value="US"></option>
-  <option value="CA">$100</option>
-  <option value="FR">$200</option>
-  <option value="DE">$300</option>
-</select>
+        <label for="filters" class="font-extrabold tracking-[1px] text-2xl">Filters</label>
+
+        <select name="prices" id="prices">
+            <option selected disabled>Select a price range </option>
+            <option value="price1">$100 - $150</option>
+            <option value="price2">$150 - $200</option>
+            <option value="price3">$200 - $250</option>
+            <option value="price4">$250 - $300</option>
+            <option value="price5">$300 - $350</option>
+            <option value="price6">$350 - $400</option>
+            <option value="price7">$400 - $450</option>
+            <option value="price8">$450 - $500</option>
+            <option value="price9">$550 - $600</option>
+        </select>
+
+        <select name="prices" id="prices">
+            <option selected disabled>Select the allowed conditions </option>
+            <option value="conditions1">Pets allowed</option>
+            <option value="conditions1">Bring your own furniture</option>
+            <option value="conditions1">Share bathroom facilities</option>
+            <option value="conditions1">Share kitchen</option>
+            <option value="conditions1">Share shower </option>
+            <option value="conditions1">PetShare living room</option>
+        </select>
+
+        <select name="services" id="services">
+            <option selected disabled>Select the available services </option>
+            <option value="conditions1">Water service</option>
+            <option value="conditions1">WiFi service</option>
+            <option value="conditions1">TV service</option>
+            <option value="conditions1">Electricity service</option>
+        </select>
+    </div>
+
+
+
+
+
 
 
     <div
@@ -22,8 +54,8 @@
                         Lease in: {{ $arrendamiento->district->name }},
                         {{ $arrendamiento->district->town->name }}
                     </span>
-                    <p class="mb-2 font-normal text-gray-700">
-                        Price: ${{ $arrendamiento->price }}
+                    <p class="mb-2 font-normal text-gray-700 text-lg">
+                        <span class="font-bold">Price: $</span> {{ $arrendamiento->price }}
                     </p>
                     <div class="flex justify-between items-center">
                         <a href="{{ route('arrendamiento', ['rental' => $arrendamiento->id]) }}"
