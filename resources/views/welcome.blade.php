@@ -6,8 +6,8 @@
             <img src="{{ asset('Students4.jpeg') }}" alt="NearU Logo" class="filter brightness-50 w-full h-[600px]" />
 
             <div class="absolute inset-0">
-                <div class="text-center text-white mt-[120px]">
-                    <span class="font-bold text-4xl tracking-[5px]">Hello, Salvadoran college student!</span>
+                <div class="text-center text-white mt-[140px]">
+                    <span class="font-extrabold text-4xl tracking-[6px]">Hello, Salvadoran college student!</span>
                 </div>
             </div>
 
@@ -51,8 +51,8 @@
                     <img src="{{ asset('alexis.jpg') }}" alt="Alexis Ticas"
                         class="w-full h-64 object-cover rounded-t-lg">
                     <div class="p-4">
-                        <h2 class="text-lg font-bold text-gray-800">Alexis Ticas</h2>
-                        <p class="text-sm text-gray-600">Frontend Developer</p>
+                        <h2 class="text-xl font-bold text-gray-800">Alexis Ticas</h2>
+                        <p class="text-md text-gray-800 underline">Frontend Developer</p>
                     </div>
                 </div>
 
@@ -61,8 +61,8 @@
                     <img src="{{ asset('bryan.jpg') }}" alt="Brayan Palacios"
                         class="w-full h-64 object-cover rounded-t-lg">
                     <div class="p-4">
-                        <h2 class="text-lg font-bold text-gray-800">Brayan Palacios</h2>
-                        <p class="text-sm text-gray-600">Marketing</p>
+                        <h2 class="text-xl font-bold text-gray-800">Brayan Palacios</h2>
+                        <p class="text-md text-gray-800 underline">Marketing</p>
                     </div>
                 </div>
 
@@ -70,8 +70,8 @@
                     class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
                     <img src="{{ asset('wesly.jpg') }}" alt="Wesly Perez" class="w-full h-64 object-cover rounded-t-lg">
                     <div class="p-4">
-                        <h2 class="text-lg font-bold text-gray-800">Wesly Perez</h2>
-                        <p class="text-sm text-gray-600">Backend Developer</p>
+                        <h2 class="text-xl font-bold text-gray-800">Wesly Perez</h2>
+                        <p class="text-md text-gray-800 underline">Backend Developer</p>
                     </div>
                 </div>
 
@@ -80,8 +80,8 @@
                     <img src="{{ asset('abner.jpg') }}" alt="Abner Canales"
                         class="w-full h-64 object-cover rounded-t-lg">
                     <div class="p-4">
-                        <h2 class="text-lg font-bold text-gray-800">Abner Canales</h2>
-                        <p class="text-sm text-gray-600">Backend Developer</p>
+                        <h2 class="text-xl font-bold text-gray-800">Abner Canales</h2>
+                        <p class="text-md text-gray-800 underline">Backend Developer</p>
                     </div>
                 </div>
 
@@ -90,8 +90,8 @@
                     <img src="{{ asset('helen.jpg') }}" alt="Helen Quijada"
                         class="w-full h-64 object-cover rounded-t-lg">
                     <div class="p-4">
-                        <h2 class="text-lg font-bold text-gray-800">Helen Quijada</h2>
-                        <p class="text-sm text-gray-600">Backend Developer</p>
+                        <h2 class="text-xl font-bold text-gray-800">Helen Quijada</h2>
+                        <p class="text-md text-gray-800 underline">Backend Developer</p>
                     </div>
                 </div>
 
@@ -100,8 +100,8 @@
                     <img src="{{ asset('allison.jpg') }}" alt="Allison Ruballo"
                         class="w-full h-64 object-cover rounded-t-lg">
                     <div class="p-4">
-                        <h2 class="text-lg font-bold text-gray-800">Allison Ruballo</h2>
-                        <p class="text-sm text-gray-600">Frontend Developer</p>
+                        <h2 class="text-xl font-bold text-gray-800">Allison Ruballo</h2>
+                        <p class="text-mx text-gray-800 underline">Frontend Developer</p>
                     </div>
                 </div>
             </div>
@@ -181,7 +181,7 @@
 
         <!-- Text container for "Our Mission" -->
         <div class="ml-8 absolute top-[70px] left-0 text-white">
-            <h1 class="text-4xl font-bold tracking-[4px]">Our Mission</h1>
+            <h1 class="text-4xl font-bold tracking-[4px] underline">Our Mission</h1>
             <p class="mt-4 text-lg">We are a platform that provides valuable opportunities for Salvadoran university
                 students to acquire a home that meets all their needs safely, promoting the idea that young Salvadorans
                 can excel and complete their higher education regardless of distance.</p>
@@ -189,7 +189,7 @@
 
         <!-- Text container for "Our Vision" -->
         <div class="mr-8 absolute top-[320px] right-0 transform -translate-y-1/2 text-white text-right">
-            <h1 class="text-4xl font-bold tracking-[4px]">Our Vision</h1>
+            <h1 class="text-4xl font-bold tracking-[4px] underline">Our Vision</h1>
             <p class="mt-4 text-lg ml-4 text-justified ">To be the leading platform for Salvadoran students seeking safe
                 and close-to-university housing, providing more than just convenient and secure housing solutions, but
                 also fostering a sense of community and belonging among young people with aspirations for personal
@@ -198,7 +198,7 @@
 
         <!-- Text container for "Our Values" -->
         <div class="ml-8 absolute bottom-[150px] left-0 text-white p-4">
-            <h1 class="text-4xl font-bold tracking-[4px]">Our Values</h1>
+            <h1 class="text-4xl font-bold tracking-[4px] underline">Our Values</h1>
 
             <p class="mt-4 text-lg">
                 Empathy,
