@@ -34,7 +34,7 @@ Route::post('/signup', function () {
             'sex_id' => 'required|integer|exists:sexes,id',
             'dui' => 'required|integer|max_digits:9|min_digits:9',
             'phone' => 'required|integer|max_digits:8|min_digits:8',
-            'age' => 'required|integer|max_digits:2|min_digits:2',
+            'age' => 'required|integer|max:100|min:18',
             'password' => 'required|string|confirmed|max:255',
     ]);
 
@@ -106,3 +106,35 @@ Route::get('rentallocation', function () {
 
 Route::view('rentalInfo', 'rentalInfo');
 
+Route::post('/addlease', function () {
+    $attributes = request()->validate([
+            'first_name' => 'required|string|max:100',
+            'last_name' => 'required|string|max:100',
+            'email' => 'required|email|max:255|unique:users,email',
+            'role_id' => 'required|integer|exists:roles,id',
+            'sex_id' => 'required|integer|exists:sexes,id',
+            'dui' => 'required|integer|max_digits:9|min_digits:9',
+            'phone' => 'required|integer|max_digits:8|min_digits:8',
+            'age' => 'required|integer|max:100|min:18',
+            'password' => 'required|string|confirmed|max:255',
+    ]);
+
+    if ($user = User::create($attributes)) {
+        Auth::login($user);
+        request()->session()->regenerate();
+        if ($user->role->name == 'Arrendador') {
+            return redirect('/arrendadorHome');
+        } else {
+            return redirect('/mostrarArrendamientos');
+        }
+    }
+    return back()->WithErrors();
+});
+
+Route::post('/rental/create', function () {
+    $attributes = validateRentalAttributes();
+
+    $RentalLocation = RentalLocation::create($attributes);
+
+    return redirect('rental/' + $RentalLocation->id);
+});
