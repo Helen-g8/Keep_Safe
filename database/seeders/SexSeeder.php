@@ -14,11 +14,11 @@ class SexSeeder extends Seeder
     public function run(): void
     {
         Sex::create([
-            'name' => 'Hombre'
+            'name' => 'Male'
         ]);
 
         Sex::create([
-            'name' => 'Mujer'
+            'name' => 'Female'
         ]);
     }
 }
