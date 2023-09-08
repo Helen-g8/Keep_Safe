@@ -38,7 +38,7 @@
             <h1 class="font-bold text-4xl text-black tracking-[4px] underline">We are NearU</h1>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 mt-4">
-                <img src="{{ asset('NearU .png') }}" alt="NearU Logo" width="300" height="200" class="mx-auto mb-8 mt-[120px]">
+                <img src="{{ asset('NearU .png') }}" alt="NearU Logo" width="400" height="300" class="mx-auto hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 mb-8 mt-[120px]">
                 <div class="flex justify-around">
                     <img src="{{ asset('team.jpg') }}"
                     class="mx-auto bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 w-[480px] h-[350px] mt-6"
@@ -56,7 +56,7 @@
                     <div
                         class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
                         <img src="{{ asset('alexis.jpg') }}" alt="Alexis Ticas"
-                            class="w-[300px] h-[340px] object-cover rounded-t-lg">
+                            class="w-[320px] h-[340px] object-cover rounded-t-lg">
                         <div class="p-2">
                             <h2 class="text-xl font-bold text-gray-800">Alexis Ticas</h2>
                             <p class="text-md text-gray-800 underline">Frontend Developer</p>
@@ -66,7 +66,7 @@
                     <div
                         class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
                         <img src="{{ asset('bryan.jpg') }}" alt="Brayan Palacios"
-                            class="w-[300px] h-[340px] object-cover rounded-t-lg">
+                            class="w-[320px] h-[340px] object-cover rounded-t-lg">
                         <div class="p-4">
                             <h2 class="text-xl font-bold text-gray-800">Brayan Palacios</h2>
                             <p class="text-md text-gray-800 underline">Marketing</p>
@@ -76,7 +76,7 @@
                     <div
                         class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
                         <img src="{{ asset('wesly.jpg') }}" alt="Wesly Perez"
-                            class="w-[300px] h-[340px] object-cover rounded-t-lg">
+                            class="w-[320px] h-[340px] object-cover rounded-t-lg">
                         <div class="p-4">
                             <h2 class="text-xl font-bold text-gray-800">Wesly Perez</h2>
                             <p class="text-md text-gray-800 underline">Backend Developer</p>
@@ -86,7 +86,7 @@
                     <div
                         class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
                         <img src="{{ asset('abner.jpg') }}" alt="Abner Canales"
-                            class="w-[300px] h-[340px] object-cover rounded-t-lg">
+                            class="w-[320px] h-[340px] object-cover rounded-t-lg">
                         <div class="p-4">
                             <h2 class="text-xl font-bold text-gray-800">Abner Canales</h2>
                             <p class="text-md text-gray-800 underline">Backend Developer</p>
@@ -96,7 +96,7 @@
                     <div
                         class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
                         <img src="{{ asset('helen.jpg') }}" alt="Helen Quijada"
-                            class="w-[300px] h-[340px] object-cover rounded-t-lg">
+                            class="w-[320px] h-[340px] object-cover rounded-t-lg">
                         <div class="p-4">
                             <h2 class="text-xl font-bold text-gray-800">Helen Quijada</h2>
                             <p class="text-md text-gray-800 underline">Backend Developer</p>
@@ -106,7 +106,7 @@
                     <div
                         class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
                         <img src="{{ asset('allison.jpg') }}" alt="Allison Ruballo"
-                            class="w-[300px] h-[340px] object-cover rounded-t-lg">
+                            class="w-[320px] h-[340px] object-cover rounded-t-lg">
                         <div class="p-4">
                             <h2 class="text-xl font-bold text-gray-800">Allison Ruballo</h2>
                             <p class="text-mx text-gray-800 underline">Frontend Developer</p>
@@ -151,9 +151,9 @@
         <div class="container mx-auto text-center">
             <h1 class="text-4xl font-extrabold flex justify-center mt-[35px] text-black tracking-[4px]">Why NearU?</h1>
 
-            <div class="flex flex-col md:flex-row mt-4 ml-2 mr-2 rounded-lg shadow-2xl">
+            <div class="flex flex-col md:flex-row mt-4 ml-2 mr-2 ">
                 <div
-                    class="w-full md:w-1/2 py-6 px-4 text-white font-[Acme] text-lg text-left bg-[#3d2A58] rounded-lg md:mr-2">
+                    class="rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 w-full md:w-1/2 py-6 px-4 text-white font-[Acme] text-lg text-left bg-[#3d2A58] rounded-lg md:mr-2">
                     <h2 class="text-xl font-[Acme] text-white mb-2 text-center">For landlords</h2>
                     <p class="text-lg leading-relaxed">
                         Are you a property owner looking to maximize your investment in El Salvador? NearU presents a
@@ -169,7 +169,7 @@
                 </div>
 
                 <div
-                    class="w-full md:w-1/2 py-6 px-4 text-white font-[Acme] text-lg text-left bg-[#BF7534]  rounded-lg md:ml-2 mt-4 md:mt-0">
+                    class="rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 w-full md:w-1/2 py-6 px-4 text-white font-[Acme] text-lg text-left bg-[#BF7534]  rounded-lg md:ml-2 mt-4 md:mt-0">
                     <h2 class="text-xl font-[Acme] text-white mb-2 text-center">For tenants</h2>
                     <p class="text-lg leading-relaxed">
                         For Tenants:
