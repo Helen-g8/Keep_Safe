@@ -172,7 +172,6 @@
                     class="rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 w-full md:w-1/2 py-6 px-4 text-white font-[Acme] text-lg text-left bg-[#BF7534]  rounded-lg md:ml-2 mt-4 md:mt-0">
                     <h2 class="text-xl font-[Acme] text-white mb-2 text-center">For tenants</h2>
                     <p class="text-lg leading-relaxed">
-                        For Tenants:
                         Embarking on your college journey is an exhilarating experience, but we understand that distance
                         can
                         sometimes pose a challenge. There's currently no comprehensive platform
