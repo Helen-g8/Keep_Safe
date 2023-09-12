@@ -1,4 +1,4 @@
-@props(['label', 'href', 'active' => false, 'button'])
+@props(['label', 'href', 'active' => false, 'color' => '###' ,'button'])
 
 
 <li class="nav-item">

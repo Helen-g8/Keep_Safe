@@ -1,6 +1,6 @@
 <x-layout>
 
-    <div class="flex justify-around mb-8 mt-10">
+    <div class="flex justify-around mb-8 mt-10 ">
 
         <label for="filters" class="font-extrabold tracking-[1px] text-2xl">Filters</label>
 
@@ -24,7 +24,7 @@
             <option value="conditions1">Share bathroom facilities</option>
             <option value="conditions1">Share kitchen</option>
             <option value="conditions1">Share shower </option>
-            <option value="conditions1">PetShare living room</option>
+            <option value="conditions1">Share living room</option>
         </select>
 
         <select name="services" id="services">

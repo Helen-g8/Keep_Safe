@@ -26,11 +26,11 @@
             <div class="flex items-center space-x-3">
                 @guest
                     <a href="/selectRole">
-                        <x-button label="Sign up" class="mr-1" />
+                        <x-button label="Sign up" class="mr-1 hover:bg-[#652FAF]" color="#4B2579" />
                     </a>
 
                     <a href="/login">
-                        <x-button label="Login" class="mr-3" />
+                        <x-button label="Login" class="mr-2 hover:bg-[#652FAF]" color='#4B2579' />
                     </a>
                 @endguest
                 @auth
