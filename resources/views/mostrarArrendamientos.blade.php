@@ -66,8 +66,19 @@
                                 <path d="M9 5l7 7-7 7"></path>
                             </svg>
                         </a>
+
+                        @if ($arrendamiento->rooms>0)
                         <label
-                            class="inline-flex items-center px-2 py-1 text-sm font-medium text-white bg-green-500 rounded text-center">Available</label>
+                        class="inline-flex items-center px-2 py-1 text-sm font-medium text-white font-bold bg-green-400 rounded text-center">Available
+                    </label>
+                        @else
+                        <label
+                        class="inline-flex items-center px-2 py-1 text-sm font-medium text-white font-bold bg-red-700 rounded text-center">Not available
+                    </label>
+                        @endif
+
+
+
                     </div>
                 </div>
             </div>

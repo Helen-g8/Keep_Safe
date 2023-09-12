@@ -221,8 +221,7 @@
                 Empathy,
                 Security,
                 Commitment,
-                Innovation,
-                Connection
+                Innovation.
             </p>
         </div>
     </section>
