@@ -12,7 +12,7 @@
             </div>
 
             <div
-                class="bg-transparent text-xl rounded-[20px] py-2 px-2 text-white font-[Acme] ml-6 mr-6 text-center mt-6 absolute bottom-[160px] left-0 right-0">
+                class="bg-transparent text-[18px] rounded-[20px] py-2 px-2 text-white font-palatino font-bold ml-6 mr-6 text-center mt-6 absolute bottom-[168px] left-0 right-0">
 
                 "A whole new world unfolds before you as you embark on your college journey. It's filled with
                 unforgettable
@@ -38,7 +38,7 @@
             <h1 class="font-bold text-4xl text-black tracking-[4px] underline">We are NearU</h1>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 mt-4">
-                <img src="{{ asset('NearU .png') }}" alt="NearU Logo" width="400" height="300" class="mx-auto hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 mb-8 mt-[120px]">
+                <img src="{{ asset('NearU .png') }}" alt="NearU Logo" width="400" height="300" class="mx-auto mb-8 mt-[120px]">
                 <div class="flex justify-around">
                     <img src="{{ asset('team.jpg') }}"
                     class="mx-auto bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 w-[480px] h-[350px] mt-6"
@@ -47,7 +47,7 @@
             </div>
 
                 <div class="p-4">
-                    <p class="text-xl text-black italic font-bold tracking-[2px] mt-12">We are the passionate individuals
+                    <p class="text-xl font-palatino font-bold text-black tracking-[1px] mt-12">We are the passionate individuals
                         behind NearU.</p>
                 </div>
 
@@ -125,20 +125,20 @@
             <img src="{{ asset('NearU .png') }}" alt="NearU Logo" width="300" height="200" class="mx-auto mb-8">
 
             <div
-                class="py-6 px-4 text-white font-[Acme] text-lg bg-[#3d2A58] ml-6 mr-6 text-center rounded-lg shadow-lg">
+                class="py-6 px-4 text-white font-palatino font-bold bg-[#3d2A58] ml-6 mr-6 text-center rounded-lg shadow-lg">
                 <h2 class="text-3xl font-[Acme] text-white mb-6 tracking-[6px]">Unlocking Your College Journey</h2>
-                <p class="text-lg leading-relaxed">
+                <p class="text-md leading-relaxed">
                     At NearU, we redefine your college experience into an exciting and worry-free journey. We understand
                     that this time is filled with unforgettable moments that will shape your future, and connections
                     that
                     will last a lifetime.
                 </p>
-                <p class="text-lg leading-relaxed mt-4">
+                <p class="text-md leading-relaxed mt-4">
                     Our mission is to break down the barriers that distance can create, through the connection of
                     students with landlords, facilitating safe and reliable agreements. We help you discover a
                     second home that brings you closer to your university.
                 </p>
-                <p class="text-lg leading-relaxed mt-4">
+                <p class="text-md leading-relaxed mt-4">
                     Imagine a college journey filled with endless possibilities, with NearU as your trusted companion.
                     Your bright future is just steps away from your doorstep.
                 </p>
@@ -154,8 +154,8 @@
             <div class="flex flex-col md:flex-row mt-4 ml-2 mr-2 ">
                 <div
                     class="rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 w-full md:w-1/2 py-6 px-4 text-white font-[Acme] text-lg text-left bg-[#3d2A58] rounded-lg md:mr-2">
-                    <h2 class="text-xl font-[Acme] text-white mb-2 text-center">For landlords</h2>
-                    <p class="text-lg leading-relaxed">
+                    <h2 class="text-xl font-palatino font-bold text-white mb-2 text-center">For landlords</h2>
+                    <p class="text-md leading-relaxed font-palatino font-bold">
                         Are you a property owner looking to maximize your investment in El Salvador? NearU presents a
                         unique
                         opportunity to tap into the thriving student housing market. There isn't a
@@ -170,8 +170,8 @@
 
                 <div
                     class="rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 w-full md:w-1/2 py-6 px-4 text-white font-[Acme] text-lg text-left bg-[#BF7534]  rounded-lg md:ml-2 mt-4 md:mt-0">
-                    <h2 class="text-xl font-[Acme] text-white mb-2 text-center">For tenants</h2>
-                    <p class="text-lg leading-relaxed">
+                    <h2 class="text-md font-palatino font-bold text-white mb-2 text-center">For tenants</h2>
+                    <p class="text-lg leading-relaxed font-palatino font-bold">
                         Embarking on your college journey is an exhilarating experience, but we understand that distance
                         can
                         sometimes pose a challenge. There's currently no comprehensive platform
@@ -197,27 +197,27 @@
         <img src="{{ asset('tassels.jpeg') }}" alt="NearU Logo" class="filter brightness-75 w-full h-[700px]" />
 
         <!-- Text container for "Our Mission" -->
-        <div class="ml-8 absolute top-[70px] left-0 text-white">
+        <div class="ml-8 absolute top-[90px] left-0 text-white">
             <h1 class="text-4xl font-bold tracking-[4px] underline">Our Mission</h1>
-            <p class="mt-4 text-lg">We are a platform that provides valuable opportunities for Salvadoran university
+            <p class="mt-4 text-[16px] font-palatino font-bold">We are a platform that provides valuable opportunities for Salvadoran university
                 students to acquire a home that meets all their needs safely, promoting the idea that young Salvadorans
                 can excel and complete their higher education regardless of distance.</p>
         </div>
 
         <!-- Text container for "Our Vision" -->
-        <div class="mr-8 absolute top-[320px] right-0 transform -translate-y-1/2 text-white text-right">
+        <div class="mr-8 absolute top-[310px] right-0 transform -translate-y-1/2 text-white text-right">
             <h1 class="text-4xl font-bold tracking-[4px] underline">Our Vision</h1>
-            <p class="mt-4 text-lg ml-4 text-justified ">To be the leading platform for Salvadoran students seeking safe
+            <p class="mt-4 text-[16px] ml-4 text-justified font-palatino font-bold ">To be the leading platform for Salvadoran students seeking safe
                 and close-to-university housing, providing more than just convenient and secure housing solutions, but
                 also fostering a sense of community and belonging among young people with aspirations for personal
                 growth.</p>
         </div>
 
         <!-- Text container for "Our Values" -->
-        <div class="ml-8 absolute bottom-[150px] left-0 text-white p-4">
+        <div class="ml-8 absolute bottom-[180px] left-0 text-white p-4">
             <h1 class="text-4xl font-bold tracking-[4px] underline">Our Values</h1>
 
-            <p class="mt-4 text-lg">
+            <p class="mt-4 text-[16px] font-palatino font-bold">
                 Empathy,
                 Security,
                 Commitment,

@@ -10,7 +10,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <style>
+        .font-palatino {
+            font-family: 'Palatino Linotype';
+        }
+        @font-face {
+            font-family: "Palatino Linotype";
+            src: url('{{ asset('fonts/Palatino Linotype.ttf') }}');
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: "Palatino Linotype";
+            src: url('{{ asset('fonts/Palatino Linotype Regular.ttf') }}');
+            font-weight: 300;
+        }
+        @font-face {
+            font-family: "Palatino Linotype";
+            src: url('{{ asset('fonts/Palatino Linotype Bold.ttf') }}');
+            font-weight: 700;
+        }
+    </style>
 </head>
 
 <body class="font-[Acme]">
