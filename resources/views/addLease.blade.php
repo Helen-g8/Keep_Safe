@@ -1,14 +1,14 @@
 <x-layout>
-    <div class="min-h-screen flex flex-col items-center bg-gradient-to-br from-white-300 to-gray-500">
+    <div class="min-h-screen flex flex-col items-center">
         <form x-data="{ state: '', town: '', district: '' }" method="post" action="addLease"
             class="bg-white p-6 rounded-lg shadow-md w-full max-w-[650px]">
             @csrf
             <h2 class="text-xl font-bold italic text-center tracking-[1px]">General Lease Information</h2>
             <div class="mt-2 grid gap-6 md:grid-cols-2">
-                <x-input label="Address" class="text-base" type="text" name="address" required
+                <x-input label="Address" class="font-palatino font-light text-base" type="text" name="address" required
                     placeholder="Type more information about the address" />
-                <x-input label="Rooms" type="number" placeholder="Number of rooms" name="number" required />
-                <x-input label="Price" type="number" placeholder="Price of your accommodation" name="price"
+                <x-input label="Rooms"  class="font-palatino font-light" type="number" placeholder="Number of rooms" name="number" required />
+                <x-input label="Price"  class="font-palatino font-light" type="number" placeholder="Price of your accommodation" name="price"
                     required />
                 <x-input label="Rules" placeholder="Type your lease rules" name="text" required />
             </div>
