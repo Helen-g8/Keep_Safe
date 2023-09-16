@@ -34,28 +34,26 @@
                     </a>
                 @endguest
                 @auth
-                    <a href="chat">
+                    <a href="/chat">
                         <x-button label="Chat" />
                     </a>
 
-                    <a href="/mostrarArrendamientos">
+                    <a href="{{ route('mostrar_arrendamientos') }}">
                         <x-button @class(['hidden' => Auth::user()->role->name != 'Arrendador']) label="Other landlord's leases" />
                     </a>
 
-                    <a href="profile">
+                    <a href="/profile">
                         <x-button label="Profile" />
                     </a>
 
-                    <a href="{{ Auth::user()->role->name == 'Arrendador' ? 'arrendadorHome' : 'mostrarArrendamientos' }}">
+                    <a href="{{ route(Auth::user()->role->name == 'Arrendador' ? 'arrendador_home' : 'mostrar_arrendamientos' )}}">
                         <x-button label="Home" />
                     </a>
 
-                    <form action="logout" method="POST" class="inline-block">
+                    <form action="/logout" method="POST" class="inline-block">
                         @csrf
                         <x-button label="Log out" type="submit" />
                     </form>
-
-
                 @endauth
             </div>
         </div>

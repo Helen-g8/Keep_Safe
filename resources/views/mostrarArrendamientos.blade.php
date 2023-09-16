@@ -52,7 +52,7 @@
 
                     <div class="my-2 text-xl font-bold text-gray-900 font-palatino font-extrabold">
                         Lease in: <span class="font-light">{{ $arrendamiento->district->name }},
-                        {{ $arrendamiento->district->town->name }}</span>
+                            {{ $arrendamiento->district->town->name }}</span>
                     </div>
 
                     <p class="mb-2 font-normal text-gray-700 text-lg">
@@ -68,14 +68,15 @@
                             </svg>
                         </a>
 
-                        @if ($arrendamiento->rooms>0)
-                        <label
-                        class="inline-flex items-center px-2 py-1 text-sm font-medium text-white font-bold bg-green-400 rounded text-center">Available
-                    </label>
+                        @if ($arrendamiento->rooms > 0)
+                            <label
+                                class="inline-flex items-center px-2 py-1 text-sm font-medium text-white font-bold bg-green-400 rounded text-center">Available
+                            </label>
                         @else
-                        <label
-                        class="inline-flex items-center px-2 py-1 text-sm font-medium text-white font-bold bg-red-700 rounded text-center">Not available
-                    </label>
+                            <label
+                                class="inline-flex items-center px-2 py-1 text-sm font-medium text-white font-bold bg-red-700 rounded text-center">Not
+                                available
+                            </label>
                         @endif
 
 

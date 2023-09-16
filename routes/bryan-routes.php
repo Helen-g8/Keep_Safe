@@ -2,11 +2,11 @@
 
 Route::view('places', 'places');
 
-Route::get('/arrendadorHome', function () {
+/*Route::get('/arrendadorHome', function () {
     return view('arrendadorHome', [
         'user' => Auth::user(),
     ]);
-})->middleware('auth');
+})->middleware('auth');*/
 
 Route::view('activeRentals', 'activeRentals');
 

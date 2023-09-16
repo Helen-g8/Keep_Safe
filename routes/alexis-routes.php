@@ -35,7 +35,7 @@ Route::get('mostrarArrendamientos', function () {
     return view('mostrarArrendamientos', [
         'arrendamientos' => RentalLocation::all()
     ]);
-});
+})->name('mostrar_arrendamientos');
 
 Route::view('activeRentals', 'activeRentals');
 
@@ -45,13 +45,18 @@ Route::view('profile', 'profile');
 
 
 
-Route::view('arrendadorHome', 'arrendadorHome');
 
 Route::get('pupilaje/{rental}', function (RentalLocation $rental) {
-    return view('arrendamiento', [
+    return view('arrendadorHome', [
         'arrendamiento' => $rental,
     ]);
-})->name('arrendamiento');
+});
+
+Route::get('arrendadorHome', function () {
+    return view('arrendadorHome', [
+        'arrendamientos' => RentalLocation::all()
+    ]);
+})->name('arrendador_home');
 
 
 Route::view('otherLeases', 'otherLeases');

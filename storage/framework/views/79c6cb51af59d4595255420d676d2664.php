@@ -62,7 +62,7 @@
                     </a>
                 <?php endif; ?>
                 <?php if(auth()->guard()->check()): ?>
-                    <a href="chat">
+                    <a href="/chat">
                         <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.button','data' => ['label' => 'Chat']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('button'); ?>
@@ -80,7 +80,7 @@
 <?php endif; ?>
                     </a>
 
-                    <a href="/mostrarArrendamientos">
+                    <a href="<?php echo e(route('mostrar_arrendamientos')); ?>">
                         <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.button','data' => ['class' => \Illuminate\Support\Arr::toCssClasses(['hidden' => Auth::user()->role->name != 'Arrendador']),'label' => 'Other landlord\'s leases']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('button'); ?>
@@ -98,7 +98,7 @@
 <?php endif; ?>
                     </a>
 
-                    <a href="profile">
+                    <a href="/profile">
                         <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.button','data' => ['label' => 'Profile']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('button'); ?>
@@ -116,7 +116,7 @@
 <?php endif; ?>
                     </a>
 
-                    <a href="<?php echo e(Auth::user()->role->name == 'Arrendador' ? 'arrendadorHome' : 'mostrarArrendamientos'); ?>">
+                    <a href="<?php echo e(route(Auth::user()->role->name == 'Arrendador' ? 'arrendador_home' : 'mostrar_arrendamientos' )); ?>">
                         <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.button','data' => ['label' => 'Home']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('button'); ?>
@@ -134,7 +134,7 @@
 <?php endif; ?>
                     </a>
 
-                    <form action="logout" method="POST" class="inline-block">
+                    <form action="/logout" method="POST" class="inline-block">
                         <?php echo csrf_field(); ?>
                         <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.button','data' => ['label' => 'Log out','type' => 'submit']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
@@ -152,8 +152,6 @@
 <?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
 <?php endif; ?>
                     </form>
-
-
                 <?php endif; ?>
             </div>
         </div>

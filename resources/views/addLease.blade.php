@@ -82,7 +82,7 @@
             </div>
 
             <div class="text-4xl flex justify-center mt-6">
-                <x-button class="w-full" label="Create Lease" type="submit" />
+                <x-button class="flex justify-center" label="Create Lease" type="submit" />
             </div>
         </form>
     </div>

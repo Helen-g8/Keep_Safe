@@ -6,8 +6,8 @@
                 <img src="{{ asset('Casa.jpg') }}" alt="NearU Logo" width="300" height="200"
                     class="mx-auto my-4 rounded-lg shadow-lg">
 
-                <p class="text-2xl font-extrabold text-[#F2BA52]">
-                    Lease at: <span class="text-black font-semibold">{{ $arrendamiento->district->name }},
+                <p class="text-2xl font-extrabold text-[#BF7534]">
+                    Lease at:  <span class="ml-1 text-black font-semibold font-palatino">{{ $arrendamiento->district->name }},
                         {{ $arrendamiento->district->town->name }} </span>
                 </p>
             </div>
@@ -68,7 +68,7 @@
                     <x-button  @class(['hidden' => Auth::user()->role->name != 'Landlord']) class="text-xl bg-[#F2BA52]" label='Get in touch with the owner' />
                 </a>
             @else
-                <p class="mt-4 text-xl text-red-500 font-extrabold">Not available</p>
+                <p class="mt-1 text-xl text-red-500 font-extrabold mb-4">Not available</p>
             @endif
 
             <a href="rentalReview.png">
