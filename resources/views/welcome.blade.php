@@ -47,7 +47,7 @@
             </div>
 
                 <div class="p-4">
-                    <p class="text-xl font-palatino font-bold text-black tracking-[1px] mt-12">We are the passionate individuals
+                    <p class="text-xl font-palatino font-extrabold text-black tracking-[0.5 px] mt-12">We are the passionate individuals
                         behind NearU.</p>
                 </div>
 
@@ -197,7 +197,7 @@
         <img src="{{ asset('tassels.jpeg') }}" alt="NearU Logo" class="filter brightness-75 w-full h-[700px]" />
 
         <!-- Text container for "Our Mission" -->
-        <div class="ml-8 absolute top-[70px] left-0 text-white">
+        <div class="ml-8 absolute top-[90px] left-0 text-white">
             <h1 class="text-4xl font-bold tracking-[4px] ">Our Mission</h1>
             <p class="mt-4 text-lg">We are a platform that provides valuable opportunities for Salvadoran university
                 students to acquire a home that meets all their needs safely, promoting the idea that young Salvadorans
@@ -214,7 +214,7 @@
         </div>
 
         <!-- Text container for "Our Values" -->
-        <div class="ml-8 absolute bottom-[150px] left-0 text-white p-4">
+        <div class="ml-8 absolute bottom-[170px] left-0 text-white p-4">
             <h1 class="text-4xl font-bold tracking-[4px] ">Our Values</h1>
 
             <p class="mt-4 text-[16px] font-palatino font-bold">

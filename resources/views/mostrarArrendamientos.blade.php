@@ -50,7 +50,7 @@
                     <img src="{{ asset('images/Casa.jpg') }}" alt="Casa Logo"
                         class="w-full h-48 object-cover rounded-lg mb-3">
 
-                    <div class="my-2 text-xl font-bold text-gray-900 font-palatino font-extrabold">
+                    <div class="my-2 text-xl text-gray-900 font-palatino font-bold">
                         Lease in: <span class="font-light">{{ $arrendamiento->district->name }},
                             {{ $arrendamiento->district->town->name }}</span>
                     </div>
