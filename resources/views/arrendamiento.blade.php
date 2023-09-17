@@ -1,18 +1,17 @@
 <x-layout>
 
-        <!-- Primera mitad (parte izquierda) -->
-        <div class="flex items-center justify-center mt-6">
-            <div class="text-center">
-                <img src="{{ asset('Casa.jpg') }}" alt="NearU Logo" width="300" height="200"
-                    class="mx-auto my-4 rounded-lg shadow-xl">
+    <!-- Primera mitad (parte izquierda) -->
+    <div class="flex items-center justify-center mt-6">
+        <div class="text-center">
+            <img src="{{ asset('Casa.jpg') }}" alt="NearU Logo" width="300" height="200"
+                class="mx-auto my-4 rounded-lg shadow-xl">
 
-                <p class="text-2xl font-extrabold text-[#BF7534]">
-                    Lease at: <span
-                        class="ml-1 text-black font-semibold font-palatino">{{ $arrendamiento->district->name }},
-                        {{ $arrendamiento->district->town->name }}. </span>
-                </p>
-            </div>
+            <p class="text-2xl font-extrabold text-[#BF7534]">
+                Lease at: <span class="ml-1 text-black font-semibold font-palatino">{{ $arrendamiento->district->name }},
+                    {{ $arrendamiento->district->town->name }}. </span>
+            </p>
         </div>
+    </div>
     </div>
 
     <!-- Segunda mitad (parte derecha) -->
@@ -68,7 +67,7 @@
 
     <div class="text-center mt-10 mb-8">
         <!-- Botón Get in touch with the owner -->
-        @if ($arrendamiento->rooms>0)
+        @if ($arrendamiento->rooms > 0)
             <a href="chat.jpg">
                 <x-button class="shadow-xl text-xl bg-[#F2BA52]" label='Get in touch with the owner' />
             </a>
@@ -78,7 +77,7 @@
 
         <a href="rentalReview.png">
             <x-button class="shadow-xl text-xl bg-[#F2BA52] ml-[25px]" label='See reviews' />
-            </a>
+        </a>
     </div>
 
 </x-layout>
