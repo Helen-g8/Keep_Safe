@@ -1,33 +1,60 @@
 <x-layout>
 
     <!-- Sección de Bienvenida -->
-    <section id="bienvenida" class="mt-[-70px] pt-[70px] min-h-screen relative">
+    <section id="bienvenida" class="mt-[-70px] pt-[70px] min-h-screen relative bg-white">
         <section id="nuestros-valores" class="relative py-30">
-            <img src="{{ asset('Students4.jpeg') }}" alt="NearU Logo" class="filter brightness-50 w-full h-[600px]" />
+            <h1 class="text-4xl font-extrabold flex justify-center mt-[10px] text-black tracking-[2px]">Welcome to NearU !</h1>
+            <style>
+.slider-frame {
+	width: 580px;
+    height: 500px;
+	margin:10px auto 0;
+	overflow: hidden;
+}
 
-            <div class="absolute inset-0">
-                <div class="text-center text-white mt-[140px]">
-                    <span class="font-extrabold text-4xl tracking-[3px]">Hello, Salvadoran college student!</span>
-                </div>
-            </div>
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
 
-            <div
-                class="bg-transparent text-[18px] rounded-[20px] py-2 px-2 text-white font-palatino font-bold ml-6 mr-6 text-center mt-6 absolute bottom-[168px] left-0 right-0">
+	animation: slide 20s infinite alternate ease-in-out;
+}
 
-                "A whole new world unfolds before you as you embark on your college journey. It's filled with
-                unforgettable
-                moments that will shape your future and connections that will stand the test of time. However, we
-                understand
-                that, amidst all the excitement, distance can sometimes pose a challenge.
-                At NearU, we've taken on the mission of transforming that distance into a thing of the past. We're here
-                to
-                provide you with the support you need by connecting you with convenient rental property owners,
-                facilitating
-                secure negotiations and agreements. Picture a second home that brings you closer to your university,
-                that's
-                exactly what we're here to offer you. Your brilliant future is just a few steps away from your doorstep,
-                with NearU as your steadfast companion".
-            </div>
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+            </style>
+
+
+        <div class="slider-frame">
+            <ul class=".slider-frame ul">
+                <li class=".slider-frame li"><img class=".slider-frame img" src="slider1.jpg" alt=""></li>
+                <li class=".slider-frame li"><img class=".slider-frame img"src="slider2.jpg" alt=""></li>
+                <li class=".slider-frame li"><img class=".slider-frame img"src="slider3.jpg" alt=""></li>
+                <li class=".slider-frame li"><img class=".slider-frame img"src="slider4.jpg" alt=""></li>
+            </ul>
+<p class="text-3xl font-normal" style="color: #000000;">The platform where you will find a </p>
+<p class="text-3xl font-normal" style="color: #4B2579;">"Home far from home"</p>
+</div>
         </section>
     </section>
 
@@ -41,130 +68,84 @@
                 <img src="{{ asset('NearU .png') }}" alt="NearU Logo" width="400" height="300" class="mx-auto mb-8 mt-[120px]">
                 <div class="flex justify-around">
                     <img src="{{ asset('team.jpg') }}"
-                    class="mx-auto bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 w-[480px] h-[350px] mt-6"
+                    class="mx-auto bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 w-[470px] h-[340px] mt-6"
                     alt="Team photo" class="w-full h-64 object-cover rounded-t-lg">
                 </div>
+                <br>
             </div>
-
-                <div class="p-4">
-<<<<<<< Updated upstream
-                    <p class="text-xl font-palatino font-extrabold text-black tracking-[0.5 px] mt-12">We are the passionate individuals
-                        behind NearU.</p>
-=======
-
->>>>>>> Stashed changes
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-1">
+                <div
+                    class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="{{ asset('alexis.jpg') }}" alt="Alexis Ticas"
+                        class="w-[320px] h-[340px] object-cover rounded-t-lg">
+                    <div class="p-2">
+                        <h2 class="text-xl font-bold text-gray-800">Alexis Ticas</h2>
+                        <p class="text-md text-gray-800 underline">Frontend Developer</p>
+                    </div>
                 </div>
 
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-1">
-                    <div
-                        class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                        <img src="{{ asset('alexis.jpg') }}" alt="Alexis Ticas"
-                            class="w-[320px] h-[340px] object-cover rounded-t-lg">
-                        <div class="p-2">
-                            <h2 class="text-xl font-bold text-gray-800">Alexis Ticas</h2>
-                            <p class="text-md text-gray-800 underline">Frontend Developer</p>
-                        </div>
+                <div
+                    class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="{{ asset('bryan.jpg') }}" alt="Brayan Palacios"
+                        class="w-[320px] h-[340px] object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold text-gray-800">Brayan Palacios</h2>
+                        <p class="text-md text-gray-800 underline">Marketing</p>
                     </div>
+                </div>
 
-                    <div
-                        class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                        <img src="{{ asset('bryan.jpg') }}" alt="Brayan Palacios"
-                            class="w-[320px] h-[340px] object-cover rounded-t-lg">
-                        <div class="p-4">
-                            <h2 class="text-xl font-bold text-gray-800">Brayan Palacios</h2>
-                            <p class="text-md text-gray-800 underline">Marketing</p>
-                        </div>
+                <div
+                    class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="{{ asset('wesly.jpg') }}" alt="Wesly Perez"
+                        class="w-[320px] h-[340px] object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold text-gray-800">Wesly Perez</h2>
+                        <p class="text-md text-gray-800 underline">Backend Developer</p>
                     </div>
+                </div>
 
-                    <div
-                        class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                        <img src="{{ asset('wesly.jpg') }}" alt="Wesly Perez"
-                            class="w-[320px] h-[340px] object-cover rounded-t-lg">
-                        <div class="p-4">
-                            <h2 class="text-xl font-bold text-gray-800">Wesly Perez</h2>
-                            <p class="text-md text-gray-800 underline">Backend Developer</p>
-                        </div>
+                <div
+                    class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="{{ asset('abner.jpg') }}" alt="Abner Canales"
+                        class="w-[320px] h-[340px] object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold text-gray-800">Abner Canales</h2>
+                        <p class="text-md text-gray-800 underline">Backend Developer</p>
                     </div>
+                </div>
 
-                    <div
-                        class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                        <img src="{{ asset('abner.jpg') }}" alt="Abner Canales"
-                            class="w-[320px] h-[340px] object-cover rounded-t-lg">
-                        <div class="p-4">
-                            <h2 class="text-xl font-bold text-gray-800">Abner Canales</h2>
-                            <p class="text-md text-gray-800 underline">Backend Developer</p>
-                        </div>
+                <div
+                    class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="{{ asset('helen.jpg') }}" alt="Helen Quijada"
+                        class="w-[320px] h-[340px] object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold text-gray-800">Helen Quijada</h2>
+                        <p class="text-md text-gray-800 underline">Backend Developer</p>
                     </div>
+                </div>
 
-                    <div
-                        class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                        <img src="{{ asset('helen.jpg') }}" alt="Helen Quijada"
-                            class="w-[320px] h-[340px] object-cover rounded-t-lg">
-                        <div class="p-4">
-                            <h2 class="text-xl font-bold text-gray-800">Helen Quijada</h2>
-                            <p class="text-md text-gray-800 underline">Backend Developer</p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                        <img src="{{ asset('allison.jpg') }}" alt="Allison Ruballo"
-                            class="w-[320px] h-[340px] object-cover rounded-t-lg">
-                        <div class="p-4">
-                            <h2 class="text-xl font-bold text-gray-800">Allison Ruballo</h2>
-                            <p class="text-mx text-gray-800 underline">Frontend Developer</p>
-                        </div>
+                <div
+                    class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="{{ asset('allison.jpg') }}" alt="Allison Ruballo"
+                        class="w-[320px] h-[340px] object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold text-gray-800">Allison Ruballo</h2>
+                        <p class="text-mx text-gray-800 underline">Frontend Developer</p>
                     </div>
                 </div>
             </div>
+        </div>
+
     </section>
 
-    <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <div class="flex justify-end px-4 pt-4">
-            <button id="dropdownButton" data-dropdown-toggle="dropdown" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
-                <span class="sr-only">Open dropdown</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 3">
-                    <path d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/>
-                </svg>
-            </button>
-            <!-- Dropdown menu -->
-            <div id="dropdown" class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                <ul class="py-2" aria-labelledby="dropdownButton">
-                <li>
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Export Data</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a>
-                </li>
-                </ul>
-            </div>
-        </div>
-        <div class="flex flex-col items-center pb-10">
-            <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image"/>
-            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
-            <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
-            <div class="flex mt-4 space-x-3 md:mt-6">
-                <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add friend</a>
-                <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700">Message</a>
-            </div>
-        </div>
-    </div>
 
-
-
-
-
-    <section id="que-hacemos" class="py-20 min-h-screen bg-gradient-to-r from-[#F2BA52] to-[#BF7534]">
+    <section id="que-hacemos" class="py-20 min-h-screen bg-gradient-to-r from-[#D99748] to-[#2E1D40]">
         <div class="container mx-auto text-center">
-            <img src="{{ asset('NearU .png') }}" alt="NearU Logo" width="300" height="200" class="mx-auto mb-8">
+            <img src="{{ asset('Casita.png') }}" alt="NearU Logo" width="200" height="100" class="mx-auto mb-8">
 
             <div
                 class="py-6 px-4 text-white font-palatino font-bold bg-[#3d2A58] ml-6 mr-6 text-center rounded-lg shadow-lg">
-                <h2 class="text-3xl font-[Acme] text-white mb-6 tracking-[6px]">Unlocking Your College Journey</h2>
+                <h2 style="color: #F2BA52" class="text-3xl font-[Acme] text-white mb-6 tracking-[2px]">Unlocking Your College Journey</h2>
                 <p class="text-md leading-relaxed">
                     At NearU, we redefine your college experience into an exciting and worry-free journey. We understand
                     that this time is filled with unforgettable moments that will shape your future, and connections
