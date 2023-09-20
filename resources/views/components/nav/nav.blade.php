@@ -1,6 +1,6 @@
-<div class="">
-    <nav class="bg-[#F2BA52] fixed w-full z-10 top-0 left-0 shadow-md font-[Acme]">
-        <div class="max-w-screen-xl flex flex-wrap justify-between items-center mx-auto p-2">
+<div>
+    <nav class="bg-[#F2BA52] fixed w-full z-10 top-0 left-0 shadow-lg font-[Acme]">
+        <div class="flex flex-wrap justify-between items-center mx-auto p-2">
             @php
                 $url = Route::getCurrentRoute()->uri;
             @endphp
