@@ -1,11 +1,10 @@
 <x-layout>
 
     <!-- Sección de Bienvenida -->
-    <label class="flex justify-center mt-6 mb-[-50px] font-extrabold text-4xl tracking-[1.5px]">Welcome to NearU!</label>
+    <label id="bienvenida" class="flex justify-center mt-6 mb-[-50px] font-extrabold text-4xl scroll-mt-96">Welcome to NearU!</label>
 
-    <section id="bienvenida" class="flex justify-center items-center py-8">
-
-        <div id="default-carousel" class="w-full h-full shadow-xl container ml-[220px] mr-[220px] mt-10 block"
+    <section class="flex justify-center items-center py-8">
+        <div id="default-carousel" class="w-full h-full shadow-xl container ml-[220px] mr-[220px] mt-10 block z-0"
             data-carousel="slide">
             <!-- Carousel wrapper -->
             <div class="relative h-full overflow-hidden rounded-lg md:h-96">
