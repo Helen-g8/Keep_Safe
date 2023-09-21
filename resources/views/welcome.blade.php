@@ -168,9 +168,9 @@
     </section>
 
 
-    <section id="que-hacemos" class="py-20 min-h-screen bg-gradient-to-r from-[#D99748] to-[#2E1D40]">
+    <section id="que-hacemos" class="py-20 min-h-screen bg-gradient-to-r from-[#D99748] to-[#4B2579] shadow-xl">
         <div class="container mx-auto text-center">
-            <img src="{{ asset('Casita.png') }}" alt="NearU Logo" width="200" height="100"
+            <img src="{{ asset('Casita.png') }}" alt="NearU Logo" width="150" height="50"
                 class="mx-auto mb-8">
 
             <div

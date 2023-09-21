@@ -1,6 +1,8 @@
 <x-layout>
-    <div class="bg-gradient-to-br from-orange-400 to-orange-300 h-screen flex items-center justify-center">
-        <div class="bg-white shadow-md rounded-lg p-8 w-96">
+    <div class="min-h-screen flex items-center justify-center relative">
+        <img src="{{ asset('login.jpeg') }}" alt="Houses Image" class="absolute inset-0 w-full h-[560px] object-cover z-0 brightness-50" />
+
+        <div class="bg-white shadow-xl rounded-lg p-8 w-96 relative">
             <div class="flex items-center justify-center mb-4">
                 <h2 class="text-3xl font-bold text-center">Log In</h2>
             </div>
