@@ -3,8 +3,8 @@
     <!-- Primera mitad (parte izquierda) -->
     <div class="flex items-center justify-center mt-6">
         <div class="text-center">
-            <img src="{{ asset('Casa.jpg') }}" alt="NearU Logo" width="300" height="200"
-                class="mx-auto my-4 rounded-lg shadow-xl">
+            <img src="{{ asset('casita12.jpg') }}" alt="Lease photo"
+            class="mx-auto my-4 rounded-lg shadow-xl">
 
             <p class="text-2xl font-extrabold text-[#BF7534]">
                 Lease at: <span class="ml-1 text-black font-semibold font-palatino">{{ $arrendamiento->district->name }},

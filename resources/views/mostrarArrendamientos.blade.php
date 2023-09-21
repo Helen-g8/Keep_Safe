@@ -47,7 +47,7 @@
         @foreach ($arrendamientos as $arrendamiento)
             <div class="p-5 border rounded bg-white shadow-lg">
                 <div class="flex flex-col justify-between h-full">
-                    <img src="{{ asset('images/Casa.jpg') }}" alt="Casa Logo"
+                    <img src="{{ asset('casita12.jpg') }}" alt="Lease photo"
                         class="w-full h-48 object-cover rounded-lg mb-3">
 
                     <div class="my-2 text-xl text-gray-900 font-palatino font-bold">
