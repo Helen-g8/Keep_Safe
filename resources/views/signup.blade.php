@@ -1,5 +1,5 @@
 <x-layout>
-    <form class="min-h-screen flex flex-col justify-center bg-gradient-to-br from-orange-300 via-orange-400 to-orange-500 text-white relative"
+    <form class="min-h-screen flex flex-col justify-center bg-gradient-to-r from-[#D99748] to-[#4B2579] shadow-xl text-white relative"
         x-data="{ state: '', town: '', district: '' }" action="/signup" method="POST">
         @csrf
         <input type="number" value="{{ $rol }}" class="hidden" name="role_id">

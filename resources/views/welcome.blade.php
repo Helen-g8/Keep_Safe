@@ -1,7 +1,7 @@
 <x-layout>
 
     <!-- Sección de Bienvenida -->
-    <label class="flex justify-center mt-6 mb-[-50px] font-extrabold underline text-4xl tracking-[1.5px]">Welcome to NearU!</label>
+    <label class="flex justify-center mt-6 mb-[-50px] font-extrabold text-4xl tracking-[1.5px]">Welcome to NearU!</label>
 
     <section id="bienvenida" class="flex justify-center items-center py-8">
 

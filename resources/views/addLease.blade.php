@@ -1,7 +1,8 @@
 <x-layout>
-    <div class="min-h-screen flex flex-col items-center">
+    <div class="min-h-screen flex flex-col items-center relative">
+
         <form x-data="{ state: '', town: '', district: '' }" method="post" action="addLease"
-            class="bg-white p-6 rounded-lg shadow-md w-full max-w-[650px]">
+            class="bg-white p-6 rounded-lg shadow-md w-full max-w-[650px] relative">
             @csrf
             <h2 class="text-xl font-bold italic text-center tracking-[1px]">General Lease Information</h2>
             <div class="mt-2 grid gap-6 md:grid-cols-2">
