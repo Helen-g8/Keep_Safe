@@ -1,11 +1,11 @@
 <x-layout>
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@1.8.1/dist/flowbite.min.js"></script>
     <!-- Sección de Bienvenida -->
     <section id="bienvenida" class="flex justify-center items-center py-8">
 
 
-        <div id="default-carousel" class="w-full h-full shadow-xl container ml-[220px] mr-[220px] mt-10 block" data-carousel="slide">
+        <div id="default-carousel" class="w-full h-full shadow-xl container ml-[220px] mr-[220px] mt-10 block"
+            data-carousel="slide">
             <!-- Carousel wrapper -->
             <div class="relative h-full overflow-hidden rounded-lg md:h-96">
                 <!-- Item 1 -->
@@ -295,7 +295,6 @@
         </div>
     </section>
 
-
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const links = document.querySelectorAll('a[href^="#"]');
@@ -306,14 +305,8 @@
                     const targetId = this.getAttribute("href").substring(1);
                     const targetElement = document.getElementById(targetId);
 
-                    // Calcula la altura máxima disponible en la ventana del navegador
-                    const maxHeight = window.innerHeight;
-
-                    // Calcula la altura a la que se debe desplazar
-                    const scrollToHeight = Math.min(targetElement.offsetTop, maxHeight);
-
                     window.scrollTo({
-                        top: scrollToHeight,
+                        top: targetElement.offsetTop,
                         behavior: "smooth"
                     });
                 });
@@ -323,3 +316,5 @@
 
 
 </x-layout>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@1.8.1/dist/flowbite.min.js"></script>
