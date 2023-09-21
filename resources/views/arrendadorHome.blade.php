@@ -6,7 +6,8 @@
     <label class="flex justify-center items-center text-4xl mt-[170px] tracking-[2px]">You haven't added any lease
         yet!</label>
 
-        <div
+
+   <!-- <div
         class="grid grid-cols-1 gap-4 md:grid-cols-4 max-w-screen bg-white border border-gray-200 rounded-lg shadow font-[Acme] tracking-wider ml-4 mr-4 mb-4">
         @foreach ($arrendamientos as $arrendamiento)
             <div class="p-5 border rounded bg-white shadow-lg">
@@ -49,5 +50,5 @@
                 </div>
             </div>
         @endforeach
-    </div>
+    </div> -->
 </x-layout>

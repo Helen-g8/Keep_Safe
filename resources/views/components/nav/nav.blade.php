@@ -5,7 +5,9 @@
                 $url = Route::getCurrentRoute()->uri;
             @endphp
             <div class="flex items-center space-x-6 font-bold">
+
                 @guest
+                    <img src="{{ asset('Casita.png') }}" alt="NearU Logo" class="ml-4 w-[60px] h-[50px]"/>
                     <a href="{{ $url != 'welcome' ? '/welcome' : '' }}#bienvenida"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white ml-4">Welcome!</a>
                     <a href="{{ $url != 'welcome' ? '/welcome' : '' }}#quienes-somos"
