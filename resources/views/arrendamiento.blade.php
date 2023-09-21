@@ -3,8 +3,8 @@
     <!-- Primera mitad (parte izquierda) -->
     <div class="flex items-center justify-center mt-6">
         <div class="text-center">
-            <img src="{{ asset('casita12.jpg') }}" alt="Lease photo"
-            class="mx-auto my-4 rounded-lg shadow-xl">
+            <img src="{{ asset('casita12.jpg') }}" alt="Lease photo" width="300" height="300"
+                class="mx-auto my-4 rounded-lg shadow-xl">
 
             <p class="text-2xl font-extrabold text-[#BF7534]">
                 Lease at: <span class="ml-1 text-black font-semibold font-palatino">{{ $arrendamiento->district->name }},
@@ -15,7 +15,7 @@
     </div>
 
     <!-- Segunda mitad (parte derecha) -->
-    <div class="flex justify-around mt-[-140px]">
+    <div class="flex justify-around mt-[-170px]">
         <div class="text-left shadow-xl rounded-[10px] p-8">
             <!-- Sección 1: General lease information -->
             <label class="underline text-lg font-extrabold">General lease
@@ -72,7 +72,7 @@
                 <x-button class="shadow-xl text-xl bg-[#F2BA52]" label='Get in touch with the owner' />
             </a>
         @else
-            <p class="text-xl text-red-500 font-extrabold mb-4">Not available</p>
+            <p class="text-2xl text-red-500 font-extrabold mb-6 ml-6">Not available</p>
         @endif
 
         <a href="rentalReview.png">
