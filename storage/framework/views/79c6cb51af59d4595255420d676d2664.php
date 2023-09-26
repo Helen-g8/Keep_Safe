@@ -11,17 +11,17 @@
                     <a href="<?php echo e($url != 'welcome' ? '/welcome' : ''); ?>#bienvenida"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white ml-4">Welcome!</a>
                     <a href="<?php echo e($url != 'welcome' ? '/welcome' : ''); ?>#quienes-somos"
-                        class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Who are
-                        we?</a>
+                        class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Who Are
+                        We?</a>
                     <a href="<?php echo e($url != 'welcome' ? '/welcome' : ''); ?>#que-hacemos"
-                        class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">What do we
-                        do?</a>
+                        class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">What Do We
+                        Do?</a>
                     <a href="<?php echo e($url != 'welcome' ? '/welcome' : ''); ?>#why-nearu"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Why
                         NearU?</a>
                     <a href="<?php echo e($url != 'welcome' ? '/welcome' : ''); ?>#our-values"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Our
-                        values</a>
+                        Values</a>
                 <?php endif; ?>
             </div>
 
@@ -29,14 +29,14 @@
                 <?php if(auth()->guard()->guest()): ?>
                     <a href="/selectRole">
                         <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.button','data' => ['label' => 'Sign up','class' => 'mr-1 hover:bg-[#652FAF]','color' => '#4B2579']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.button','data' => ['label' => 'Sign Up','class' => 'mr-1 hover:bg-[#652FAF]','color' => '#4B2579']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('button'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag && $constructor = (new ReflectionClass(Illuminate\View\AnonymousComponent::class))->getConstructor()): ?>
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['label' => 'Sign up','class' => 'mr-1 hover:bg-[#652FAF]','color' => '#4B2579']); ?>
+<?php $component->withAttributes(['label' => 'Sign Up','class' => 'mr-1 hover:bg-[#652FAF]','color' => '#4B2579']); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>

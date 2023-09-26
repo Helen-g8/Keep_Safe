@@ -8,7 +8,7 @@
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
     <div class="min-h-screen flex items-center justify-center relative">
-        <img src="<?php echo e(asset('logIn.jpeg')); ?>" alt="Houses Image" class="absolute inset-0 w-full h-[560px] object-cover z-0 brightness-50" />
+        <img src="<?php echo e(asset('logIn.jpeg')); ?>" alt="Houses Image" class="absolute inset-0 w-full h-full object-cover z-0 brightness-50" />
 
         <div class="bg-white shadow-xl rounded-lg p-8 w-96 relative">
             <div class="flex items-center justify-center mb-4">

@@ -11,24 +11,24 @@
                     <a href="{{ $url != 'welcome' ? '/welcome' : '' }}#bienvenida"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white ml-4">Welcome!</a>
                     <a href="{{ $url != 'welcome' ? '/welcome' : '' }}#quienes-somos"
-                        class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Who are
-                        we?</a>
+                        class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Who Are
+                        We?</a>
                     <a href="{{ $url != 'welcome' ? '/welcome' : '' }}#que-hacemos"
-                        class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">What do we
-                        do?</a>
+                        class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">What Do We
+                        Do?</a>
                     <a href="{{ $url != 'welcome' ? '/welcome' : '' }}#why-nearu"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Why
                         NearU?</a>
                     <a href="{{ $url != 'welcome' ? '/welcome' : '' }}#our-values"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Our
-                        values</a>
+                        Values</a>
                 @endguest
             </div>
 
             <div class="flex items-center space-x-3">
                 @guest
                     <a href="/selectRole">
-                        <x-button label="Sign up" class="mr-1 hover:bg-[#652FAF]" color="#4B2579" />
+                        <x-button label="Sign Up" class="mr-1 hover:bg-[#652FAF]" color="#4B2579" />
                     </a>
 
                     <a href="/login">

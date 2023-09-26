@@ -1,12 +1,12 @@
 <x-layout>
 
-    <!-- Sección de Bienvenida -->
+    <!-- Welcome section -->
     <section id="bienvenida" class="z-0 relative">
 
-        <div class="text-5xl absolute inset-0 flex justify-center items-center z-10 text-white font-palatino font-bold tracking-[1px] mt-[45px]">
+        <div class="text-6xl absolute inset-0 flex justify-center items-center z-10 text-white tracking-[1px] mt-[45px]">
             <label>Welcome to</label>
-            <label class="font-palatino font-extrabold text-[#4B2579] ml-3">Near</label>
-            <label class="font-palatino font-extrabold text-[#F2BA52]">U</label>
+            <label class="mt-2.5 font-palatino font-bold text-[#4B2579] ml-2.5">Near</label>
+            <label class="mt-2.5 font-palatino font-bold text-[#F2BA52]">U</label>
         </div>
 
         <div id="default-carousel" class="relative w-full h-screen shadow-xl block brightness-50" data-carousel="slide">
@@ -43,7 +43,7 @@
     </section>
 
 
-    <!-- Sección de Quiénes Somos -->
+    <!-- Who Are We section -->
     <section id="quienes-somos" class="py-20 min-h-screen bg-white">
         <div class="container mx-auto text-center">
 
@@ -131,6 +131,7 @@
     </section>
 
 
+    <!-- What Do We Do section -->
     <section id="que-hacemos" class="py-20 min-h-screen bg-gradient-to-r from-[#D99748] to-[#4B2579] shadow-xl">
         <div class="container mx-auto text-center">
             <img src="{{ asset('Casita.png') }}" alt="NearU Logo" width="150" height="50" class="mx-auto mb-8">
@@ -164,6 +165,7 @@
     </section>
 
 
+    <!-- Why NearU section  -->
     <section id="why-nearu" class="py-10 min-h-screen bg-white">
         <div class="container mx-auto text-center">
             <h1 class="text-4xl font-extrabold flex justify-center mt-[35px] text-black tracking-[4px]">Why
@@ -217,15 +219,14 @@
     </section>
 
 
-
-
-    <section id="our-values" class="relative py-30">
-        <img src="{{ asset('tassels.jpeg') }}" alt="NearU Logo" class="filter brightness-75 w-full h-[700px]" />
+    <!-- Our Values section -->
+    <section id="our-values" class="relative">
+        <img src="{{ asset('tassels.jpeg') }}" alt="NearU Logo" class="filter brightness-75 w-full h-[620px]" />
 
         <!-- Text container for "Our Mission" -->
-        <div class="ml-8 absolute top-[90px] left-0 text-white">
+        <div class="ml-8 absolute top-[75px] left-0 text-white">
             <h1 class="text-4xl font-bold tracking-[4px] ">Our Mission</h1>
-            <p class="mt-4 text-lg">We are a platform that provides valuable opportunities for Salvadoran
+            <p class="mt-4 text-lg font-palatino">We are a platform that provides valuable opportunities for Salvadoran
                 university
                 students to acquire a home that meets all their needs safely, promoting the idea that young
                 Salvadorans
@@ -233,9 +234,9 @@
         </div>
 
         <!-- Text container for "Our Vision" -->
-        <div class="mr-8 absolute top-[320px] right-0 transform -translate-y-1/2 text-white text-right">
+        <div class="mr-8 absolute top-[345px] right-0 transform -translate-y-1/2 text-white text-right">
             <h1 class="text-4xl font-bold tracking-[4px] ">Our Vision</h1>
-            <p class="mt-4 text-lg ml-4 text-justified ">To be the leading platform for Salvadoran students
+            <p class="mt-4 text-lg ml-4 text-justified font-palatino">To be the leading platform for Salvadoran students
                 seeking
                 safe
                 and close-to-university housing, providing more than just convenient and secure housing
@@ -246,8 +247,8 @@
         </div>
 
         <!-- Text container for "Our Values" -->
-        <div class="ml-8 absolute bottom-[170px] left-0 text-white p-4">
-            <h1 class="text-4xl font-bold tracking-[4px] ">Our Values</h1>
+        <div class="ml-8 absolute bottom-[60px] left-0 text-white p-4">
+            <h1 class="text-4xl font-bold tracking-[4px]">Our Values</h1>
 
             <p class="mt-4 text-[16px] font-palatino font-bold">
                 Empathy,
@@ -258,6 +259,7 @@
         </div>
     </section>
 
+    <!-- This JavaScript part is incharged of creating an animation that takes the user to the section clicked -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const links = document.querySelectorAll('a[href^="#"]');

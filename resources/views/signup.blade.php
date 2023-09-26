@@ -1,5 +1,6 @@
 <x-layout>
-    <form class="min-h-screen flex flex-col justify-center bg-gradient-to-r from-[#D99748] to-[#4B2579] shadow-xl text-white relative"
+    <form
+        class="min-h-screen flex flex-col justify-center bg-gradient-to-r from-[#D99748] to-[#4B2579] shadow-xl text-white relative"
         x-data="{ state: '', town: '', district: '' }" action="/signup" method="POST">
         @csrf
         <input type="number" value="{{ $rol }}" class="hidden" name="role_id">
@@ -19,7 +20,8 @@
                 </select>
             </div>
             <x-input label="DUI" type="number" placeholder="Enter your DUI number" name="dui" required />
-            <x-input label="Phone Number" placeholder="Enter your phone number" name="phone" type='number' required />
+            <x-input label="Phone Number" placeholder="Enter your phone number" name="phone" type='number'
+                required />
             <x-input label="Email" placeholder="Enter your email" name="email" required />
             <x-input label="Password" placeholder="Create a secure password" name="password" type='password' required />
             <x-input label="Confirm Password" placeholder="Confirm your password" name="password_confirmation"
@@ -91,4 +93,3 @@
         <x-button @endif class="py-auto mx-auto mt-4" type="submit" label="Submit"/>
     </form>
 </x-layout>
-
