@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcomeL');
+    return redirect('welcome');
 });
 
 include 'abner-routes.php';
