@@ -18,6 +18,13 @@
         </select>
 
         <select name="prices" id="prices">
+            <option selected disabled>Select the lease type </option>
+            <option value="price1">Room</option>
+            <option value="price2">House</option>
+            <option value="price3">Room Apartment</option>
+        </select>
+
+        <select name="prices" id="prices">
             <option selected disabled>Select the allowed conditions </option>
             <option value="conditions1">Pets allowed</option>
             <option value="conditions1">Bring your own furniture</option>
@@ -35,9 +42,6 @@
             <option value="conditions1">Electricity service</option>
         </select>
     </div>
-
-
-
 
 
 
