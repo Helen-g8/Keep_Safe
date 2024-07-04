@@ -9,6 +9,8 @@ use App\Models\University;
 
 Route::view('welcome', 'welcome');
 
+Route::view('Tchat', 'Tchat ');
+
 Route::view('login', 'login');
 
 Route::view('chat', 'chat');
