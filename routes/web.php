@@ -22,6 +22,3 @@ include 'alexis-routes.php';
 include 'bryan-routes.php';
 include 'helen-routes.php';
 include 'wesly-routes.php';
-include 'hugo-routes.php';
-include 'elsy-routes.php';
-include 'josue-routes.php';
