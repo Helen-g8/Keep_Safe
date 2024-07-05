@@ -4,42 +4,51 @@
 
         <label for="filters" class="font-extrabold tracking-[1px] text-2xl">Filters</label>
 
-        <select name="prices" id="prices">
-            <option selected disabled>Select a price range </option>
-            <option value="price1">$100 - $150</option>
-            <option value="price2">$150 - $200</option>
-            <option value="price3">$200 - $250</option>
-            <option value="price4">$250 - $300</option>
-            <option value="price5">$300 - $350</option>
-            <option value="price6">$350 - $400</option>
-            <option value="price7">$400 - $450</option>
-            <option value="price8">$450 - $500</option>
-            <option value="price9">$550 - $600</option>
-        </select>
+        <form method="get" action="/mostrarArrendamientos_filtros">
+            <select name="price_min" id="">
+                <option selected disabled>Select a minimun price</option>
+                <option value="100">$100 - $150</option>
+                <option value="200">$150 - $200</option>
+                <option value="price3">$200 - $250</option>
+                <option value="price4">$250 - $300</option>
+                <option value="price5">$300 - $350</option>
+                <option value="price6">$350 - $400</option>
+                <option value="price7">$400 - $450</option>
+                <option value="price8">$450 - $500</option>
+                <option value="price9">$550 - $600</option>
+            </select>
 
-        <select name="prices" id="prices">
-            <option selected disabled>Select the allowed conditions </option>
-            <option value="conditions1">Pets allowed</option>
-            <option value="conditions1">Bring your own furniture</option>
-            <option value="conditions1">Share bathroom facilities</option>
-            <option value="conditions1">Share kitchen</option>
-            <option value="conditions1">Share shower </option>
-            <option value="conditions1">Share living room</option>
-        </select>
+            <select name="cuartos" id="">
+                <option selected disabled>Select the lease type </option>
+                <option value="1">Room</option>
+                <option value="2">House</option>
+                <option value="3">Room Apartment</option>
+            </select>
 
-        <select name="services" id="services">
-            <option selected disabled>Select the available services </option>
-            <option value="conditions1">Water service</option>
-            <option value="conditions1">WiFi service</option>
-            <option value="conditions1">TV service</option>
-            <option value="conditions1">Electricity service</option>
-        </select>
+            <select name="prices" id="prices">
+                <option selected disabled>Select the allowed conditions </option>
+                <option value="conditions1">Pets allowed</option>
+                <option value="conditions1">Bring your own furniture</option>
+                <option value="conditions1">Share bathroom facilities</option>
+                <option value="conditions1">Share kitchen</option>
+                <option value="conditions1">Share shower </option>
+                <option value="conditions1">Share living room</option>
+            </select>
+
+            <select name="services" id="services">
+                <option selected disabled>Select the available services </option>
+                <option value="conditions1">Water service</option>
+                <option value="conditions1">WiFi service</option>
+                <option value="conditions1">TV service</option>
+                <option value="conditions1">Electricity service</option>
+            </select>
+
+            <x-button class="py-auto mx-auto mt-4" type="submit" label="Submit"/>
+
+        </form>
     </div>
 
-
-
-
-
+    
 
 
     <div

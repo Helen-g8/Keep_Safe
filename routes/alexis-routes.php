@@ -9,6 +9,8 @@ use App\Models\University;
 
 Route::view('welcome', 'welcome');
 
+Route::view('Tchat', 'Tchat ');
+
 Route::view('login', 'login');
 
 Route::view('chat', 'chat');
@@ -36,6 +38,19 @@ Route::get('mostrarArrendamientos', function () {
         'arrendamientos' => RentalLocation::all()
     ]);
 })->name('mostrar_arrendamientos');
+
+Route::get('mostrarArrendamientos_filtros', function() {
+    if(request('cuartos') == null) {
+
+    } elseif(request('price_min')== null) {
+        $arrendamientos = RentalLocation::where('rooms', request('cuartos'))->where('price', '>=', request('price_min'))->get();
+    };
+
+    return view('mostrarArrendamientos', [
+        //en 'rooms', requet('cuartos`) "aqui lo compara a == por defecto
+        'arrendamientos' => $arrendamientos
+    ]);
+});
 
 Route::view('activeRentals', 'activeRentals');
 

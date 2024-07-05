@@ -19,7 +19,7 @@
                     @endforeach
                 </select>
             </div>
-            <x-input label="DUI" type="number" placeholder="Enter your DUI number" name="dui" required />
+            <x-input label="DUI" type="file" name="dui" required />
             <x-input label="Phone Number" placeholder="Enter your phone number" name="phone" type='number'
                 required />
             <x-input label="Email" placeholder="Enter your email" name="email" required />
@@ -42,7 +42,8 @@
                 <x-input label="University ID" type='file' name="address" required />
 
                 <div>
-                    <label for="criminal_records" class="block mb-2 text-sm font-medium">Criminal Records</label>
+                    <label for="criminal_records" cdui
+                    lass="block mb-2 text-sm font-medium">Criminal Records</label>
                     <input type="file" id="cR"
                         class="bg-white border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                         required>

@@ -17,3 +17,6 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+*.php
+*.php
+!resources/views/Tchat.blade.php
