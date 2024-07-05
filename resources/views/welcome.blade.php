@@ -2,44 +2,12 @@
 
     <!-- Welcome section -->
     <section id="bienvenida" class="z-0 relative">
+        <div id="a" class="relative w-full h-screen shadow-xl block brightness-50">
 
-        <div class="text-6xl absolute inset-0 flex justify-center items-center z-10 text-white tracking-[1px] mt-[45px]">
-            <label>Welcome to</label>
-            <label class="mt-2.5 font-palatino font-bold text-[#4B2579] ml-2.5">Near</label>
-            <label class="mt-2.5 font-palatino font-bold text-[#F2BA52]">U</label>
+            <img src="{{ asset('NearU .png') }}" alt="NearU Logo" width="400" height="300"/>
+
         </div>
 
-        <div id="default-carousel" class="relative w-full h-screen shadow-xl block brightness-50" data-carousel="slide">
-            <!-- Carousel wrapper -->
-            <div class="relative h-full overflow-hidden w-full z-0">
-                <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="{{ asset('slider1.jpg') }}"
-                        class="w-full h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                        alt="...">
-                </div>
-                <!-- Item 2 -->
-                <div class="duration-700 ease-in-out" data-carousel-item>
-                    <img src="{{ asset('slider2.jpg') }}"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 3 -->
-                <div class="duration-700 ease-in-out" data-carousel-item>
-                    <img src="{{ asset('slider3.jpg') }}"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 4 -->
-                <div class="duration-700 ease-in-out" data-carousel-item>
-                    <img src="{{ asset('slider4.jpg') }}"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 5 -->
-                <div class="duration-700 ease-in-out" data-carousel-item>
-                    <img src="{{ asset('slider2.jpg') }}"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-            </div>
-        </div>
     </section>
 
 
