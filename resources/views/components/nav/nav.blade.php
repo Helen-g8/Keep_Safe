@@ -36,9 +36,7 @@
                     </a>
                 @endguest
                 @auth
-                    <a href="/chat">
-                        <x-button label="Chat" />
-                    </a>
+                   
 
                     <a href="{{ route('mostrar_arrendamientos') }}">
                         <x-button @class(['hidden' => Auth::user()->role->name != 'Arrendador']) label="Other landlord's leases" />

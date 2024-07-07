@@ -68,7 +68,7 @@
     <div class="text-center mt-10 mb-8">
         <!-- Botón Get in touch with the owner -->
         @if ($arrendamiento->rooms > 0)
-            <a href="chat.jpg">
+            <a href="/Tchat">
                 <x-button class="shadow-xl text-xl bg-[#F2BA52]" label='Get in touch with the owner' />
             </a>
         @else
