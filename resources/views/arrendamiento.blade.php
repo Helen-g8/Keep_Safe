@@ -15,7 +15,7 @@
     </div>
 
     <!-- Segunda mitad (parte derecha) -->
-    <div class="flex justify-around mt-[-170px]">
+    <div class="flex justify-around mt-[-280px]">
         <div class="text-left shadow-xl rounded-[10px] p-8">
             <!-- Sección 1: General lease information -->
             <label class="underline text-lg font-extrabold">General lease
@@ -53,7 +53,7 @@
             @endforeach
         </div>
 
-        <div class="text-left shadow-xl rounded-[10px] p-8">
+        <div class="text-left shadow-xl rounded-[10px] px-[20px] py-[10px]">
             <!-- Sección 3: Lease services -->
             <label class="mt-4 underline text-lg font-extrabold">Lease services</label>
             @foreach ($arrendamiento->services as $service)

@@ -52,10 +52,10 @@
                 </div>
             </div>
 
-            <button type="submit" class="mt-4 bg-indigo-500 text-white p-2 rounded hover:bg-indigo-700">Submit</button>
+            <button type="submit" class="mt-4 bg-indigo-500 text-white p-2 rounded hover:bg-indigo-700">View leases</button>
         </form>
     </div>
-</div>
+    </div>
 
 
     <div class="grid grid-cols-1 gap-4 md:grid-cols-4 max-w-screen bg-white border border-gray-200 rounded-lg shadow font-[Acme] tracking-wider ml-4 mr-4 mb-4">
@@ -80,7 +80,7 @@
                         </a>
 
                         @if ($arrendamiento->rooms > 0)
-                            <label class="inline-flex items-center px-2 py-1 text-sm font-medium text-white font-bold bg-green-400 rounded text-center">Available</label>
+                            <label class="inline-flex items-center px-2 py-1 text-sm font-medium text-white font-bold bg-green-500 rounded text-center">Available</label>
                         @else
                             <label class="inline-flex items-center px-2 py-1 text-sm font-medium text-white font-bold bg-red-700 rounded text-center">Not available</label>
                         @endif

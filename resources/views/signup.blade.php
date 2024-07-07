@@ -1,10 +1,10 @@
 <x-layout>
     <form
-        class="min-h-screen flex flex-col justify-center bg-gradient-to-r from-[#D99748] to-[#4B2579] shadow-xl text-white relative"
+        class="min-h-screen flex flex-col justify-center bg-[#4B2579] shadow-xl text-white relative"
         x-data="{ state: '', town: '', district: '' }" action="/signup" method="POST">
         @csrf
         <input type="number" value="{{ $rol }}" class="hidden" name="role_id">
-        <div class="mx-[90px] mt-2 grid gap-6 md:grid-cols-2">
+        <div class="mx-[90px] mt-8 grid gap-6 md:grid-cols-2">
             <x-input label="First Name" placeholder="E.g. Kevin Antonio" name="first_name" required />
             <x-input label="Last Name" placeholder="E.g. Hernandez Molina" name="last_name" required />
             <x-input label="Age" placeholder="Enter your age" name="age" type="number" required />
@@ -19,11 +19,16 @@
                     @endforeach
                 </select>
             </div>
-            <x-input label="DUI" type="file" name="dui" required />
-            <x-input label="Phone Number" placeholder="Enter your phone number" name="phone" type='number'
+
+            <x-input type="number" placeholder="Enter your DUI" label="DUI" name="dui" required />
+ 
+            <x-input label="Phone Number" placeholder="Enter your phone number" name="phone" type="number"
                 required />
+
             <x-input label="Email" placeholder="Enter your email" name="email" required />
+
             <x-input label="Password" placeholder="Create a secure password" name="password" type='password' required />
+            
             <x-input label="Confirm Password" placeholder="Confirm your password" name="password_confirmation"
                 type='password' required />
 
