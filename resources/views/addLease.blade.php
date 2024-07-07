@@ -23,7 +23,6 @@
                          placeholder="Upload high-quality pictures of your lease" name="leasePhoto" required />
             </div>
 
-            <!-- Botón y vista previa de captura de foto desde la cámara -->
             <div class="mt-4 text-center">
                 <button type="button" @click="capturePhoto"
                         class="bg-blue-500 text-white px-4 py-2 rounded-md" id="takePhotoBtn">Tomar Foto</button>
@@ -32,7 +31,6 @@
                 </div>
             </div>
 
-            <!-- Input oculto para guardar la foto capturada -->
             <input type="hidden" name="capturedPhoto" x-model="photoData">
 
             <h2 class="text-xl font-bold italic mt-10 text-center tracking-[1px]">Lease Restrictions</h2>
@@ -103,7 +101,6 @@
             </div>
         </form>
 
-        <!-- Script JavaScript para la captura de fotos desde la cámara -->
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 const form = document.querySelector('form');
@@ -115,13 +112,10 @@
                 cameraView.style.height = 'auto';
                 cameraView.classList.add('hidden');
 
-                // Función para capturar una foto desde la cámara
                 const capturePhoto = async () => {
                     try {
-                        // Acceder a la cámara del dispositivo
                         cameraStream = await navigator.mediaDevices.getUserMedia({ video: true });
 
-                        // Mostrar la vista previa de la cámara
                         document.getElementById('photoResult').appendChild(cameraView);
                         cameraView.srcObject = cameraStream;
                         cameraView.classList.remove('hidden');
@@ -130,40 +124,30 @@
                     }
                 };
 
-                // Función para capturar la foto y guardarla localmente
                 const captureAndSavePhoto = () => {
                     const canvas = document.createElement('canvas');
                     const context = canvas.getContext('2d');
 
-                    // Ajustar el tamaño del canvas al tamaño de la vista de la cámara
                     canvas.width = cameraView.videoWidth;
                     canvas.height = cameraView.videoHeight;
 
-                    // Dibujar la imagen de la cámara en el canvas
                     context.drawImage(cameraView, 0, 0, canvas.width, canvas.height);
 
-                    // Obtener la imagen en formato base64
                     const imageData = canvas.toDataURL('image/png');
 
-                    // Mostrar la imagen capturada en la interfaz
                     document.querySelector('#photoResult img').src = imageData;
 
-                    // Asignar la imagen capturada al modelo de datos para enviarla con el formulario
                     form.querySelector('input[name="capturedPhoto"]').value = imageData;
 
-                    // Detener el stream de la cámara
                     cameraStream.getVideoTracks().forEach(track => track.stop());
 
-                    // Ocultar/mostrar elementos necesarios
                     cameraView.classList.add('hidden');
                 };
 
-                // Función para enviar el formulario
                 const submitForm = () => {
                     form.submit();
                 };
 
-                // Asignar métodos a los eventos
                 document.getElementById('takePhotoBtn').addEventListener('click', capturePhoto);
                 document.getElementById('photoResult').addEventListener('click', captureAndSavePhoto);
                 form.addEventListener('submit', submitForm);
