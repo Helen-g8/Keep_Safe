@@ -33,6 +33,7 @@
                 <option value="conditions1">Share kitchen</option>
                 <option value="conditions1">Share shower </option>
                 <option value="conditions1">Share living room</option>
+                <option value="conditions1">Roomie</option>
             </select>
 
             <select name="services" id="services">
