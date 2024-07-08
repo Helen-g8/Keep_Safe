@@ -1,14 +1,25 @@
 <x-layout>
 
+
     <!-- Welcome section -->
-    <section id="bienvenida" class="z-0 relative">
-        <div id="a" class="relative w-full h-screen shadow-xl block brightness-50">
+    <section id="bienvenida" class="relative h-screen">
+    <div class="absolute inset-0 w-full h-full brightness-75">
+        <img src="{{ asset('welcome_bgpic.jpeg') }}" alt="NearU Logo" class="h-full w-full object-cover"/>
+    </div>
 
-            <img src="{{ asset('NearU .png') }}" alt="NearU Logo" width="400" height="300"/>
+    <div class="absolute left-0 top-1/2 transform -translate-y-1/2 pl-10">
+        <h1 class="text-8xl text-white ml-[80px]">
+            <span>Your home</span><br><span>here</span>
+        </h1>
+    </div>
 
-        </div>
+    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 pr-10">
+        <img src="{{ asset('nearulogo.png') }}" alt="Centered Image" class="h-[300px] w-[370px] mr-[80px]">
+    </div>
+</section>
 
-    </section>
+
+
 
 
     <!-- Who Are We section -->

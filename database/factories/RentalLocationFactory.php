@@ -28,7 +28,6 @@ class RentalLocationFactory extends Factory
             "district_id" => $districts->random(),
             "address" => fake()->streetAddress(),
             "price" =>fake()->numberBetween(75,500),
-            "roomie" => fake()->boolean(), 
         ];
     }
 }
