@@ -14,7 +14,7 @@
     </div>
 
     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 pr-10">
-        <img src="{{ asset('nearulogo.png') }}" alt="Centered Image" class="h-[360px] w-[450px] mr-[80px]">
+        <img src="{{ asset('nearulogo.png') }}" alt="Centered Image" class="h-[320px] w-[410px] mr-[80px]">
     </div>
 
     <!--<div class="absolute right-0 top-1/2 transform -translate-y-1/2 pr-10">
