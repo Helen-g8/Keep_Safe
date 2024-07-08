@@ -19,6 +19,8 @@ class ServiceSeeder extends Seeder
             'WiFi service',
             'TV service',
             'Electricity service',
+            'Food service',
+            'Cleaning service',
         ];
         //anwers es si la persona acepto la condiciones de arriba
 
