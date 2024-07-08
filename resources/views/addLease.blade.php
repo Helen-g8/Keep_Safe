@@ -18,11 +18,6 @@
                 <x-input label="Rules" placeholder="Type your lease rules" name="text" required />
             </div>
 
-            <div class="flex justify-center mt-4">
-                <x-input label="Lease Pictures" type="file"
-                         placeholder="Upload high-quality pictures of your lease" name="leasePhoto" required />
-            </div>
-
             <div class="mt-4 text-center">
                 <button type="button" @click="capturePhoto"
                         class="bg-blue-500 text-white px-4 py-2 rounded-md" id="takePhotoBtn">Lease pictures</button>

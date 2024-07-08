@@ -3,19 +3,24 @@
 
     <!-- Welcome section -->
     <section id="bienvenida" class="relative h-screen">
-    <div class="absolute inset-0 w-full h-full brightness-75">
-        <img src="{{ asset('welcome_bgpic.jpeg') }}" alt="NearU Logo" class="h-full w-full object-cover"/>
+    <div class="absolute inset-0 w-full h-full brightness-50">
+        <img src="{{ asset('welcomepic.png') }}" alt="NearU Logo" class="h-full w-full object-cover"/>
     </div>
 
     <div class="absolute left-0 top-1/2 transform -translate-y-1/2 pl-10">
-        <h1 class="text-8xl text-white ml-[80px]">
+        <h1 class="text-8xl text-white ml-[100px]">
             <span>Your home</span><br><span>here</span>
         </h1>
     </div>
 
     <div class="absolute right-0 top-1/2 transform -translate-y-1/2 pr-10">
-        <img src="{{ asset('nearulogo.png') }}" alt="Centered Image" class="h-[300px] w-[370px] mr-[80px]">
+        <img src="{{ asset('nearulogo.png') }}" alt="Centered Image" class="h-[360px] w-[450px] mr-[80px]">
     </div>
+
+    <!--<div class="absolute right-0 top-1/2 transform -translate-y-1/2 pr-10">
+        <   img src="{{ asset('welcome_side.png') }}" alt="Centered Image" class="h-[340px] w-[600px] mr-[80px] rounded-xl border-8 border-black">
+        </div>
+    -->
 </section>
 
 

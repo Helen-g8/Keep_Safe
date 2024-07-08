@@ -75,7 +75,7 @@
             <p class="text-2xl text-red-500 font-extrabold mb-6 ml-6">Not available</p>
         @endif
 
-        <a href="rentalReview.png">
+        <a href="/rentalInfo">
             <x-button class="shadow-xl text-xl bg-[#F2BA52] ml-[25px]" label='See reviews' />
         </a>
     </div>
