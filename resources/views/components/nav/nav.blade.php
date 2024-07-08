@@ -1,5 +1,5 @@
 <div>
-    <nav class="bg-[#F2BA52] fixed w-full z-10 top-0 left-0 shadow-lg font-[Acme]">
+    <nav class="bg-[#F2BA52] fixed w-full z-10 top-0 left-0 shadow-lg font-[Poppins_B]">
         <div class="flex flex-wrap justify-between items-center mx-auto p-2">
             @php
                 $url = Route::getCurrentRoute()->uri;
@@ -13,9 +13,6 @@
                     <a href="{{ $url != 'welcome' ? '/welcome' : '' }}#quienes-somos"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Who Are
                         We?</a>
-                    <a href="{{ $url != 'welcome' ? '/welcome' : '' }}#que-hacemos"
-                        class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">What Do We
-                        Do?</a>
                     <a href="{{ $url != 'welcome' ? '/welcome' : '' }}#why-nearu"
                         class="block py-2 pl-3 pr-4 rounded transition-all hover:bg-[#BF7534] hover:text-white">Why
                         NearU?</a>

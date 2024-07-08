@@ -114,41 +114,6 @@
 
     </section>
 
-
-    <!-- What Do We Do section -->
-    <section id="que-hacemos" class="py-20 min-h-screen bg-gradient-to-r from-[#D99748] to-[#4B2579] shadow-xl">
-        <div class="container mx-auto text-center">
-            <img src="{{ asset('Casita.png') }}" alt="NearU Logo" width="150" height="50" class="mx-auto mb-8">
-
-            <div
-                class="py-6 px-4 text-white font-palatino font-bold bg-[#3d2A58] ml-6 mr-6 text-center rounded-lg shadow-lg">
-                <h2 style="color: #F2BA52" class="text-3xl font-[Acme] text-white mb-6 tracking-[2px]">
-                    Unlocking Your
-                    College Journey</h2>
-                <p class="text-md leading-relaxed">
-                    At NearU, we redefine your college experience into an exciting and worry-free journey. We
-                    understand
-                    that this time is filled with unforgettable moments that will shape your future, and
-                    connections
-                    that
-                    will last a lifetime.
-                </p>
-                <p class="text-md leading-relaxed mt-4">
-                    Our mission is to break down the barriers that distance can create, through the connection
-                    of
-                    students with landlords, facilitating safe and reliable agreements. We help you discover a
-                    second home that brings you closer to your university.
-                </p>
-                <p class="text-md leading-relaxed mt-4">
-                    Imagine a college journey filled with endless possibilities, with NearU as your trusted
-                    companion.
-                    Your bright future is just steps away from your doorstep.
-                </p>
-            </div>
-        </div>
-    </section>
-
-
     <!-- Why NearU section  -->
     <section id="why-nearu" class="py-10 min-h-screen bg-white">
         <div class="container mx-auto text-center">

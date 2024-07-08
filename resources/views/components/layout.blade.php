@@ -13,7 +13,7 @@
     <title>Login</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .font-palatino {
+        .fonts {
             font-family: 'Palatino Linotype';
         }
         @font-face {
@@ -31,10 +31,26 @@
             src: url('{{ asset('fonts/Palatino Linotype Bold.ttf') }}');
             font-weight: 700;
         }
+        @font-face {
+            font-family: "Poppins_Black";
+            src: url('{{ asset('fonts/Poppins-Black.ttf') }}');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: "Poppins_Medium";
+            src: url('{{ asset('fonts/Poppins-Medium.ttf') }}');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: "SemiBold";
+            src: url('{{ asset('fonts/Poppins-SemiBold.ttf') }}');
+            font-weight: 700;
+        }
+        
     </style>
 </head>
 
-<body class="font-[Acme]">
+<body class="font-[SemiBold]">
     <x-nav.nav />
 
     <div class="h-screen pt-[52px]">
