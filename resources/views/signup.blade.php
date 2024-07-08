@@ -21,14 +21,14 @@
             </div>
 
             <x-input type="number" placeholder="Enter your DUI" label="DUI" name="dui" required />
- 
+
             <x-input label="Phone Number" placeholder="Enter your phone number" name="phone" type="number"
                 required />
 
             <x-input label="Email" placeholder="Enter your email" name="email" required />
 
             <x-input label="Password" placeholder="Create a secure password" name="password" type='password' required />
-            
+
             <x-input label="Confirm Password" placeholder="Confirm your password" name="password_confirmation"
                 type='password' required />
 
@@ -53,6 +53,8 @@
                         class="bg-white border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                         required>
                 </div>
+
+
 
                 <div>
                     <label for="states" class="mb-2 text-sm font-medium">Departments</label>
