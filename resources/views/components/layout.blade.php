@@ -42,7 +42,7 @@
             font-weight: 700;
         }
         @font-face {
-            font-family: "SemiBold";
+            font-family: "Poppins_SemiBold";
             src: url('{{ asset('fonts/Poppins-SemiBold.ttf') }}');
             font-weight: 700;
         }
@@ -50,7 +50,7 @@
     </style>
 </head>
 
-<body class="font-[SemiBold]">
+<body class="font-[Poppins_SemiBold]">
     <x-nav.nav />
 
     <div class="h-screen pt-[52px]">

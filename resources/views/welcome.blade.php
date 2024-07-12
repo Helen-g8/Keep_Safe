@@ -8,7 +8,7 @@
     </div>
 
     <div class="absolute left-0 top-1/2 transform -translate-y-1/2 pl-10">
-        <h1 class="text-8xl text-white ml-[100px]">
+        <h1 class="text-8xl text-white ml-[100px] font-[Poppins_Black]">
             <span>Your home</span><br><span>here</span>
         </h1>
     </div>
@@ -123,8 +123,8 @@
             <div class="flex flex-col md:flex-row mt-4 ml-2 mr-2 ">
                 <div
                     class="rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 w-full md:w-1/2 py-6 px-4 text-white font-[Acme] text-lg text-left bg-[#3d2A58] rounded-lg md:mr-2">
-                    <h2 class="text-xl font-palatino font-bold text-white mb-2 text-center">For landlords</h2>
-                    <p class="text-md leading-relaxed font-palatino font-bold">
+                    <h2 class="text-xl text-white mb-2 text-center">For landlords</h2>
+                    <p class="text-md leading-relaxed font-[Poppins_Semibold]">
                         Are you a property owner looking to maximize your investment in El Salvador? NearU
                         presents a
                         unique
