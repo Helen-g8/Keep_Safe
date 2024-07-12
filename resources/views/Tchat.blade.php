@@ -23,7 +23,7 @@
     <script>
         const restrictedWords = ['uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve'];
 
-        document.getElementById('messageInput').addEventListener('input', function (event) {
+        document.getElementById('message_input').addEventListener('input', function (event) {
             var input = event.target;
             var value = input.value;
             var regex = /^[A-Za-z\s]*$/;
@@ -37,29 +37,9 @@
             input.value = filteredWords.join(' ');
         });
 
-        document.getElementById('messageForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            var input = document.getElementById('messageInput');
-            var value = input.value.trim();
-
-            if (value.length > 0) {
-                const messageList = document.getElementById('messageList');
-                const messageElement = document.createElement('div');
-                messageElement.textContent = value;
-                messageList.appendChild(messageElement);
-                input.value = '';
-            }
-        });
-    </script>
-
-    <!-- Optional: Include AlpineJS for interactivity -->
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
-
-    <!-- JavaScript to handle message sending (assuming backend handling is separate) -->
-    <script>
         document.addEventListener('DOMContentLoaded', function () {
             const messageForm = document.getElementById('messageForm');
-            const messageInput = document.getElementById('messageInput');
+            const messageInput = document.getElementById('message_input');
             const messageList = document.getElementById('messageList');
 
             // Submit message form
@@ -85,4 +65,7 @@
             }
         });
     </script>
+
+    <!-- Optional: Include AlpineJS for interactivity -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
 </x-layout>
