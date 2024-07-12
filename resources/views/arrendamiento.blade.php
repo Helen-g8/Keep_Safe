@@ -3,7 +3,7 @@
     <!-- Primera mitad (parte izquierda) -->
     <div class="flex items-center justify-center mt-6">
         <div class="text-center">
-            <img src="{{ asset('casita12.jpg') }}" alt="Lease photo" width="300" height="300"
+            <img src="{{ asset('casa_6.jpg') }}" alt="Lease photo" width="300" height="300"
                 class="mx-auto my-4 rounded-lg shadow-xl">
 
 
