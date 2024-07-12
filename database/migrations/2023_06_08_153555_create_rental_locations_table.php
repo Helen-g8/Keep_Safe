@@ -23,7 +23,7 @@ return new class extends Migration
             $table->foreignIdFor(District::class)->constrained();
             $table->string("address");
             $table->integer("price");
-
+            $table->string("image")->nullable(); // Agregar columna para la imagen
         });
     }
 

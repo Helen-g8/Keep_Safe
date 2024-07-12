@@ -10,13 +10,21 @@ class RentalLocation extends Model
 {
     use HasFactory, BelongsToThrough;
 
+    protected $fillable = ['user_id', 'rooms', 'coordinates', 'district_id', 'address', 'price', 'image'];
+
+    public static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($rentalLocation) {
+            $rentalLocation->image = 'casa_' . rand(1, 5) . '.jpg';
+        });
+    }
+
     public function district(){
         return $this->belongsTo(District::class);
     }
-    /**
-     * Summary of town
-     * @return mixed
-     */
+
     public function town() {
         return $this->belongsToThrough(Town::class, District::class);
     }
@@ -25,7 +33,7 @@ class RentalLocation extends Model
         return $this->belongsToThrough(State::class, [Town::class, District::class]);
     }
 
-    public function Payment(){
+    public function payments(){
         return $this->hasMany(Payment::class);
     }
 
@@ -33,7 +41,7 @@ class RentalLocation extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function rentalreview(){
+    public function rentalReviews(){
         return $this->hasMany(RentalReview::class);
     }
 
@@ -47,7 +55,7 @@ class RentalLocation extends Model
         return $this->belongsToMany(Service::class)->withPivot('answer');
     }
 
-    public function rule(){
+    public function rules(){
         return $this->hasMany(Rule::class);
     }
 }
