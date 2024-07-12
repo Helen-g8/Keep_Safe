@@ -1,5 +1,5 @@
 <x-layout>
-
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,15 +26,20 @@
                 margin-bottom: 20px; /* Espacio entre el texto y el botón */
                 tracking: 2px; /* Ajusta este valor según necesites */
             }
+            .large-button {
+                font-size: 2rem; /* Ajusta este valor para aumentar el tamaño del texto */
+                padding: 20px 40px; /* Ajusta estos valores para aumentar el tamaño del botón */
+            }
         </style>
     </head>
-
+    <>
         <div class="center-container">
             <label class="label">You haven't added any lease yet!</label>
             <a href="addLease">
-                <x-button label="Add lease" />
+                <x-button label="Add lease" class="large-button"/>
             </a>
         </div>
+
 
 
 
