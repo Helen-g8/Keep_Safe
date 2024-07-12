@@ -7,13 +7,13 @@
         <img src="{{ asset('welcomepic.png') }}" alt="NearU Logo" class="h-full w-full object-cover"/>
     </div>
 
-    <div class="absolute left-0 top-1/2 transform -translate-y-1/2 pl-10">
-        <h1 class="font-black text-8xl text-white ml-[100px]">
+    <div class="absolute left-0 top-1/2 transform -translate-y-1/2 pl-10 mt-[50px]">
+        <h1 class="font-extrabold text-8xl text-white ml-[100px]">
             <span>Your home</span><br><span>here</span>
         </h1>
     </div>
 
-    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 pr-10">
+    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 pr-10 mt-[58px]">
         <img src="{{ asset('nearulogo.png') }}" alt="Centered Image" class="h-[320px] w-[410px] mr-[80px]">
     </div>
 

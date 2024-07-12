@@ -27,21 +27,6 @@
             font-weight: 300;
         }
         @font-face {
-            font-family: "Palatino Linotype";
-            src: url('{{ asset('fonts/Palatino Linotype Bold.ttf') }}');
-            font-weight: 700;
-        }
-        @font-face {
-            font-family: "Poppins_Black";
-            src: url('{{ asset('fonts/Poppins-Black.ttf') }}');
-            font-weight: 700;
-        }
-        @font-face {
-            font-family: "Poppins_Medium";
-            src: url('{{ asset('fonts/Poppins-Medium.ttf') }}');
-            font-weight: 700;
-        }
-        @font-face {
             font-family: "Poppins_SemiBold";
             src: url('{{ asset('fonts/Poppins-SemiBold.ttf') }}');
             font-weight: 700;
@@ -53,7 +38,7 @@
 <body class="font-[Poppins_SemiBold]">
     <x-nav.nav />
 
-    <div class="h-screen pt-[52px]">
+    <div class="h-screen">
         {{ $slot }}
     </div>
 </body>
