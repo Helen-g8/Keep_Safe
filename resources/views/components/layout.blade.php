@@ -46,7 +46,7 @@
             src: url('{{ asset('fonts/Poppins-SemiBold.ttf') }}');
             font-weight: 700;
         }
-        
+
     </style>
 </head>
 
@@ -56,6 +56,7 @@
     <div class="h-screen pt-[52px]">
         {{ $slot }}
     </div>
+    <script src="//unpkg.com/alpinejs" defer></script>
 </body>
 
 </html>
