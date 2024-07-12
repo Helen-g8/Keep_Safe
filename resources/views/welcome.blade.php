@@ -8,7 +8,7 @@
     </div>
 
     <div class="absolute left-0 top-1/2 transform -translate-y-1/2 pl-10">
-        <h1 class="text-8xl text-white ml-[100px] font-[Poppins_Black]">
+        <h1 class="font-black text-8xl text-white ml-[100px]">
             <span>Your home</span><br><span>here</span>
         </h1>
     </div>

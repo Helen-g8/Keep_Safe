@@ -6,6 +6,8 @@
             <img src="{{ asset('casita12.jpg') }}" alt="Lease photo" width="300" height="300"
                 class="mx-auto my-4 rounded-lg shadow-xl">
 
+
+
             <p class="text-2xl font-extrabold text-[#BF7534]">
                 Lease at: <span class="ml-1 text-black font-semibold font-palatino">{{ $arrendamiento->district->name }},
                     {{ $arrendamiento->district->town->name }}. </span>
