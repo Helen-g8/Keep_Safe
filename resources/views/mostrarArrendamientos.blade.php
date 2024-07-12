@@ -59,7 +59,7 @@
 
     <div class="grid grid-cols-1 gap-4 md:grid-cols-4 max-w-screen bg-white border border-gray-200 rounded-lg shadow font-[Acme] tracking-wider ml-4 mr-4 mb-4">
     @foreach ($arrendamientos as $arrendamiento)
-        <?php $randomImage = 'casa_' . rand(1, 5    ) . '.jpg'; ?>
+        <?php $randomImage = 'casa_' . rand(1, 6    ) . '.jpg'; ?>
         <div class="p-5 border rounded bg-white shadow-lg">
             <div class="flex flex-col justify-between h-full">
                 <img src="{{ asset($arrendamiento->image) }}" alt="Lease photo" class="w-full h-48 object-cover rounded-lg mb-3">
