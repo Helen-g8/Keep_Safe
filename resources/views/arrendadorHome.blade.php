@@ -1,10 +1,41 @@
 <x-layout>
-    <a href="addLease" class="flex justify-center mt-4 ml-[1050px]">
-        <x-button label="Add lease" />
-    </a>
 
-    <label class="flex justify-center items-center text-4xl mt-[170px] tracking-[2px]">You haven't added any lease
-        yet!</label>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Centrar Texto y Botón</title>
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .center-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+            .label {
+                text-align: center;
+                font-size: 2rem; /* Ajusta este valor según necesites */
+                margin-bottom: 20px; /* Espacio entre el texto y el botón */
+                tracking: 2px; /* Ajusta este valor según necesites */
+            }
+        </style>
+    </head>
+
+        <div class="center-container">
+            <label class="label">You haven't added any lease yet!</label>
+            <a href="addLease">
+                <x-button label="Add lease" />
+            </a>
+        </div>
+
 
 
    <!-- <div
