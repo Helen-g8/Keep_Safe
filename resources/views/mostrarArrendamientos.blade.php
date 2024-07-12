@@ -57,13 +57,11 @@
     </div>
     </div>
 
-
     <div class="grid grid-cols-1 gap-4 md:grid-cols-4 max-w-screen bg-white border border-gray-200 rounded-lg shadow font-[Acme] tracking-wider ml-4 mr-4 mb-4">
     @foreach ($arrendamientos as $arrendamiento)
-        <?php $randomImage = 'casa_' . rand(1, 6    ) . '.jpg'; ?>
         <div class="p-5 border rounded bg-white shadow-lg">
             <div class="flex flex-col justify-between h-full">
-                <img src="{{ asset($randomImage) }}" alt="Lease photo" class="w-full h-48 object-cover rounded-lg mb-3">
+                <img src="{{ asset($arrendamiento->image) }}" alt="Lease photo" class="w-full h-48 object-cover rounded-lg mb-3">
 
                 <div class="my-2 text-xl text-gray-900 font-palatino font-bold">
                     Lease in: <span class="font-light">{{ $arrendamiento->district->name }}, {{ $arrendamiento->district->town->name }}</span>
@@ -90,6 +88,7 @@
         </div>
     @endforeach
 </div>
+
 
 
     <!-- JavaScript para manejar el modal -->
