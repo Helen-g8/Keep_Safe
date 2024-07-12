@@ -71,14 +71,14 @@
         <!-- Botón Get in touch with the owner -->
         @if ($arrendamiento->rooms > 0)
             <a href="/Tchat">
-                <x-button class="shadow-xl text-xl bg-[#F2BA52]" label='Get in touch with the owner' />
+                <x-button class="shadow-xl text-xl bg-[#4B2579]" label='Get in touch with the owner' />
             </a>
         @else
             <p class="text-2xl text-red-500 font-extrabold mb-6 ml-6">Not available</p>
         @endif
 
         <a href="/rentalInfo">
-            <x-button class="shadow-xl text-xl bg-[#F2BA52] ml-[25px]" label='See reviews' />
+            <x-button class="shadow-xl text-xl bg-[#4B2579] ml-[25px]" label='See reviews' />
         </a>
     </div>
 
