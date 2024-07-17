@@ -20,7 +20,7 @@
                 </select>
             </div>
 
-            <x-input type="number" placeholder="Enter your DUI" label="DUI" name="dui" required />
+            <x-input type="number" pattern="\d{9}" placeholder="Enter your DUI" label="DUI" name="dui" required />
 
             <x-input label="Phone Number" placeholder="Enter your phone number" name="phone" type="number"
                 required />
@@ -98,6 +98,6 @@
         </div>
 
         <!-- Mover el botón de submit aquí -->
-        <x-button @endif class="py-auto mx-auto mt-4" type="submit" label="Submit"/>
+        <x-button @endif class="py-auto mx-auto mt-4 bg-purple-600" type="submit" label="Create account"/>
     </form>
 </x-layout>

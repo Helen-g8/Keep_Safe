@@ -20,7 +20,7 @@
 
             <div class="mt-4 text-center">
                 <button type="button" @click="capturePhoto"
-                        class="bg-blue-500 text-white px-4 py-2 rounded-md" id="takePhotoBtn">Lease pictures</button>
+                        class="bg-purple-600 hover:bg-purple-800 text-white px-4 py-2 rounded-md" id="takePhotoBtn">Add lease pictures</button>
                 <div x-show="photoData" class="mt-4" id="photoResult">
                     <img x-bind:src="photoData" alt="Foto tomada" class="rounded-lg shadow-md max-w-full h-auto">
                 </div>
